@@ -1467,6 +1467,27 @@
         flex: 1 1 240px;
       }
 
+      #statistics .toolbar {
+        justify-content: center;
+      }
+
+      #statistics .toolbar .field input,
+      #statistics .toolbar .field select,
+      #statistics .toolbar .btn-mini {
+        min-height: 44px;
+      }
+
+      #statistics .toolbar .btn-mini {
+        padding: 0 14px;
+        border-radius: 12px;
+      }
+
+      #statistics .toolbar #stats-reset {
+        width: 44px;
+        padding: 0;
+        justify-content: center;
+      }
+
       .switch {
         display: inline-flex;
         align-items: center;
@@ -2490,20 +2511,6 @@
         <div class="wrap">
           <div class="section-head reveal">
             <h2 id="standings-title" data-step="02">Турнирная таблица</h2>
-            <p>2016 г.р. 26/27 (формат 4х4), Первый этап. Клик по заголовку столбца — сортировка, поиск — подсветка команды.</p>
-          </div>
-
-          <div class="toolbar reveal">
-            <label class="field grow">
-              <span>Поиск команды</span>
-              <input id="standings-search" type="search" placeholder="Например: Центр" autocomplete="off" />
-            </label>
-            <label class="switch">
-              <input id="standings-top8" type="checkbox" />
-              Только топ-8
-            </label>
-            <button class="btn-mini" id="standings-reset" type="button">Сбросить</button>
-            <p class="page-info" id="standings-status" role="status" aria-live="polite"></p>
           </div>
 
           <div class="table-wrap reveal">
@@ -2511,16 +2518,16 @@
               <caption class="visually-hidden">Турнирная таблица 2016 г.р., первый этап</caption>
               <thead>
                 <tr>
-                  <th scope="col">Место</th>
-                  <th scope="col" data-sort="text">Команда</th>
-                  <th scope="col" data-sort="number">И</th>
-                  <th scope="col" data-sort="number">В</th>
-                  <th scope="col" data-sort="number">Н</th>
-                  <th scope="col" data-sort="number">П</th>
-                  <th scope="col" data-sort="number">ШЗ</th>
-                  <th scope="col" data-sort="number">ШП</th>
-                  <th scope="col" data-sort="number">РШ</th>
-                  <th scope="col" data-sort="number">О</th>
+                  <th scope="col" data-sort="number">Место</th>
+                  <th scope="col">Команда</th>
+                  <th scope="col" data-sort="number" title="Сыграно игр">И</th>
+                  <th scope="col" data-sort="number" title="Выиграно игр">В</th>
+                  <th scope="col" data-sort="number" title="Игр в ничью">Н</th>
+                  <th scope="col" data-sort="number" title="Поражений">П</th>
+                  <th scope="col" data-sort="number" title="Шайб заброшено">ШЗ</th>
+                  <th scope="col" data-sort="number" title="Шайб пропущено">ШП</th>
+                  <th scope="col" data-sort="number" title="Разница шайб">РШ</th>
+                  <th scope="col" data-sort="number" title="Очков">О</th>
                 </tr>
               </thead>
               <tbody>
@@ -2576,10 +2583,6 @@
         <div class="wrap">
           <div class="section-head reveal">
             <h2 id="stats-title" data-step="04">Статистика игроков 2016 г.р.</h2>
-            <p>
-              Сезон 2026/2027: позиция — игрок — группа — команда — игры — голы. Фильтры, сортировка по любому столбцу и
-              выгрузка в CSV.
-            </p>
           </div>
 
           <div class="podium reveal" id="podium"></div>
@@ -2610,7 +2613,12 @@
                 <option value="50">50</option>
               </select>
             </label>
-            <button class="btn-mini" id="stats-reset" type="button">Сбросить фильтры</button>
+            <button class="btn-mini" id="stats-reset" type="button" aria-label="Сброс фильтров и сортировки" title="Сброс">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12a9 9 0 1 1-2.64-6.36" />
+                <path d="M21 3v6h-6" />
+              </svg>
+            </button>
             <button class="btn-mini" id="stats-export" type="button">
               <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                 <path d="M12 3v12M7 10l5 5 5-5M5 20h14" />
@@ -2624,12 +2632,13 @@
               <caption class="visually-hidden">Бомбардиры турнира 2016 г.р., сезон 2026/2027</caption>
               <thead>
                 <tr>
-                  <th scope="col">Позиция</th>
+                  <th scope="col" data-sort="number">Позиция</th>
                   <th scope="col" data-sort="text">Игрок</th>
                   <th scope="col" data-sort="text">Группа</th>
                   <th scope="col" data-sort="text">Команда</th>
                   <th scope="col" data-sort="number">Игры</th>
                   <th scope="col" data-sort="number">Голы</th>
+                  <th scope="col" data-sort="number"><abbr title="point per game = goals/games">PPG</abbr></th>
                 </tr>
               </thead>
               <tbody id="goals-table-body"></tbody>
@@ -2849,8 +2858,16 @@
         );
         onScroll();
 
-        toTop?.addEventListener("click", () => {
+        function scrollToTop() {
           window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+        }
+
+        toTop?.addEventListener("click", scrollToTop);
+        $$("a[href='#top']").forEach((link) => {
+          link.addEventListener("click", (event) => {
+            event.preventDefault();
+            scrollToTop();
+          });
         });
 
         const navToggle = $("#nav-toggle");
@@ -2979,9 +2996,6 @@
         const OWN_TEAM = "Центр 2016";
 
         if (standingsTable) {
-          const standingsSearch = $("#standings-search");
-          const standingsTop8 = $("#standings-top8");
-          const standingsStatus = $("#standings-status");
           const headCells = $$("thead th", standingsTable);
           const columnLabels = headCells.map((th) => th.textContent.trim());
           const tbody = $("tbody", standingsTable);
@@ -3115,9 +3129,9 @@
           }
 
           headCells.forEach((th, index) => {
-            if (index === 0) return;
+            const type = th.dataset.sort;
+            if (!type) return;
             th.tabIndex = 0;
-            const type = th.dataset.sort || "number";
             const handler = () => sortStandings(index, type);
             th.addEventListener("click", handler);
             th.addEventListener("keydown", (event) => {
@@ -3127,15 +3141,6 @@
               }
             });
           });
-
-          standingsSearch.addEventListener("input", applyStandingsFilters);
-          standingsTop8.addEventListener("change", applyStandingsFilters);
-          $("#standings-reset")?.addEventListener("click", () => {
-            standingsSearch.value = "";
-            standingsTop8.checked = false;
-            applyStandingsFilters();
-          });
-          applyStandingsFilters();
         }
 
         /* ====================================================================
@@ -3313,7 +3318,17 @@
         const maxGoals = rawPlayers.reduce((max, item) => Math.max(max, Number(item.goals) || 0), 1);
         const rankedPlayers = [...rawPlayers]
           .sort((a, b) => b.goals - a.goals || b.games - a.games || String(a.player).localeCompare(String(b.player), "ru"))
-          .map((item, index) => ({ ...item, position: index + 1 }));
+          .map((item, index) => {
+            const games = Number(item.games) || 0;
+            const goals = Number(item.goals) || 0;
+            return {
+              ...item,
+              games,
+              goals,
+              ppg: games > 0 ? goals / games : 0,
+              position: index + 1,
+            };
+          });
 
         let currentPage = 1;
         let pageSize = Number(pageSizeSelect?.value || 15);
@@ -3408,7 +3423,7 @@
 
           if (!filtered.length) {
             tableBody.innerHTML =
-              '<tr class="empty-row"><td colspan="6">По выбранным фильтрам игроков не найдено. Попробуйте изменить запрос.</td></tr>';
+              '<tr class="empty-row"><td colspan="7">По выбранным фильтрам игроков не найдено. Попробуйте изменить запрос.</td></tr>';
             statsStatus.textContent = "Найдено: 0";
             prevPageButton.disabled = true;
             nextPageButton.disabled = true;
@@ -3418,7 +3433,7 @@
           }
 
           const startIndex = (currentPage - 1) * pageSize;
-          const labels = ["Позиция", "Игрок", "Группа", "Команда", "Игры", "Голы"];
+          const labels = ["Позиция", "Игрок", "Группа", "Команда", "Игры", "Голы", "PPG"];
 
           tableBody.innerHTML = filtered
             .slice(startIndex, startIndex + pageSize)
@@ -3433,6 +3448,7 @@
                 <td class="num" data-label="${labels[5]}">${numberFmt.format(item.goals)}
                   <span class="heat"><i style="--w: ${(item.goals / maxGoals) * 100}%"></i></span>
                 </td>
+                <td class="num" data-label="${labels[6]}">${decimalsFmt.format(item.ppg)}</td>
               </tr>`
             )
             .join("");
@@ -3496,13 +3512,15 @@
             groupFilter.value = "all";
             teamFilter.value = "all";
             if (playerSearch) playerSearch.value = "";
+            statsSort = { key: "position", direction: 1 };
+            updateStatsSortAria();
             resetPaginationAndRender();
           });
 
           $("#stats-export")?.addEventListener("click", () => {
-            const rows = [["Позиция", "Игрок", "Группа", "Команда", "Игры", "Голы"]];
+            const rows = [["Позиция", "Игрок", "Группа", "Команда", "Игры", "Голы", "PPG"]];
             getFilteredPlayers().forEach((item) => {
-              rows.push([item.position, item.player, item.group, item.team, item.games, item.goals]);
+              rows.push([item.position, item.player, item.group, item.team, item.games, item.goals, item.ppg.toFixed(2)]);
             });
             const csv = rows
               .map((row) => row.map((cell) => `"${String(cell).replace(/"/g, '""')}"`).join(";"))
@@ -3510,8 +3528,31 @@
             downloadFile("centr-2016-stats.csv", `\uFEFF${csv}`, "text/csv;charset=utf-8");
           });
 
-          const keyByLabel = { Игрок: "player", Группа: "group", Команда: "team", Игры: "games", Голы: "goals" };
+          const keyByLabel = {
+            Позиция: "position",
+            Игрок: "player",
+            Группа: "group",
+            Команда: "team",
+            Игры: "games",
+            Голы: "goals",
+            PPG: "ppg",
+          };
           const statsHeadCells = $$("#goals-table thead th");
+
+          function updateStatsSortAria() {
+            statsHeadCells.forEach((cell) => {
+              const key = keyByLabel[cell.textContent.trim()];
+              if (!key) {
+                cell.removeAttribute("aria-sort");
+                return;
+              }
+              if (key === statsSort.key) {
+                cell.setAttribute("aria-sort", statsSort.direction === 1 ? "ascending" : "descending");
+              } else {
+                cell.removeAttribute("aria-sort");
+              }
+            });
+          }
 
           statsHeadCells.forEach((th) => {
             const key = keyByLabel[th.textContent.trim()];
@@ -3522,13 +3563,7 @@
                 statsSort.key === key
                   ? { key, direction: statsSort.direction * -1 }
                   : { key, direction: th.dataset.sort === "text" ? 1 : -1 };
-              statsHeadCells.forEach((cell, index) => {
-                if (cell === th) {
-                  cell.setAttribute("aria-sort", statsSort.direction === 1 ? "ascending" : "descending");
-                } else {
-                  cell.removeAttribute("aria-sort");
-                }
-              });
+              updateStatsSortAria();
               resetPaginationAndRender();
             };
             th.addEventListener("click", handler);
@@ -3540,11 +3575,11 @@
             });
           });
 
-          statsHeadCells[statsHeadCells.length - 1]?.setAttribute("aria-sort", "descending");
+          updateStatsSortAria();
           renderGoalsTable();
         } else if (tableBody) {
           tableBody.innerHTML =
-            '<tr class="empty-row"><td colspan="6">Не удалось загрузить данные статистики (файл all_2016_players_season5.js).</td></tr>';
+            '<tr class="empty-row"><td colspan="7">Не удалось загрузить данные статистики (файл all_2016_players_season5.js).</td></tr>';
           if (statsStatus) statsStatus.textContent = "Данные недоступны";
         }
 
