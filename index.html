@@ -602,12 +602,14 @@
       let currentPage = 1;
 
       function fillFilterOptions(selectElement, values) {
-        values.forEach((value) => {
+        [...values]
+          .sort((left, right) => left.localeCompare(right, "ru", { sensitivity: "base", numeric: true }))
+          .forEach((value) => {
           const option = document.createElement("option");
           option.value = value;
           option.textContent = value;
           selectElement.append(option);
-        });
+          });
       }
 
       function getFilteredPlayers() {
