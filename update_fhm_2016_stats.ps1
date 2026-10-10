@@ -1,8 +1,5 @@
 param(
   [int]$SeasonId = 5,
-  [int]$TeamYear = 2016,
-  [int]$BirthYear = 2016,
-  [int]$Limit = 50,
   [int]$DelayMs = 120,
   [string]$OutputJson = "all_2016_players_season5.json",
   [string]$OutputJs = "all_2016_players_season5.js"
@@ -51,74 +48,100 @@ function Invoke-FhmGet {
   }
 }
 
-if ($Limit -lt 1 -or $Limit -gt 50) {
-  throw "Limit must be in range 1..50"
+function ConvertTo-Array {
+  param($Value)
+
+  if ($null -eq $Value) {
+    return @()
+  }
+
+  if ($Value -is [array]) {
+    return @($Value)
+  }
+
+  return @($Value)
 }
+
+$targetTournamentGroups = @(
+  [pscustomobject]@{
+    TournamentId = 51
+    GroupIds     = @(312, 315)
+  },
+  [pscustomobject]@{
+    TournamentId = 48
+    GroupIds     = @(309)
+  }
+)
+
+$tournaments = ConvertTo-Array (Invoke-FhmPost -Uri "https://fhmoscow.com/api/filter/tournament" -Body @{
+  season = $SeasonId
+})
 
 $teams = @()
-$offset = 0
 
-while ($true) {
-  $teamResponse = Invoke-FhmPost -Uri "https://fhmoscow.com/api/team/list" -Body @{
-    season = $SeasonId
-    year   = $TeamYear
-    limit  = $Limit
-    offset = $offset
+foreach ($target in $targetTournamentGroups) {
+  $tournamentId = [int]$target.TournamentId
+  $tournament = $tournaments | Where-Object { [int]$_.id -eq $tournamentId } | Select-Object -First 1
+  if ($null -eq $tournament) {
+    throw ("Tournament {0} not found in season {1}" -f $tournamentId, $SeasonId)
   }
 
-  $items = @($teamResponse.items)
-  if ($items.Count -eq 0) {
-    break
+  $stages = ConvertTo-Array (Invoke-FhmPost -Uri "https://fhmoscow.com/api/filter/stage" -Body @{
+    tournament = $tournamentId
+  })
+
+  $stage = $stages | Where-Object { $_.current -eq $true } | Select-Object -First 1
+  if ($null -eq $stage) {
+    $stage = $stages | Where-Object { $_.transition -ne $true } | Select-Object -First 1
+  }
+  if ($null -eq $stage) {
+    throw ("No stage found for tournament {0} ({1})" -f $tournamentId, $tournament.name)
   }
 
-  $teams += $items
-  $offset += $items.Count
+  $groups = ConvertTo-Array (Invoke-FhmPost -Uri "https://fhmoscow.com/api/filter/group" -Body @{
+    stage = [int]$stage.id
+  })
 
-  if ($teams.Count -ge [int]$teamResponse.count) {
-    break
+  foreach ($groupId in $target.GroupIds) {
+    $group = $groups | Where-Object { [int]$_.id -eq [int]$groupId } | Select-Object -First 1
+    if ($null -eq $group) {
+      throw ("Group {0} not found in tournament {1} ({2})" -f $groupId, $tournamentId, $tournament.name)
+    }
+
+    $groupTeams = ConvertTo-Array (Invoke-FhmPost -Uri "https://fhmoscow.com/api/filter/team" -Body @{
+      group = [int]$group.id
+    })
+
+    foreach ($team in $groupTeams) {
+      $teamShortName = if ($team.PSObject.Properties.Name -contains "shortName") { [string]$team.shortName } else { "" }
+      $teamFullName = if ($team.PSObject.Properties.Name -contains "name") { [string]$team.name } else { "" }
+
+      $teams += [pscustomobject]@{
+        id         = [int]$team.id
+        shortName  = $teamShortName
+        name       = $teamFullName
+        groupName  = [string]$group.name
+        tournament = [string]$tournament.name
+      }
+    }
   }
 }
 
+$teams = $teams | Group-Object id | ForEach-Object { $_.Group | Select-Object -First 1 }
+
 $rows = @()
-$yearSuffix = ".{0}$" -f $BirthYear
 
 for ($index = 0; $index -lt $teams.Count; $index++) {
   $team = $teams[$index]
   $teamId = [int]$team.id
-  $teamName = [string]$team.shortName
-  Write-Host ("[{0}/{1}] {2}" -f ($index + 1), $teams.Count, $teamName)
-
-  $groupName = "-"
-  try {
-    $filterData = Invoke-FhmPost -Uri "https://fhmoscow.com/api/filter/data" -Body @{
-      season = $SeasonId
-      team   = $teamId
-    }
-
-    $groups = @($filterData.group)
-    if ($groups.Count -gt 0) {
-      $currentGroup = $groups | Where-Object { $_.current -eq $true } | Select-Object -First 1
-      if ($null -eq $currentGroup) {
-        $currentGroup = $groups | Select-Object -First 1
-      }
-      if ($null -ne $currentGroup -and $currentGroup.name) {
-        $groupName = [string]$currentGroup.name
-      }
-    }
-  }
-  catch {
-    $groupName = "-"
-  }
+  $teamName = if ([string]::IsNullOrWhiteSpace([string]$team.shortName)) { [string]$team.name } else { [string]$team.shortName }
+  $groupName = [string]$team.groupName
+  Write-Host ("[{0}/{1}] {2} [{3}]" -f ($index + 1), $teams.Count, $teamName, $groupName)
 
   $rosterResponse = Invoke-FhmGet -Uri ("https://fhmoscow.com/api/team/{0}/player?season={1}" -f $teamId, $SeasonId)
   $players = if ($rosterResponse -is [array]) { @($rosterResponse) } else { @($rosterResponse.value) }
 
   foreach ($player in $players) {
-    $dob = [string]$player.dateOfBirth
-    if ($dob -notmatch $yearSuffix) {
-      continue
-    }
-
     $games = 0
     $goals = 0
 
