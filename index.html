@@ -1360,11 +1360,6 @@
         font-size: 1.06rem;
       }
 
-      .chart .chart-note {
-        margin: 0 0 18px;
-        color: var(--muted);
-        font-size: 0.87rem;
-      }
 
       .chart-rows {
         display: grid;
@@ -2083,6 +2078,100 @@
           grid-column: 1 / -1;
         }
 
+        /* Турнирная таблица на телефоне: компактная таблица с шапкой,
+           без подписи «Команда» у каждой строки и без полосы очков */
+        #standings-table {
+          min-width: 0;
+          table-layout: fixed;
+        }
+
+        #standings-table th,
+        #standings-table td {
+          padding: 7px 2px;
+          text-align: center;
+          font-variant-numeric: tabular-nums;
+        }
+
+        #standings-table tbody td {
+          font-size: 0.74rem;
+        }
+
+        #standings-table thead th {
+          padding: 11px 1px;
+          font-size: 0.62rem;
+          letter-spacing: 0.01em;
+        }
+
+        /* У первой колонки шапку не подписываем: место видно по бейджу */
+        #standings-table thead th:first-child {
+          font-size: 0;
+        }
+
+        /* Стрелки сортировки в узких колонках мешают — подсвечиваем столбец цветом */
+        #standings-table thead th[data-sort]::after {
+          display: none;
+        }
+
+        #standings-table thead th[aria-sort] {
+          color: color-mix(in srgb, var(--ice) 85%, var(--text));
+          box-shadow: inset 0 -2px 0 color-mix(in srgb, var(--ice) 60%, transparent);
+        }
+
+        /* Ширины колонок: цифровые — по содержимому, название команды — остаток */
+        #standings-table th:first-child,
+        #standings-table td:first-child {
+          width: 24px;
+        }
+
+        #standings-table th:nth-child(3),
+        #standings-table td:nth-child(3),
+        #standings-table th:nth-child(4),
+        #standings-table td:nth-child(4),
+        #standings-table th:nth-child(5),
+        #standings-table td:nth-child(5),
+        #standings-table th:nth-child(6),
+        #standings-table td:nth-child(6),
+        #standings-table th:nth-child(10),
+        #standings-table td:nth-child(10) {
+          width: 22px;
+        }
+
+        #standings-table th:nth-child(7),
+        #standings-table td:nth-child(7),
+        #standings-table th:nth-child(8),
+        #standings-table td:nth-child(8) {
+          width: 28px;
+        }
+
+        #standings-table th:nth-child(9),
+        #standings-table td:nth-child(9) {
+          width: 30px;
+        }
+
+        #standings-table tbody td:nth-child(2) {
+          padding-left: 8px;
+          text-align: left;
+          font-weight: 600;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        /* Полоса очков, бейдж «мы» и хвост «2016» на телефоне не нужны */
+        #standings-table .bar,
+        #standings-table .team-year,
+        #standings-table tbody td:nth-child(2) .badge {
+          display: none;
+        }
+
+        #standings-table .rank {
+          width: 21px;
+          height: 21px;
+          border-radius: 7px;
+          font-size: 0.68rem;
+        }
+
+        /* Статистика игроков остаётся в виде карточек */
         /* Таблицы превращаются в карточки, если JS добавил подписи колонок */
         table.data.as-cards {
           min-width: 0;
@@ -2133,6 +2222,10 @@
           justify-content: flex-start;
           font-size: 1.05rem;
           font-weight: 700;
+        }
+
+        .match-foot .tour {
+          display: none;
         }
       }
 
@@ -2387,7 +2480,6 @@
 
           <div class="chart reveal" id="points-chart">
             <h3>Очки команд в турнире</h3>
-            <p class="chart-note">Топ-8 по набранным очкам. «Центр 2016» выделен цветом.</p>
             <div class="chart-rows" id="chart-rows"></div>
           </div>
         </div>
@@ -2457,7 +2549,6 @@
         <div class="wrap">
           <div class="section-head reveal">
             <h2 id="matches-title" data-step="03">Ближайшие матчи</h2>
-            <p>Календарь первого этапа. Обратный отсчёт до ближайшей игры — слева вверху, каждую игру можно добавить в календарь.</p>
           </div>
 
           <ul class="match-list reveal">
@@ -2559,7 +2650,6 @@
         <div class="wrap">
           <div class="section-head reveal">
             <h2 id="bday-title" data-step="05">Дни рождения</h2>
-            <p>Состав команды из вкладки «Состав». Даты и обратный отсчёт считаются от текущего дня автоматически.</p>
           </div>
 
           <div class="bday-grid">
@@ -2897,6 +2987,26 @@
           const tbody = $("tbody", standingsTable);
           const teams = [];
 
+          // «2016» есть в названии каждой команды турнира: на телефоне этот хвост
+          // скрывается (см. медиазапрос), чтобы длинные названия помещались целиком
+          const TEAM_YEAR = /\s*2016$/;
+
+          function teamCellHtml(name, query) {
+            const text = String(name);
+            const year = text.match(TEAM_YEAR);
+            const base = year ? text.slice(0, year.index) : text;
+            const suffix = year ? `<span class="team-year">${escapeHtml(year[0])}</span>` : "";
+
+            if (!query) return escapeHtml(base) + suffix;
+
+            const at = base.toLocaleLowerCase("ru").indexOf(query);
+            if (at === -1) return escapeHtml(base) + suffix;
+
+            return `${escapeHtml(base.slice(0, at))}<mark>${escapeHtml(
+              base.slice(at, at + query.length)
+            )}</mark>${escapeHtml(base.slice(at + query.length))}${suffix}`;
+          }
+
           $$("tbody tr", standingsTable).forEach((row, rowIndex) => {
             const cells = $$("td", row);
             const numeric = cells.slice(2).map((cell) => Number(cell.textContent.replace(/\s/g, "").replace(",", ".")));
@@ -2915,14 +3025,16 @@
             const medal = record.place <= 3 ? ` medal-${record.place}` : "";
             cells[0].innerHTML = `<span class="rank${medal}">${record.place}</span>`;
             cells[1].classList.add("cell-team");
-            cells[1].innerHTML = `${escapeHtml(record.team)}${record.own ? ' <span class="badge accent">мы</span>' : ""}`;
+            cells[1].innerHTML = `${teamCellHtml(record.team, "")}${
+              record.own ? ' <span class="badge accent">мы</span>' : ""
+            }`;
             cells.forEach((cell, cellIndex) => {
               cell.dataset.label = columnLabels[cellIndex] || "";
             });
           });
 
-          // Класс включает мобильный режим «карточки» только после добавления подписей
-          standingsTable.classList.add("as-cards");
+          // Турнирная таблица на телефоне остаётся таблицей с шапкой
+          // (компактный вид задаётся в медиазапросе), карточки не включаем
 
           const maxPoints = Math.max(...teams.map((team) => team.points), 1);
           teams.forEach((team) => {
@@ -2935,19 +3047,20 @@
 
           const chartRows = $("#chart-rows");
           if (chartRows) {
-            const top = [...teams].sort((a, b) => b.points - a.points || b.diff - a.diff).slice(0, 8);
-            const max = Math.max(...top.map((team) => team.points), 1);
-            chartRows.innerHTML = top
-              .map(
-                (team, index) => `
-                <div class="chart-row${team.own ? " own" : ""}" style="--delay: ${index * 70}ms">
+            // График — по всем командам турнира, сортировка по очкам и разнице шайб
+            const ranked = [...teams].sort((a, b) => b.points - a.points || b.diff - a.diff);
+            const max = Math.max(...ranked.map((team) => team.points), 1);
+            chartRows.innerHTML = ranked
+              .map((team, index) => {
+                const step = index * 50;
+                const row = `
+                <div class="chart-row${team.own ? " own" : ""}" style="--delay: ${step}ms">
                   <span class="name">${escapeHtml(team.team)}</span>
-                  <span class="track"><span class="fill" style="--w: ${(team.points / max) * 100}%; --delay: ${
-                  index * 70
-                }ms"></span></span>
+                  <span class="track"><span class="fill" style="--w: ${(team.points / max) * 100}%; --delay: ${step}ms"></span></span>
                   <span class="value">${team.points}</span>
-                </div>`
-              )
+                </div>`;
+                return row;
+              })
               .join("");
           }
 
@@ -2961,17 +3074,10 @@
               const matchesTop = !onlyTop8 || team.place <= 8;
               const show = matchesQuery && matchesTop;
               team.row.hidden = !show;
-              if (show) visible += 1;
 
-              if (query && matchesQuery) {
-                const start = team.team.toLocaleLowerCase("ru").indexOf(query);
-                team.row.children[1].innerHTML = `${escapeHtml(team.team.slice(0, start))}<mark>${escapeHtml(
-                  team.team.slice(start, start + query.length)
-                )}</mark>${escapeHtml(team.team.slice(start + query.length))}${
-                  team.own ? ' <span class="badge accent">мы</span>' : ""
-                }`;
-              } else if (!query) {
-                team.row.children[1].innerHTML = `${escapeHtml(team.team)}${
+              if (show) {
+                visible += 1;
+                team.row.children[1].innerHTML = `${teamCellHtml(team.team, query)}${
                   team.own ? ' <span class="badge accent">мы</span>' : ""
                 }`;
               }
@@ -3517,12 +3623,6 @@
           const pastCount = $("#bday-past-count");
           if (upcomingCount) upcomingCount.textContent = String(upcomingEntries.length);
           if (pastCount) pastCount.textContent = String(pastEntries.length);
-
-          const celebratesToday = birthdays.find((entry) => entry.upcoming && entry.daysUntil === 0);
-          const birthdayNote = $("#birthdays .section-head p");
-          if (celebratesToday && birthdayNote) {
-            birthdayNote.textContent = `Сегодня день рождения у ${celebratesToday.name}! Остальные даты и отсчёт считаются от текущего дня автоматически.`;
-          }
         }
       })();
     </script>
