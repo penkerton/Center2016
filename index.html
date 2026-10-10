@@ -214,6 +214,76 @@
         color: var(--muted);
       }
 
+      .stats-controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0 0 12px;
+      }
+
+      .stats-controls label {
+        display: grid;
+        gap: 4px;
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
+      .stats-controls select {
+        min-width: 220px;
+        padding: 8px 10px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        font: inherit;
+        color: var(--text);
+        background: #fff;
+      }
+
+      .stats-controls input {
+        min-width: 260px;
+        padding: 8px 10px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        font: inherit;
+        color: var(--text);
+        background: #fff;
+      }
+
+      .stats-note {
+        margin: 0 0 12px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .stats-pagination {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .stats-pagination button {
+        border: 1px solid var(--line);
+        background: #fff;
+        color: var(--text);
+        border-radius: 8px;
+        padding: 6px 10px;
+        font: inherit;
+        cursor: pointer;
+      }
+
+      .stats-pagination button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .stats-page-info {
+        color: var(--muted);
+        font-size: 0.9rem;
+        min-width: 86px;
+        text-align: center;
+      }
+
       .birthday-note {
         margin: 0 0 14px;
         color: var(--muted);
@@ -332,7 +402,7 @@
               <a class="btn primary" href="https://fhmoscow.com/team/604?season=5" target="_blank" rel="noopener noreferrer"
                 >Карточка команды</a
               >
-              <a class="btn ghost" href="https://fhmoscow.com/club/41" target="_blank" rel="noopener noreferrer">Клуб «Центр»</a>
+              <a class="btn ghost" href="https://mha.mossport.ru/centr/" target="_blank" rel="noopener noreferrer">Клуб «Центр»</a>
             </div>
           </div>
         </div>
@@ -403,6 +473,51 @@
         </ul>
       </section>
 
+      <section id="statistics">
+        <h2>Статистика игроков 2016 г.р. (сезон 2026/2027)</h2>
+        <p class="stats-note">
+          Таблица: позиция — игрок — группа — команда — игры — голы. Сортировка по голам: от большего к меньшему.
+        </p>
+        <div class="stats-controls">
+          <label>
+            Группа
+            <select id="group-filter">
+              <option value="all">Все группы</option>
+            </select>
+          </label>
+          <label>
+            Команда
+            <select id="team-filter">
+              <option value="all">Все команды</option>
+            </select>
+          </label>
+          <label>
+            Поиск игрока
+            <input id="player-search" type="text" placeholder="Введите часть ФИО" />
+          </label>
+        </div>
+        <div class="standings-wrap">
+          <table class="standings" id="goals-table">
+            <thead>
+              <tr>
+                <th>Позиция</th>
+                <th>Игрок</th>
+                <th>Группа</th>
+                <th>Команда</th>
+                <th>Игры</th>
+                <th>Голы</th>
+              </tr>
+            </thead>
+            <tbody id="goals-table-body"></tbody>
+          </table>
+        </div>
+        <div class="stats-pagination">
+          <button type="button" id="stats-prev-page">Назад</button>
+          <span class="stats-page-info" id="stats-page-info">1 / 1</span>
+          <button type="button" id="stats-next-page">Вперёд</button>
+        </div>
+      </section>
+
       <section id="birthdays">
         <h2>Дни рождения</h2>
         <p class="birthday-note">
@@ -463,5 +578,112 @@
         Информация может обновляться по ходу сезона.
       </footer>
     </main>
+    <script src="all_2016_players_season5.js"></script>
+    <script>
+      const playerGoalsData = Array.isArray(window.playerGoalsData) ? window.playerGoalsData : [];
+
+      function comparePlayers(a, b) {
+        return b.goals - a.goals || b.games - a.games || a.player.localeCompare(b.player, "ru");
+      }
+
+      const rankedPlayers = [...playerGoalsData]
+        .sort(comparePlayers)
+        .map((item, index) => ({ ...item, position: index + 1 }));
+
+      const groupFilter = document.getElementById("group-filter");
+      const teamFilter = document.getElementById("team-filter");
+      const playerSearch = document.getElementById("player-search");
+      const tableBody = document.getElementById("goals-table-body");
+      const prevPageButton = document.getElementById("stats-prev-page");
+      const nextPageButton = document.getElementById("stats-next-page");
+      const pageInfo = document.getElementById("stats-page-info");
+
+      const PAGE_SIZE = 15;
+      let currentPage = 1;
+
+      function fillFilterOptions(selectElement, values) {
+        values.forEach((value) => {
+          const option = document.createElement("option");
+          option.value = value;
+          option.textContent = value;
+          selectElement.append(option);
+        });
+      }
+
+      function getFilteredPlayers() {
+        const selectedGroup = groupFilter.value;
+        const selectedTeam = teamFilter.value;
+        const playerQuery = playerSearch.value.trim().toLocaleLowerCase("ru");
+
+        return rankedPlayers
+          .filter((item) => (selectedGroup === "all" ? true : item.group === selectedGroup))
+          .filter((item) => (selectedTeam === "all" ? true : item.team === selectedTeam))
+          .filter((item) => (playerQuery ? item.player.toLocaleLowerCase("ru").includes(playerQuery) : true));
+      }
+
+      function updatePaginationControls(totalRows) {
+        const totalPages = Math.max(1, Math.ceil(totalRows / PAGE_SIZE));
+        pageInfo.textContent = `${currentPage} / ${totalPages}`;
+        prevPageButton.disabled = currentPage <= 1;
+        nextPageButton.disabled = currentPage >= totalPages;
+      }
+
+      function renderGoalsTable() {
+        const filteredPlayers = getFilteredPlayers();
+        const totalPages = Math.max(1, Math.ceil(filteredPlayers.length / PAGE_SIZE));
+
+        if (currentPage > totalPages) {
+          currentPage = totalPages;
+        }
+
+        if (!filteredPlayers.length) {
+          tableBody.innerHTML = '<tr><td colspan="6">По выбранным фильтрам данных нет.</td></tr>';
+          pageInfo.textContent = "0 / 0";
+          prevPageButton.disabled = true;
+          nextPageButton.disabled = true;
+          return;
+        }
+
+        const startIndex = (currentPage - 1) * PAGE_SIZE;
+        const pagedPlayers = filteredPlayers.slice(startIndex, startIndex + PAGE_SIZE);
+
+        tableBody.innerHTML = pagedPlayers
+          .map(
+            (item) =>
+              `<tr><td class="num">${item.position}</td><td>${item.player}</td><td>${item.group}</td><td>${item.team}</td><td class="num">${item.games}</td><td class="num">${item.goals}</td></tr>`
+          )
+          .join("");
+
+        updatePaginationControls(filteredPlayers.length);
+      }
+
+      function resetPaginationAndRender() {
+        currentPage = 1;
+        renderGoalsTable();
+      }
+
+      fillFilterOptions(groupFilter, [...new Set(rankedPlayers.map((item) => item.group))]);
+      fillFilterOptions(teamFilter, [...new Set(rankedPlayers.map((item) => item.team))]);
+
+      groupFilter.addEventListener("change", resetPaginationAndRender);
+      teamFilter.addEventListener("change", resetPaginationAndRender);
+      playerSearch.addEventListener("input", resetPaginationAndRender);
+      prevPageButton.addEventListener("click", () => {
+        if (currentPage > 1) {
+          currentPage -= 1;
+          renderGoalsTable();
+        }
+      });
+      nextPageButton.addEventListener("click", () => {
+        const totalRows = getFilteredPlayers().length;
+        const totalPages = Math.max(1, Math.ceil(totalRows / PAGE_SIZE));
+
+        if (currentPage < totalPages) {
+          currentPage += 1;
+          renderGoalsTable();
+        }
+      });
+      renderGoalsTable();
+    </script>
   </body>
 </html>
