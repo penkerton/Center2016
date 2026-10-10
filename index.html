@@ -161,6 +161,47 @@
         gap: 10px;
       }
 
+      .standings-wrap {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        overflow: auto;
+      }
+
+      .standings {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 760px;
+      }
+
+      .standings th,
+      .standings td {
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        white-space: nowrap;
+      }
+
+      .standings th {
+        color: var(--muted);
+        font-size: 0.86rem;
+        font-weight: 700;
+      }
+
+      .standings td.num {
+        text-align: center;
+      }
+
+      .standings tr.highlight {
+        background: var(--accent-soft);
+      }
+
+      .standings-note {
+        margin: 0 0 12px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
       .matches li {
         background: var(--surface);
         border: 1px solid var(--line);
@@ -267,7 +308,7 @@
       <div class="wrap nav">
         <div class="brand">Москва · Центр 2016</div>
         <nav>
-          <a href="#about">О команде</a>
+          <a href="#standings">Турнирная таблица</a>
           <a href="#matches" style="margin-left: 14px">Матчи</a>
           <a href="#birthdays" style="margin-left: 14px">Дни рождения</a>
         </nav>
@@ -297,25 +338,42 @@
         </div>
       </section>
 
-      <section id="about">
-        <h2>О команде</h2>
-        <div class="facts">
-          <article class="fact">
-            <b>Сезон</b>
-            2026/2027
-          </article>
-          <article class="fact">
-            <b>Турнир</b>
-            2016 г.р. 26/27 (формат 4х4)
-          </article>
-          <article class="fact">
-            <b>Этап</b>
-            Первый этап
-          </article>
-          <article class="fact">
-            <b>Текущая группа</b>
-            Группа В
-          </article>
+      <section id="standings">
+        <h2>Турнирная таблица</h2>
+        <p class="standings-note">2016 г.р. 26/27 (формат 4х4), Первый этап</p>
+        <div class="standings-wrap">
+          <table class="standings">
+            <thead>
+              <tr>
+                <th>Место</th>
+                <th>Команда</th>
+                <th>И</th>
+                <th>В</th>
+                <th>Н</th>
+                <th>П</th>
+                <th>ШЗ</th>
+                <th>ШП</th>
+                <th>РШ</th>
+                <th>О</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="num">1</td><td>Созвездие 2016</td><td class="num">6</td><td class="num">5</td><td class="num">1</td><td class="num">0</td><td class="num">133</td><td class="num">67</td><td class="num">66</td><td class="num">11</td></tr>
+              <tr><td class="num">2</td><td>Северная звезда 2016</td><td class="num">5</td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">97</td><td class="num">46</td><td class="num">51</td><td class="num">10</td></tr>
+              <tr><td class="num">3</td><td>Марьино 2016</td><td class="num">6</td><td class="num">4</td><td class="num">1</td><td class="num">1</td><td class="num">165</td><td class="num">88</td><td class="num">77</td><td class="num">9</td></tr>
+              <tr><td class="num">4</td><td>Буран Москва 2016</td><td class="num">4</td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">124</td><td class="num">55</td><td class="num">69</td><td class="num">8</td></tr>
+              <tr class="highlight"><td class="num">5</td><td>Центр 2016</td><td class="num">5</td><td class="num">4</td><td class="num">0</td><td class="num">1</td><td class="num">116</td><td class="num">76</td><td class="num">40</td><td class="num">8</td></tr>
+              <tr><td class="num">6</td><td>Метеор 2016</td><td class="num">5</td><td class="num">3</td><td class="num">0</td><td class="num">2</td><td class="num">98</td><td class="num">72</td><td class="num">26</td><td class="num">6</td></tr>
+              <tr><td class="num">7</td><td>Янтарь 2016</td><td class="num">6</td><td class="num">3</td><td class="num">0</td><td class="num">3</td><td class="num">111</td><td class="num">108</td><td class="num">3</td><td class="num">6</td></tr>
+              <tr><td class="num">8</td><td>Вымпел 2016</td><td class="num">6</td><td class="num">3</td><td class="num">0</td><td class="num">3</td><td class="num">88</td><td class="num">91</td><td class="num">-3</td><td class="num">6</td></tr>
+              <tr><td class="num">9</td><td>Пингвины 2016</td><td class="num">4</td><td class="num">2</td><td class="num">1</td><td class="num">1</td><td class="num">79</td><td class="num">69</td><td class="num">10</td><td class="num">5</td></tr>
+              <tr><td class="num">10</td><td>Сталкер 2016</td><td class="num">6</td><td class="num">1</td><td class="num">0</td><td class="num">5</td><td class="num">90</td><td class="num">111</td><td class="num">-21</td><td class="num">2</td></tr>
+              <tr><td class="num">11</td><td>Арктика 2016</td><td class="num">4</td><td class="num">0</td><td class="num">1</td><td class="num">3</td><td class="num">55</td><td class="num">112</td><td class="num">-57</td><td class="num">1</td></tr>
+              <tr><td class="num">12</td><td>Серебряные акулы 2016</td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">5</td><td class="num">66</td><td class="num">133</td><td class="num">-67</td><td class="num">0</td></tr>
+              <tr><td class="num">13</td><td>Синяя птица 2016</td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">5</td><td class="num">62</td><td class="num">133</td><td class="num">-71</td><td class="num">0</td></tr>
+              <tr><td class="num">14</td><td>Академия Бирюкова 2016</td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">5</td><td class="num">43</td><td class="num">166</td><td class="num">-123</td><td class="num">0</td></tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
