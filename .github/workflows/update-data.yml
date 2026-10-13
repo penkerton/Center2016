@@ -2,7 +2,7 @@ name: Update FHMMoscow data
 
 on:
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "0 0,3,6,9,12,15,18,21 * * *"
   workflow_dispatch:
 
 permissions:

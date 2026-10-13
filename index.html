@@ -2785,7 +2785,7 @@
         <div class="wrap">
           <div class="section-head reveal">
             <h2 id="dashboard-title" data-step="01">Обзор сезона</h2>
-            <p>Показатели «Центра» в первом этапе турнира 2016 г.р. (формат 4×4). Данные обновлены 10.10.2026.</p>
+            <p>Показатели «Центра» в первом этапе турнира 2016 г.р. (формат 4×4). Данные обновлены <span class="data-snapshot-date">13.10.2026</span>.</p>
           </div>
 
           <div class="stat-tiles reveal">
@@ -3140,7 +3140,7 @@
         <p style="margin: 0">
           Источник данных: Федерация хоккея Москвы —
           <a href="https://fhmoscow.com/team/604?season=5" target="_blank" rel="noopener noreferrer">страница команды</a>.
-          Информация может обновляться по ходу сезона. Снимок данных: 10.10.2026.
+          Данные за <span class="data-snapshot-date">13.10.2026</span>. Следующее обновление в <strong id="next-update-time">--:-- МСК</strong>.
         </p>
         <div class="footer-links">
           <a href="#dashboard">Обзор</a>
@@ -3173,6 +3173,8 @@
         const fullDateFmt = new Intl.DateTimeFormat("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });
         const dateWeekdayFmt = new Intl.DateTimeFormat("ru-RU", { weekday: "short", day: "numeric", month: "long" });
         const html = document.documentElement;
+        const DATA_SNAPSHOT_DATE = "13.10.2026";
+        const UPDATE_SLOTS_HOURS = [0, 3, 6, 9, 12, 15, 18, 21];
 
         /** Русская плюрализация: plural(3, "день", "дня", "дней") → "дня". */
         function plural(count, one, few, many) {
@@ -3203,6 +3205,47 @@
         function daysBetween(from, to) {
           return Math.round((startOfDay(to) - startOfDay(from)) / 86400000);
         }
+
+        function getMoscowTimeParts(date = new Date()) {
+          const parts = new Intl.DateTimeFormat("en-GB", {
+            timeZone: "Europe/Moscow",
+            hour: "2-digit",
+            minute: "2-digit",
+            hourCycle: "h23",
+          }).formatToParts(date);
+
+          const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+          return {
+            hour: Number(values.hour),
+            minute: Number(values.minute),
+          };
+        }
+
+        function getNextUpdateTimeMoscow() {
+          const { hour, minute } = getMoscowTimeParts();
+          const currentMinutes = hour * 60 + minute;
+          let nextHour = UPDATE_SLOTS_HOURS.find((slotHour) => slotHour * 60 > currentMinutes);
+
+          if (nextHour === undefined) {
+            nextHour = UPDATE_SLOTS_HOURS[0];
+          }
+
+          return `${String(nextHour).padStart(2, "0")}:00 МСК`;
+        }
+
+        function updateDataMetaLabels() {
+          $$(".data-snapshot-date").forEach((node) => {
+            node.textContent = DATA_SNAPSHOT_DATE;
+          });
+
+          const nextUpdateNode = $("#next-update-time");
+          if (nextUpdateNode) {
+            nextUpdateNode.textContent = getNextUpdateTimeMoscow();
+          }
+        }
+
+        updateDataMetaLabels();
+        setInterval(updateDataMetaLabels, 60000);
 
         /* ====================================================================
             Тема оформления: клубная светлая (по умолчанию) и клубная тёмная
