@@ -1,5 +1,8 @@
 name: Deploy static site to GitHub Pages
 
+# Обычные пуши в main. Пуш от бота из update-data.yml этот workflow не запускает
+# (GITHUB_TOKEN не создаёт новых запусков), поэтому там деплой выполняется отдельно.
+
 on:
   push:
     branches: ["main"]
@@ -10,9 +13,10 @@ permissions:
   pages: write
   id-token: write
 
+# Общая группа с update-data.yml: деплои Pages не должны накладываться друг на друга
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -20,6 +24,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4

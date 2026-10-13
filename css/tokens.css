@@ -1,0 +1,67 @@
+      /* ==========================================================================
+         1. Токены тем
+
+         Тема по умолчанию — клубная светлая.
+         Дополнительно доступна клубная тёмная.
+         Переменная --ice здесь отвечает за второй акцент и хайлайты,
+         в клубных темах она тоже красная.
+         ========================================================================== */
+      :root,
+      html[data-theme="club-light"] {
+        color-scheme: light;
+        --bg: #f6f4f5;
+        --bg-soft: #ffffff;
+        --surface: rgba(255, 255, 255, 0.82);
+        --surface-2: rgba(255, 255, 255, 0.96);
+        --line: rgba(24, 18, 20, 0.13);
+        --line-strong: rgba(24, 18, 20, 0.26);
+        --text: #171113;
+        --muted: #6b6367;
+        --ice: #d21f34;
+        --accent: #b3121f;
+        --accent-2: #7f0b16;
+        --amber: #a8560a;
+        --green: #0f7a4f;
+        --red: #b3121f;
+        --gold: #a9750a;
+        --silver: #5f6873;
+        --bronze: #9a5a1f;
+        --shadow-lg: 0 30px 60px -35px rgba(90, 12, 22, 0.32);
+        --shadow-sm: 0 12px 28px -20px rgba(90, 12, 22, 0.38);
+        --aurora-blend: normal;
+        --aurora-opacity: 0.28;
+        --grain-opacity: 0.022;
+        --header-bg: rgba(246, 244, 245, 0.8);
+        --club-stripe: #b3121f;
+        --club-stripe-opacity: 0.9;
+      }
+
+      /* Клубная тёмная — чёрный фон, белый текст, красные акценты */
+      html[data-theme="club-dark"] {
+        color-scheme: dark;
+        --bg: #0a0a0c;
+        --bg-soft: #131316;
+        --surface: rgba(255, 255, 255, 0.05);
+        --surface-2: rgba(255, 255, 255, 0.09);
+        --line: rgba(255, 255, 255, 0.11);
+        --line-strong: rgba(255, 255, 255, 0.22);
+        --text: #f6f2f3;
+        --muted: #a49ea2;
+        --ice: #ff5f6d;
+        --accent: #e01b2b;
+        --accent-2: #c8102e;
+        --amber: #ffb03a;
+        --green: #3ec98a;
+        --red: #ff5f6d;
+        --gold: #ffd166;
+        --silver: #cbd5e1;
+        --bronze: #e08e5a;
+        --shadow-lg: 0 30px 70px -30px rgba(0, 0, 0, 0.92);
+        --shadow-sm: 0 10px 30px -18px rgba(0, 0, 0, 0.95);
+        --aurora-blend: screen;
+        --aurora-opacity: 0.5;
+        --grain-opacity: 0.045;
+        --header-bg: rgba(10, 10, 12, 0.76);
+        --club-stripe: #e01b2b;
+        --club-stripe-opacity: 1;
+      }

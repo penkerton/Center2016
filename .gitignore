@@ -1,0 +1,6 @@
+# служебные файлы окружения
+node_modules/
+npm-debug.log*
+Thumbs.db
+Desktop.ini
+.DS_Store

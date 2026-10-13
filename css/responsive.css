@@ -1,0 +1,399 @@
+      /* ==========================================================================
+         11. Адаптив
+         ========================================================================== */
+      @media (max-width: 980px) {
+        .hero-inner {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-visual {
+          order: -1;
+        }
+
+        .logo-stage {
+          aspect-ratio: 21 / 9;
+        }
+      }
+
+      @media (max-width: 860px) {
+        .burger {
+          display: grid;
+        }
+
+        .nav {
+          position: fixed;
+          inset: 62px 0 auto 0;
+          flex-direction: column;
+          align-items: stretch;
+          gap: 2px;
+          padding: 14px 4vw 22px;
+          background: var(--header-bg);
+          backdrop-filter: blur(18px);
+          -webkit-backdrop-filter: blur(18px);
+          border-bottom: 1px solid var(--line);
+          transform: translateY(-14px);
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.28s ease, transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.28s;
+        }
+
+        body.nav-open .nav {
+          transform: none;
+          opacity: 1;
+          visibility: visible;
+        }
+
+        .nav a {
+          padding: 13px 14px;
+          font-size: 1rem;
+        }
+
+        .nav a::after {
+          display: none;
+        }
+
+        .live-chip {
+          display: none;
+        }
+      }
+
+      @media (max-width: 760px) {
+        /* Экономия ресурсов на узких экранах: без зерна поверх страницы
+           и без постоянной анимации размытых пятен на фоне */
+        body::after {
+          display: none;
+        }
+
+        .aurora i {
+          filter: blur(48px);
+          animation: none;
+        }
+
+        .countdown {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        /* Панель фильтров статистики: широкие названия команд задают select-ам
+           большую минимальную ширину, из-за чего они вылезали за экран.
+           На узких экранах поля идут в один столбец и могут сжиматься. */
+        #statistics .toolbar {
+          justify-content: stretch;
+        }
+
+        #statistics .toolbar .field {
+          flex: 1 1 100%;
+          min-width: 0;
+        }
+
+        #statistics .toolbar .field input,
+        #statistics .toolbar .field select {
+          min-width: 0;
+        }
+
+        .chart-row {
+          font-size: 0.86rem;
+        }
+
+        .chart-row .label {
+          left: 8px;
+          max-width: calc(100% - 66px);
+          font-size: 0.76rem;
+        }
+
+        .chart-row .track {
+          height: 22px;
+          padding-right: 42px;
+        }
+
+        /* Турнирная таблица на телефоне: компактная таблица с шапкой,
+           без подписи «Команда» у каждой строки и без полосы очков */
+        #standings-table {
+          min-width: 0;
+          table-layout: fixed;
+        }
+
+        #standings-table th,
+        #standings-table td {
+          padding: 7px 2px;
+          text-align: center;
+          font-variant-numeric: tabular-nums;
+        }
+
+        #standings-table tbody td {
+          font-size: 0.74rem;
+        }
+
+        #standings-table thead th {
+          padding: 11px 1px;
+          font-size: 0.62rem;
+          letter-spacing: 0.01em;
+        }
+
+        /* У первой колонки шапку не подписываем: место видно по бейджу */
+        #standings-table thead th:first-child {
+          font-size: 0;
+        }
+
+        /* Стрелки сортировки в узких колонках мешают — подсвечиваем столбец цветом */
+        #standings-table thead th[data-sort]::after {
+          display: none;
+        }
+
+        #standings-table thead th[aria-sort] {
+          color: color-mix(in srgb, var(--ice) 85%, var(--text));
+          box-shadow: inset 0 -2px 0 color-mix(in srgb, var(--ice) 60%, transparent);
+        }
+
+        /* Ширины колонок: цифровые — по содержимому, название команды — остаток */
+        #standings-table th:first-child,
+        #standings-table td:first-child {
+          width: 24px;
+        }
+
+        #standings-table th:nth-child(3),
+        #standings-table td:nth-child(3),
+        #standings-table th:nth-child(4),
+        #standings-table td:nth-child(4),
+        #standings-table th:nth-child(5),
+        #standings-table td:nth-child(5),
+        #standings-table th:nth-child(6),
+        #standings-table td:nth-child(6),
+        #standings-table th:nth-child(10),
+        #standings-table td:nth-child(10) {
+          width: 22px;
+        }
+
+        #standings-table th:nth-child(7),
+        #standings-table td:nth-child(7),
+        #standings-table th:nth-child(8),
+        #standings-table td:nth-child(8) {
+          width: 28px;
+        }
+
+        #standings-table th:nth-child(9),
+        #standings-table td:nth-child(9) {
+          width: 30px;
+        }
+
+        #standings-table tbody td:nth-child(2) {
+          padding-left: 8px;
+          text-align: left;
+          font-weight: 600;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        /* Бейдж «мы» на телефоне не нужен */
+        #standings-table tbody td:nth-child(2) .badge {
+          display: none;
+        }
+
+        #standings-table .rank {
+          width: 21px;
+          height: 21px;
+          border-radius: 7px;
+          font-size: 0.68rem;
+        }
+
+        .h2h-wrap {
+          --h2h-cell: 42px;
+          --h2h-header: 188px;
+        }
+
+        .h2h-matrix .corner,
+        .h2h-matrix tbody th {
+          min-width: 136px;
+          padding: 0 8px;
+          font-size: 0.72rem;
+        }
+
+        .h2h-matrix .col-team .h2h-col-label {
+          font-size: 0.67rem;
+        }
+
+        .h2h-matrix .cell {
+          font-size: 0.67rem;
+        }
+
+        /* Статистика игроков: плотная мобильная сетка без горизонтального скролла */
+        #goals-table.as-cards {
+          min-width: 0;
+        }
+
+        #goals-table.as-cards thead {
+          display: none;
+        }
+
+        #goals-table.as-cards tbody tr {
+          display: grid;
+          grid-template-columns: 30px minmax(0, 1fr) minmax(34px, auto) minmax(74px, auto);
+          align-items: center;
+          gap: 6px 10px;
+          padding: 10px 12px;
+          border-bottom: 1px solid var(--line);
+        }
+
+        #goals-table.as-cards tbody td {
+          display: block;
+          padding: 0;
+          border: 0;
+          white-space: normal;
+          min-width: 0;
+        }
+
+        #goals-table.as-cards tbody td::before {
+          display: none;
+        }
+
+        #goals-table.as-cards tbody td.cell-place {
+          text-align: left;
+        }
+
+        #goals-table.as-cards tbody td.cell-player {
+          text-align: left;
+          overflow: hidden;
+        }
+
+        #goals-table.as-cards tbody td.cell-player .player-name {
+          display: block;
+          font-weight: 700;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        #goals-table.as-cards tbody td.cell-player .player-sub {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          margin-top: 2px;
+          overflow: hidden;
+        }
+
+        #goals-table.as-cards tbody td.cell-player .player-team {
+          display: block;
+          color: var(--muted);
+          font-size: 0.74rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        #goals-table.as-cards tbody td.cell-player .player-role {
+          flex: none;
+          padding: 0 5px;
+          border: 1px solid var(--line);
+          border-radius: 5px;
+          color: var(--muted);
+          font-size: 0.64rem;
+          font-weight: 700;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+        }
+
+        #goals-table.as-cards tbody td.cell-games,
+        #goals-table.as-cards tbody td.cell-goals {
+          text-align: right;
+          white-space: nowrap;
+          font-size: 0.86rem;
+        }
+
+        #goals-table.as-cards tbody td.cell-goals .ppg-inline {
+          display: inline;
+          color: var(--muted);
+          font-size: 0.78rem;
+        }
+
+        #goals-table.as-cards tbody td.cell-group,
+        #goals-table.as-cards tbody td.cell-role,
+        #goals-table.as-cards tbody td.cell-team,
+        #goals-table.as-cards tbody td.cell-ppg {
+          display: none;
+        }
+
+        #goals-table.as-cards .rank {
+          width: 24px;
+          height: 24px;
+          border-radius: 7px;
+          font-size: 0.72rem;
+        }
+      }
+
+      @media (max-width: 400px) {
+        #goals-table.as-cards tbody tr {
+          grid-template-columns: 26px minmax(0, 1fr) minmax(30px, auto) minmax(68px, auto);
+          gap: 6px 8px;
+          padding: 9px 10px;
+        }
+
+        #goals-table.as-cards tbody td.cell-games,
+        #goals-table.as-cards tbody td.cell-goals {
+          font-size: 0.82rem;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .bday-col {
+          padding: 16px;
+        }
+
+        .to-top {
+          right: 12px;
+          bottom: 12px;
+        }
+      }
+
+      /* ==========================================================================
+         12. Предпочтения пользователя
+         ========================================================================== */
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.001ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.001ms !important;
+        }
+
+        html.has-js .reveal {
+          opacity: 1;
+          transform: none;
+          filter: none;
+        }
+
+        /* Тяжёлые эффекты при отключённой анимации не нужны */
+        .aurora i {
+          animation: none;
+        }
+
+        body::after {
+          display: none;
+        }
+      }
+
+      @media print {
+        .aurora,
+        .rink-lines,
+        .scroll-progress,
+        .site-header,
+        .to-top,
+        body::after {
+          display: none !important;
+        }
+
+        html.has-js .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+          filter: none !important;
+        }
+
+        body {
+          background: #fff;
+          color: #000;
+        }
+      }

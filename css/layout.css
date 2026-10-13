@@ -1,0 +1,339 @@
+      /* ==========================================================================
+         3. Индикатор прокрутки и шапка
+         ========================================================================== */
+      .scroll-progress {
+        position: fixed;
+        inset: 0 0 auto 0;
+        height: 3px;
+        z-index: 60;
+        background: color-mix(in srgb, var(--ice) 12%, transparent);
+      }
+
+      .scroll-progress span {
+        display: block;
+        height: 100%;
+        width: 100%;
+        transform-origin: 0 50%;
+        transform: scaleX(var(--p, 0));
+        background: linear-gradient(90deg, var(--ice), var(--accent), var(--accent-2));
+        box-shadow: 0 0 18px color-mix(in srgb, var(--ice) 60%, transparent);
+      }
+
+      /* Нативная scroll-driven animation, если браузер умеет */
+      @supports (animation-timeline: scroll()) {
+        .scroll-progress span {
+          animation: grow linear both;
+          animation-timeline: scroll(root block);
+        }
+
+        @keyframes grow {
+          from {
+            transform: scaleX(0);
+          }
+          to {
+            transform: scaleX(1);
+          }
+        }
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: var(--header-bg);
+        backdrop-filter: blur(16px) saturate(150%);
+        -webkit-backdrop-filter: blur(16px) saturate(150%);
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+      }
+
+      .site-header.is-scrolled {
+        border-bottom-color: var(--line);
+        box-shadow: 0 18px 40px -30px rgba(0, 0, 0, 0.9);
+      }
+
+      .header-inner {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 12px 0;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-right: auto;
+      }
+
+      .brand-mark {
+        position: relative;
+        display: grid;
+        place-items: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 13px;
+        background: #fff;
+        box-shadow: 0 10px 24px -12px color-mix(in srgb, var(--accent) 72%, transparent);
+        overflow: hidden;
+      }
+
+      .brand-mark img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 3px;
+      }
+
+      .brand-mark::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.55) 50%, transparent 70%);
+        transform: translateX(-120%);
+        transition: transform 0.7s ease;
+      }
+
+      .brand:hover .brand-mark::after {
+        transform: translateX(120%);
+      }
+
+      .brand-text {
+        display: grid;
+        line-height: 1.15;
+      }
+
+      .brand-text strong {
+        font-size: 1.02rem;
+        letter-spacing: -0.01em;
+      }
+
+      .brand-text small {
+        color: var(--muted);
+        font-size: 0.74rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .nav a {
+        position: relative;
+        padding: 9px 13px;
+        border-radius: 10px;
+        color: var(--muted);
+        font-size: 0.94rem;
+        font-weight: 500;
+        transition: color 0.22s ease, background 0.22s ease;
+      }
+
+      .nav a::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 3px;
+        width: 0;
+        height: 2px;
+        border-radius: 2px;
+        background: linear-gradient(90deg, var(--ice), var(--accent-2));
+        transform: translateX(-50%);
+        transition: width 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      .nav a:hover {
+        color: var(--text);
+        background: var(--surface);
+      }
+
+      .nav a:hover::after,
+      .nav a.is-active::after {
+        width: 60%;
+      }
+
+      .nav a.is-active {
+        color: var(--text);
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .live-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 7px 12px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--muted);
+        font-size: 0.8rem;
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+      }
+
+      .live-chip::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--green);
+        box-shadow: 0 0 0 0 color-mix(in srgb, var(--green) 70%, transparent);
+        animation: pulse 2.4s ease-out infinite;
+      }
+
+      @keyframes pulse {
+        70% {
+          box-shadow: 0 0 0 7px transparent;
+        }
+        100% {
+          box-shadow: 0 0 0 0 transparent;
+        }
+      }
+
+      .icon-btn {
+        display: grid;
+        place-items: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--surface);
+        cursor: pointer;
+        transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+      }
+
+      .icon-btn:hover {
+        transform: translateY(-2px);
+        border-color: var(--line-strong);
+        background: var(--surface-2);
+      }
+
+      .icon-btn svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      /* Переключатель тем: два образца палитры */
+      .theme-picker {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 5px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--surface);
+      }
+
+      .swatch {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        border: 1px solid var(--line-strong);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .swatch:hover {
+        transform: translateY(-2px);
+      }
+
+      .swatch[aria-pressed="true"] {
+        box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px color-mix(in srgb, var(--text) 55%, transparent);
+      }
+
+      .swatch::after {
+        content: attr(data-label);
+        position: absolute;
+        top: calc(100% + 12px);
+        left: 50%;
+        z-index: 5;
+        padding: 5px 9px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--bg-soft);
+        color: var(--text);
+        font-size: 0.72rem;
+        font-weight: 600;
+        white-space: nowrap;
+        opacity: 0;
+        transform: translate(-50%, -4px);
+        pointer-events: none;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+      }
+
+      .swatch:hover::after,
+      .swatch:focus-visible::after {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+
+      .theme-picker .swatch:last-child::after {
+        left: auto;
+        right: -6px;
+        transform: translateY(-4px);
+      }
+
+      .theme-picker .swatch:last-child:hover::after,
+      .theme-picker .swatch:last-child:focus-visible::after {
+        transform: none;
+      }
+
+      /* Образцы палитр не зависят от активной темы */
+      .swatch-club-light {
+        background: linear-gradient(135deg, #ffffff 0 46%, #e3dcde 46% 54%, #c8102e 54%);
+      }
+
+      .swatch-club-dark {
+        background: linear-gradient(135deg, #131316 0 46%, #3c3c43 46% 54%, #e01b2b 54%);
+      }
+
+      /* Клубные темы: красная полоса под шапкой */
+      .site-header::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+        height: 2px;
+        background: var(--club-stripe, transparent);
+        opacity: var(--club-stripe-opacity, 0);
+        transition: opacity 0.3s ease;
+      }
+
+      .burger {
+        display: none;
+      }
+
+      .burger span {
+        display: block;
+        width: 18px;
+        height: 2px;
+        border-radius: 2px;
+        background: currentColor;
+        transition: transform 0.25s ease, opacity 0.2s ease;
+      }
+
+      .burger span + span {
+        margin-top: 4px;
+      }
+
+      body.nav-open .burger span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+      }
+
+      body.nav-open .burger span:nth-child(2) {
+        opacity: 0;
+      }
+
+      body.nav-open .burger span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+      }

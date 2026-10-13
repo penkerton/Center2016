@@ -1,0 +1,15 @@
+{
+  "name": "centr-2016-hockey",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Статичный сайт хоккейной команды «Центр» (2016 г.р.) с данными Федерации хоккея Москвы",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "update": "node update_fhm_2016_stats.mjs",
+    "test": "node --test"
+  }
+}

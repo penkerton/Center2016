@@ -1,8 +1,12 @@
 name: Update FHMMoscow data
 
+# Данные обновляются каждые 3 часа. Пуш выполняется встроенным GITHUB_TOKEN,
+# а такие пуши НЕ запускают другие workflow, поэтому деплой Pages сделан здесь же
+# (pages.yml отвечает только за деплой обычных пушей в main).
+
 on:
   schedule:
-    - cron: "0 0,3,6,9,12,15,18,21 * * *"
+    - cron: "0 */3 * * *"
   workflow_dispatch:
 
 permissions:
@@ -10,13 +14,15 @@ permissions:
   pages: write
   id-token: write
 
+# Общая группа с pages.yml: деплои Pages не должны накладываться друг на друга
 concurrency:
-  group: "update-fhm-data"
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       - name: Checkout
@@ -30,11 +36,14 @@ jobs:
       - name: Update data files
         run: node ./update_fhm_2016_stats.mjs
 
+      - name: Validate generated data
+        run: node --test
+
       - name: Detect data changes
         id: changes
         shell: bash
         run: |
-          git add all_2016_players_season5.js
+          git add -A
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
@@ -68,4 +77,4 @@ jobs:
 
       - name: No changes
         if: steps.changes.outputs.changed != 'true'
-        run: echo "No data changes detected; nothing to commit."
+        run: echo "Данные не изменились — коммит и деплой не нужны."
