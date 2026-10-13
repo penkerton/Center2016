@@ -4,7 +4,7 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Академия Харламова",
     "games": 5,
-    "goals": 26
+    "goals": 28
   },
   {
     "player": "Павел Курсин",
@@ -2093,13 +2093,6 @@ window.playerGoalsData = [
     "goals": 4
   },
   {
-    "player": "Ефим Бондаренко",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "games": 3,
-    "goals": 4
-  },
-  {
     "player": "Иван Пчелинцев",
     "group": "Группа В",
     "team": "Арктика",
@@ -2639,6 +2632,13 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
+    "player": "Ефим Бондаренко",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "games": 3,
+    "goals": 3
+  },
+  {
     "player": "Иван Волков",
     "group": "Группа А",
     "team": "Спартак",
@@ -3104,13 +3104,6 @@ window.playerGoalsData = [
     "player": "Дарья Дегтярёва",
     "group": "Группа В",
     "team": "Буран Москва",
-    "games": 5,
-    "goals": 2
-  },
-  {
-    "player": "Демид Голованов",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
     "games": 5,
     "goals": 2
   },
@@ -4021,6 +4014,13 @@ window.playerGoalsData = [
     "player": "Данир Хусяинов",
     "group": "Группа В",
     "team": "Вымпел",
+    "games": 5,
+    "goals": 1
+  },
+  {
+    "player": "Демид Голованов",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
     "games": 5,
     "goals": 1
   },
