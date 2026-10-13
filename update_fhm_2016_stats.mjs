@@ -4,6 +4,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const OUTPUT_FILE_DEFAULT = "all_2016_players_season5.js";
+const OUTPUT_MATCHES_FILE_DEFAULT = "all_2016_matches_season5.js";
 const FETCH_TIMEOUT_MS = 12000;
 const MIN_VALID_ROWS = 20;
 const MIN_VALID_RATIO = 0.6;
@@ -13,6 +14,7 @@ function parseArgs(argv) {
     seasonId: 5,
     delayMs: 120,
     outputJs: OUTPUT_FILE_DEFAULT,
+    outputMatchesJs: OUTPUT_MATCHES_FILE_DEFAULT,
   };
 
   const readValue = (flag, index) => {
@@ -40,6 +42,11 @@ function parseArgs(argv) {
       i += 1;
       continue;
     }
+    if (arg === "--outputMatchesJs") {
+      options.outputMatchesJs = readValue(arg, i);
+      i += 1;
+      continue;
+    }
     if (arg === "--help" || arg === "-h") {
       printHelp();
       process.exit(0);
@@ -56,6 +63,7 @@ function parseArgs(argv) {
   }
 
   resolveSafeOutputPath(options.outputJs);
+  resolveSafeOutputPath(options.outputMatchesJs);
 
   return options;
 }
@@ -67,6 +75,7 @@ function printHelp() {
   console.log("  --seasonId <number>     Season id (default: 5)");
   console.log("  --delayMs <number>      Delay between teams in ms (default: 120)");
   console.log("  --outputJs <path>       JS output path");
+  console.log("  --outputMatchesJs <path> JS output path for matches");
 }
 
 async function sleep(ms) {
@@ -236,6 +245,97 @@ function sanitizeRows(rows) {
   return cleaned;
 }
 
+function parseSeasonYearsFromTitle(value) {
+  const text = String(value ?? "");
+  const match = text.match(/\b(\d{2})\/(\d{2})\b/);
+  if (!match) {
+    return { startYear: 2026, endYear: 2027 };
+  }
+
+  const startYear = 2000 + Number(match[1]);
+  const endYear = 2000 + Number(match[2]);
+  return { startYear, endYear };
+}
+
+function toIsoDate(rawDate, seasonYears) {
+  const text = String(rawDate ?? "");
+  const match = text.match(/(\d{2})\.(\d{2})/);
+  if (!match) {
+    return "";
+  }
+
+  const day = Number(match[1]);
+  const month = Number(match[2]);
+  const year = month >= 7 ? seasonYears.startYear : seasonYears.endYear;
+
+  const mm = String(month).padStart(2, "0");
+  const dd = String(day).padStart(2, "0");
+  return `${year}-${mm}-${dd}`;
+}
+
+function toClockTime(rawDate) {
+  const text = String(rawDate ?? "");
+  const match = text.match(/(\d{2}:\d{2})$/);
+  if (!match) {
+    return "";
+  }
+  return match[1] === "00:00" ? "" : match[1];
+}
+
+function normalizeMatchRows(matches) {
+  const cleaned = [];
+
+  for (const match of matches) {
+    const homeTeam = normalizeTeamName(match?.team1?.name ?? "");
+    const awayTeam = normalizeTeamName(match?.team2?.name ?? "");
+    const date = String(match?.dateIso ?? "");
+    const time = String(match?.time ?? "");
+    const homeGoalsRaw = match?.team1?.score;
+    const awayGoalsRaw = match?.team2?.score;
+    const homeGoals =
+      homeGoalsRaw === null || homeGoalsRaw === undefined || homeGoalsRaw === ""
+        ? null
+        : Number.isFinite(Number(homeGoalsRaw))
+          ? Number(homeGoalsRaw)
+          : null;
+    const awayGoals =
+      awayGoalsRaw === null || awayGoalsRaw === undefined || awayGoalsRaw === ""
+        ? null
+        : Number.isFinite(Number(awayGoalsRaw))
+          ? Number(awayGoalsRaw)
+          : null;
+
+    if (!homeTeam || !awayTeam || !date) {
+      continue;
+    }
+
+    cleaned.push({
+      id: Number(match?.id ?? 0),
+      homeTeam,
+      awayTeam,
+      homeGoals,
+      awayGoals,
+      date,
+      time,
+      group: String(match?.group ?? ""),
+      tour: String(match?.tour ?? ""),
+      tournament: String(match?.tournament ?? ""),
+      status: Number(match?.status ?? 0),
+    });
+  }
+
+  const uniqueById = new Map();
+  cleaned.forEach((row) => {
+    if (!uniqueById.has(row.id)) {
+      uniqueById.set(row.id, row);
+    }
+  });
+
+  const deduped = [...uniqueById.values()];
+  deduped.sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
+  return deduped;
+}
+
 async function writeOutput(outputJs, rows) {
   const json = JSON.stringify(rows, null, 2);
   const js = `window.playerGoalsData = ${json};`;
@@ -243,6 +343,17 @@ async function writeOutput(outputJs, rows) {
   const jsPath = resolveSafeOutputPath(outputJs);
   await fs.mkdir(path.dirname(jsPath), { recursive: true });
 
+  await fs.writeFile(jsPath, js, "utf8");
+
+  return jsPath;
+}
+
+async function writeMatchesOutput(outputJs, rows) {
+  const json = JSON.stringify(rows, null, 2);
+  const js = `window.tournamentMatchesData = ${json};`;
+
+  const jsPath = resolveSafeOutputPath(outputJs);
+  await fs.mkdir(path.dirname(jsPath), { recursive: true });
   await fs.writeFile(jsPath, js, "utf8");
 
   return jsPath;
@@ -263,6 +374,7 @@ async function main() {
   );
 
   const teams = [];
+  const selectedGroups = [];
 
   for (const target of targetTournamentGroups) {
     const tournamentId = Number(target.tournamentId);
@@ -304,6 +416,14 @@ async function main() {
           group: Number(group.id),
         }),
       );
+
+      selectedGroups.push({
+        tournamentId,
+        tournamentName: String(tournament?.name ?? ""),
+        stageId: Number(stage.id),
+        groupId: Number(group.id),
+        groupName: String(group?.name ?? ""),
+      });
 
       for (const team of groupTeams) {
         teams.push({
@@ -357,12 +477,56 @@ async function main() {
 
   const sanitizedRows = sanitizeRows(rows);
 
+  const allMatchItems = [];
+
+  for (const group of selectedGroups) {
+    const tours = toArray(
+      await invokeFhmPost("https://fhmoscow.com/api/filter/tour", {
+        season: options.seasonId,
+        tournament: group.tournamentId,
+        stage: group.stageId,
+        group: group.groupId,
+      }),
+    );
+
+    const seasonYears = parseSeasonYearsFromTitle(group.tournamentName);
+
+    for (const tour of tours) {
+      const response = await invokeFhmPost("https://fhmoscow.com/api/game/list", {
+        season: options.seasonId,
+        tournament: group.tournamentId,
+        stage: group.stageId,
+        group: group.groupId,
+        tour: Number(tour.id),
+      });
+
+      const items = toArray(response?.items).map((item) => ({
+        ...item,
+        group: String(item?.group ?? group.groupName),
+        tournament: String(item?.tournament ?? group.tournamentName),
+        dateIso: toIsoDate(item?.date, seasonYears),
+        time: toClockTime(item?.date),
+      }));
+
+      allMatchItems.push(...items);
+
+      if (options.delayMs > 0) {
+        await sleep(options.delayMs);
+      }
+    }
+  }
+
+  const normalizedMatchRows = normalizeMatchRows(allMatchItems);
+
   const jsPath = await writeOutput(options.outputJs, sanitizedRows);
+  const matchesJsPath = await writeMatchesOutput(options.outputMatchesJs, normalizedMatchRows);
 
   console.log("");
   console.log(`Teams processed: ${uniqueTeams.length}`);
   console.log(`Player rows: ${sanitizedRows.length}`);
+  console.log(`Matches rows: ${normalizedMatchRows.length}`);
   console.log(`JS:   ${jsPath}`);
+  console.log(`JS matches: ${matchesJsPath}`);
   console.log("");
 
   for (const row of sanitizedRows.slice(0, 10)) {

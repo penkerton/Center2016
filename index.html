@@ -2954,20 +2954,23 @@
           </div>
 
           <ul class="visually-hidden" id="matches-source" aria-hidden="true">
-            <li class="match" data-home="Вымпел" data-away="Центр" data-date="2026-10-17" data-time="11:15" data-venue="away" data-tour="Турнир 2016 г.р. 26/27 (формат 4х4), Группа В">
-              <strong>17 октября, 11:15</strong> · Вымпел — Центр
+            <li class="match" data-home="Созвездие" data-away="Пингвины" data-date="2026-09-05" data-time="09:30" data-venue="home" data-tour="Турнир 2016 г.р. 26/27 (формат 4х4), Группа В">
+              <strong>5 сентября, 09:30</strong> · Созвездие — Пингвины (15:15)
             </li>
-            <li class="match" data-home="Центр" data-away="Марьино" data-date="2026-10-24" data-time="" data-venue="home" data-tour="Турнир 2016 г.р. 26/27 (формат 4х4), Группа В">
-              <strong>24 октября</strong> · Центр — Марьино
+            <li class="match" data-home="Арктика" data-away="Созвездие" data-date="2026-09-12" data-time="10:45" data-venue="away" data-tour="Турнир 2016 г.р. 26/27 (формат 4х4), Группа В">
+              <strong>12 сентября, 10:45</strong> · Арктика — Созвездие (14:22)
             </li>
-            <li class="match" data-home="Созвездие" data-away="Центр" data-date="2026-10-31" data-time="" data-venue="away" data-tour="Турнир 2016 г.р. 26/27 (формат 4х4), Группа В">
-              <strong>31 октября</strong> · Созвездие — Центр
+            <li class="match" data-home="Созвездие" data-away="Серебряные акулы" data-date="2026-09-19" data-time="09:30" data-venue="home" data-tour="Турнир 2016 г.р. 26/27 (формат 4х4), Группа В">
+              <strong>19 сентября, 09:30</strong> · Созвездие — Серебряные акулы (23:10)
             </li>
-            <li class="match" data-home="Центр" data-away="Буран Москва" data-date="2026-11-07" data-time="" data-venue="home" data-tour="Турнир 2016 г.р. 26/27 (формат 4х4), Группа В">
-              <strong>7 ноября</strong> · Центр — Буран Москва
+            <li class="match" data-home="Синяя птица" data-away="Созвездие" data-date="2026-09-26" data-time="11:00" data-venue="away" data-tour="Турнир 2016 г.р. 26/27 (формат 4х4), Группа В">
+              <strong>26 сентября, 11:00</strong> · Синяя птица — Созвездие (8:22)
             </li>
-            <li class="match" data-home="Центр" data-away="Пингвины" data-date="2026-11-14" data-time="" data-venue="home" data-tour="Турнир 2016 г.р. 26/27 (формат 4х4), Группа В">
-              <strong>14 ноября</strong> · Центр — Пингвины
+            <li class="match" data-home="Созвездие" data-away="Академия Бирюкова" data-date="2026-10-03" data-time="11:00" data-venue="home" data-tour="Турнир 2016 г.р. 26/27 (формат 4х4), Группа В">
+              <strong>3 октября, 11:00</strong> · Созвездие — Академия Бирюкова (36:9)
+            </li>
+            <li class="match" data-home="Сталкер" data-away="Созвездие" data-date="2026-10-10" data-time="09:00" data-venue="away" data-tour="Турнир 2016 г.р. 26/27 (формат 4х4), Группа В">
+              <strong>10 октября, 09:00</strong> · Сталкер — Созвездие (11:15)
             </li>
           </ul>
         </div>
@@ -3155,6 +3158,7 @@
     </button>
 
     <script src="all_2016_players_season5.js"></script>
+    <script src="all_2016_matches_season5.js"></script>
     <script>
       /* CENTR2016APPSTART */
       (() => {
@@ -3415,6 +3419,59 @@
           return String(name ?? "").replace(TEAM_YEAR_SUFFIX, "").trim();
         }
 
+        function parseMatchDate(date, time) {
+          return new Date(`${date}T${time || "00:00"}:00`);
+        }
+
+        function normalizeExternalMatches(rows) {
+          if (!Array.isArray(rows)) return [];
+
+          return rows
+            .map((item) => {
+              const date = String(item?.date ?? "");
+              const time = String(item?.time ?? "");
+              const home = normalizeTeamName(item?.homeTeam ?? item?.home ?? "");
+              const away = normalizeTeamName(item?.awayTeam ?? item?.away ?? "");
+              const homeGoalsRaw = item?.homeGoals;
+              const awayGoalsRaw = item?.awayGoals;
+              const homeGoals =
+                homeGoalsRaw === null || homeGoalsRaw === undefined || homeGoalsRaw === ""
+                  ? null
+                  : Number.isFinite(Number(homeGoalsRaw))
+                    ? Number(homeGoalsRaw)
+                    : null;
+              const awayGoals =
+                awayGoalsRaw === null || awayGoalsRaw === undefined || awayGoalsRaw === ""
+                  ? null
+                  : Number.isFinite(Number(awayGoalsRaw))
+                    ? Number(awayGoalsRaw)
+                    : null;
+
+              if (!date || !home || !away) return null;
+
+              const hasScore = homeGoals !== null && awayGoals !== null;
+              return {
+                id: Number(item?.id ?? 0),
+                date,
+                time,
+                datetime: parseMatchDate(date, time),
+                home,
+                away,
+                homeGoals,
+                awayGoals,
+                hasScore,
+                status: Number(item?.status ?? 0),
+                tour: String(item?.tour ?? ""),
+                group: String(item?.group ?? ""),
+                tournament: String(item?.tournament ?? ""),
+              };
+            })
+            .filter(Boolean)
+            .sort((a, b) => a.datetime - b.datetime);
+        }
+
+        const externalMatches = normalizeExternalMatches(window.tournamentMatchesData);
+
         /* ====================================================================
            Турнирная таблица: сортировка, поиск, полосы очков, график
            ==================================================================== */
@@ -3564,18 +3621,15 @@
           const standingsTabs = standingsTabsWrap ? $$("[role='tab']", standingsTabsWrap) : [];
 
           const h2hMatrixRoot = $("#h2h-matrix-root");
-          const H2H_RESULTS = [
-            { homeTeam: "Центр", awayTeam: "Метеор", homeGoals: 21, awayGoals: 13, date: "2026-09-03" },
-            { homeTeam: "Центр", awayTeam: "Вымпел", homeGoals: 16, awayGoals: 14, date: "2026-09-10" },
-            { homeTeam: "Центр", awayTeam: "Арктика", homeGoals: 24, awayGoals: 9, date: "2026-09-17" },
-            { homeTeam: "Центр", awayTeam: "Сталкер", homeGoals: 31, awayGoals: 18, date: "2026-09-24" },
-            { homeTeam: "Буран Москва", awayTeam: "Центр", homeGoals: 22, awayGoals: 18, date: "2026-10-01" },
-            { homeTeam: "Созвездие", awayTeam: "Северная звезда", homeGoals: 15, awayGoals: 15, date: "2026-09-05" },
-            { homeTeam: "Марьино", awayTeam: "Янтарь", homeGoals: 29, awayGoals: 17, date: "2026-09-09" },
-            { homeTeam: "Пингвины", awayTeam: "Сталкер", homeGoals: 19, awayGoals: 16, date: "2026-09-12" },
-            { homeTeam: "Серебряные акулы", awayTeam: "Синяя птица", homeGoals: 14, awayGoals: 20, date: "2026-09-16" },
-            { homeTeam: "Академия Бирюкова", awayTeam: "Арктика", homeGoals: 11, awayGoals: 13, date: "2026-09-19" },
-          ];
+          const H2H_RESULTS = externalMatches
+            .filter((match) => match.hasScore)
+            .map((match) => ({
+              homeTeam: match.home,
+              awayTeam: match.away,
+              homeGoals: match.homeGoals,
+              awayGoals: match.awayGoals,
+              date: match.date,
+            }));
 
           function shortTeamName(name) {
             return normalizeTeamName(name);
@@ -3722,21 +3776,42 @@
         /* ====================================================================
            Матчи: состояния, отсчёт, добавление в календарь (.ics)
            ==================================================================== */
-        const matches = $$("#matches-source .match").map((element) => {
+        const fallbackMatches = $$("#matches-source .match").map((element) => {
           const date = element.dataset.date;
           const time = element.dataset.time || "";
           return {
-            element,
             home: normalizeTeamName(element.dataset.home || ""),
             away: normalizeTeamName(element.dataset.away || ""),
             tour: element.dataset.tour || "",
             venue: element.dataset.venue === "home" ? "home" : "away",
             date,
             time,
-            datetime: new Date(`${date}T${time || "00:00"}:00`),
+            status: 0,
+            homeGoals: null,
+            awayGoals: null,
+            hasScore: false,
+            datetime: parseMatchDate(date, time),
             hasTime: Boolean(time),
           };
         });
+
+        const ownTeamMatches = externalMatches.filter((match) => match.home === OWN_TEAM || match.away === OWN_TEAM);
+        const sourceMatches = ownTeamMatches.length ? ownTeamMatches : fallbackMatches;
+
+        const matches = sourceMatches
+          .map((match) => {
+            const venue = match.home === OWN_TEAM ? "home" : "away";
+            const element = document.createElement("li");
+            element.className = "match";
+            return {
+              ...match,
+              element,
+              venue,
+              hasTime: Boolean(match.time),
+              datetime: match.datetime instanceof Date ? match.datetime : parseMatchDate(match.date, match.time),
+            };
+          })
+          .sort((a, b) => a.datetime - b.datetime);
 
         const todayStart = new Date();
         todayStart.setHours(0, 0, 0, 0);
@@ -3785,7 +3860,7 @@
 
         activateMatchTab(0);
 
-        const nextMatch = matches.find((match) => match.datetime >= new Date()) || null;
+        const nextMatch = matches.find((match) => !match.hasScore && match.datetime >= new Date()) || null;
 
         function countdownLabel(match) {
           const days = daysBetween(new Date(), match.datetime);
@@ -3838,10 +3913,13 @@
         matches.forEach((match) => {
           const state = countdownLabel(match);
           const isNext = nextMatch === match;
+          const isPlayed = match.hasScore;
           match.element.classList.add(match.venue === "home" ? "is-home" : "is-away");
           match.element.classList.toggle("is-next", isNext);
-          match.element.classList.toggle("is-past", state.state === "past");
-          match.element.dataset.state = state.state;
+          match.element.classList.toggle("is-past", isPlayed || state.state === "past");
+          match.element.dataset.state = isPlayed ? "past" : state.state;
+
+          const scoreLabel = isPlayed ? `${match.homeGoals}:${match.awayGoals}` : "";
 
           const when = match.hasTime
             ? `${dateWeekdayFmt.format(match.datetime)}, ${match.time}`
@@ -3862,13 +3940,13 @@
               ${isNext ? '<span class="badge accent">следующий</span>' : ""}
             </div>
             <div class="match-teams">
-              <span>${escapeHtml(match.home)}</span>
+              <span>${escapeHtml(match.home)}${isPlayed ? ` <strong>${match.homeGoals}</strong>` : ""}</span>
               <span class="vs">vs</span>
-              <span>${escapeHtml(match.away)}</span>
+              <span>${escapeHtml(match.away)}${isPlayed ? ` <strong>${match.awayGoals}</strong>` : ""}</span>
             </div>
             <div class="match-foot">
-              <span class="countdown-chip ${state.state === "past" ? "past" : state.state === "today" ? "today" : ""}">${escapeHtml(
-            state.text
+              <span class="countdown-chip ${isPlayed || state.state === "past" ? "past" : state.state === "today" ? "today" : ""}">${escapeHtml(
+            isPlayed ? `счёт ${scoreLabel}` : state.text
           )}</span>
               <span class="spacer"></span>
               <button class="btn-mini" type="button" data-ics>В календарь</button>
@@ -3883,7 +3961,7 @@
             }, 2000);
           });
 
-          if (match.datetime >= todayStart) {
+          if (!isPlayed && match.datetime >= todayStart) {
             upcomingList?.append(match.element);
           } else {
             pastList?.append(match.element);
