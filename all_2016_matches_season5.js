@@ -1458,8 +1458,8 @@ window.tournamentMatchesData = [
     "id": 22095,
     "homeTeam": "Снежные барсы",
     "awayTeam": "Русь",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 12,
+    "awayGoals": 20,
     "date": "2026-10-14",
     "time": "15:15",
     "groupId": 312,
@@ -1467,7 +1467,7 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "7 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 23568,
@@ -1965,21 +1965,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23589,
-    "homeTeam": "Академия Михайлова (Тула)",
-    "awayTeam": "ЦСКА",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-10-24",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "5 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
     "id": 23586,
     "homeTeam": "Локомотив",
     "awayTeam": "Динамо",
@@ -2022,6 +2007,21 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "8 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 23589,
+    "homeTeam": "Академия Михайлова (Тула)",
+    "awayTeam": "ЦСКА",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-10-24",
+    "time": "13:15",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "5 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
     "status": 0
   },
   {
