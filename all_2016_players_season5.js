@@ -1184,14 +1184,6 @@ window.playerGoalsData = [
     "goals": 6
   },
   {
-    "player": "Клим Родионов",
-    "group": "Группа Б",
-    "team": "Русь",
-    "role": "Н",
-    "games": 5,
-    "goals": 6
-  },
-  {
     "player": "Максим Левшин",
     "group": "Группа В",
     "team": "Северная звезда",
@@ -1627,6 +1619,14 @@ window.playerGoalsData = [
     "player": "Егор Лебедев",
     "group": "Группа В",
     "team": "Синяя птица",
+    "role": "Н",
+    "games": 5,
+    "goals": 5
+  },
+  {
+    "player": "Клим Родионов",
+    "group": "Группа Б",
+    "team": "Русь",
     "role": "Н",
     "games": 5,
     "goals": 5
@@ -2656,6 +2656,14 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
+    "player": "Виктор Полянчиков",
+    "group": "Группа Б",
+    "team": "Русь",
+    "role": "Н",
+    "games": 5,
+    "goals": 3
+  },
+  {
     "player": "Владислав Кирсанов",
     "group": "Группа В",
     "team": "Вымпел",
@@ -3507,14 +3515,6 @@ window.playerGoalsData = [
     "player": "Валерий Малиновский",
     "group": "Группа Б",
     "team": "Рыцари",
-    "role": "Н",
-    "games": 5,
-    "goals": 2
-  },
-  {
-    "player": "Виктор Полянчиков",
-    "group": "Группа Б",
-    "team": "Русь",
     "role": "Н",
     "games": 5,
     "goals": 2
