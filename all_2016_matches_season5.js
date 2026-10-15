@@ -1875,21 +1875,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23598,
-    "homeTeam": "Академия Михайлова (Новомосковск)",
-    "awayTeam": "Крылья Советов",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-10-24",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "5 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
     "id": 23586,
     "homeTeam": "Локомотив",
     "awayTeam": "Динамо",
@@ -2017,6 +2002,21 @@ window.tournamentMatchesData = [
     "awayGoals": null,
     "date": "2026-10-24",
     "time": "13:15",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "5 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
+    "id": 23598,
+    "homeTeam": "Академия Михайлова (Новомосковск)",
+    "awayTeam": "Крылья Советов",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-10-24",
+    "time": "14:30",
     "groupId": 309,
     "tournamentId": 48,
     "group": "Группа А",
