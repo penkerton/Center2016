@@ -1860,21 +1860,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22434,
-    "homeTeam": "Северная звезда",
-    "awayTeam": "Буран Москва",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-10-24",
-    "time": "",
-    "groupId": 315,
-    "tournamentId": 51,
-    "group": "Группа В",
-    "tour": "8 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22428,
     "homeTeam": "Академия Бирюкова",
     "awayTeam": "Пингвины",
@@ -2005,6 +1990,21 @@ window.tournamentMatchesData = [
     "groupId": 312,
     "tournamentId": 51,
     "group": "Группа Б",
+    "tour": "8 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 22434,
+    "homeTeam": "Северная звезда",
+    "awayTeam": "Буран Москва",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-10-24",
+    "time": "12:50",
+    "groupId": 315,
+    "tournamentId": 51,
+    "group": "Группа В",
     "tour": "8 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
