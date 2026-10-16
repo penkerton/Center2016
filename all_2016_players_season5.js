@@ -3352,6 +3352,14 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
+    "player": "Иван Торченюк",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "Н",
+    "games": 6,
+    "goals": 2
+  },
+  {
     "player": "Иван Шурыгин",
     "group": "Группа Б",
     "team": "Гранит",
@@ -4168,14 +4176,6 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
-    "player": "Павел Гордеев",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "Н",
-    "games": 3,
-    "goals": 2
-  },
-  {
     "player": "Платон Климов",
     "group": "Группа А",
     "team": "Красная машина Юниор",
@@ -4363,14 +4363,6 @@ window.playerGoalsData = [
     "player": "Дмитрий Чернявский",
     "group": "Группа Б",
     "team": "Гранит",
-    "role": "Н",
-    "games": 6,
-    "goals": 1
-  },
-  {
-    "player": "Иван Торченюк",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
     "role": "Н",
     "games": 6,
     "goals": 1
@@ -5483,6 +5475,14 @@ window.playerGoalsData = [
     "player": "Никита Попов",
     "group": "Группа А",
     "team": "Крылья Советов",
+    "role": "Н",
+    "games": 3,
+    "goals": 1
+  },
+  {
+    "player": "Павел Гордеев",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
     "role": "Н",
     "games": 3,
     "goals": 1
