@@ -2152,6 +2152,14 @@ window.playerGoalsData = [
     "goals": 4
   },
   {
+    "player": "Илья Чегарной",
+    "group": "Группа Б",
+    "team": "Красная машина Атлант",
+    "role": "Н",
+    "games": 5,
+    "goals": 4
+  },
+  {
     "player": "Ильяс Айнетдинов",
     "group": "Группа В",
     "team": "Центр",
@@ -2763,14 +2771,6 @@ window.playerGoalsData = [
     "player": "Илья Постников",
     "group": "Группа Б",
     "team": "Белые медведи",
-    "role": "Н",
-    "games": 5,
-    "goals": 3
-  },
-  {
-    "player": "Илья Чегарной",
-    "group": "Группа Б",
-    "team": "Красная машина Атлант",
     "role": "Н",
     "games": 5,
     "goals": 3
@@ -4852,14 +4852,6 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Серебряные акулы",
     "role": "Н",
-    "games": 5,
-    "goals": 1
-  },
-  {
-    "player": "Петр Черкасов",
-    "group": "Группа Б",
-    "team": "Красная машина Атлант",
-    "role": "З",
     "games": 5,
     "goals": 1
   },
@@ -6995,6 +6987,14 @@ window.playerGoalsData = [
     "player": "Николай Антипов",
     "group": "Группа В",
     "team": "Синяя птица",
+    "role": "З",
+    "games": 5,
+    "goals": 0
+  },
+  {
+    "player": "Петр Черкасов",
+    "group": "Группа Б",
+    "team": "Красная машина Атлант",
     "role": "З",
     "games": 5,
     "goals": 0
