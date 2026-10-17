@@ -1713,8 +1713,8 @@ window.tournamentMatchesData = [
     "id": 23571,
     "homeTeam": "Арена Плей Трактор (Север)",
     "awayTeam": "Академия Михайлова (Новомосковск)",
-    "homeGoals": 2,
-    "awayGoals": 0,
+    "homeGoals": 3,
+    "awayGoals": 2,
     "date": "2026-10-17",
     "time": "14:30",
     "groupId": 309,
@@ -1722,14 +1722,14 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "4 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 1
+    "status": 2
   },
   {
     "id": 22422,
     "homeTeam": "Арктика",
     "awayTeam": "Серебряные акулы",
-    "homeGoals": 0,
-    "awayGoals": 0,
+    "homeGoals": 24,
+    "awayGoals": 7,
     "date": "2026-10-17",
     "time": "15:00",
     "groupId": 315,
@@ -1737,7 +1737,7 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "7 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 1
+    "status": 2
   },
   {
     "id": 22125,
