@@ -1473,8 +1473,8 @@ window.tournamentMatchesData = [
     "id": 23568,
     "homeTeam": "Динамо",
     "awayTeam": "Авангард",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 0,
+    "awayGoals": 3,
     "date": "2026-10-17",
     "time": "09:00",
     "groupId": 309,
@@ -1482,14 +1482,14 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "4 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
+    "status": 1
   },
   {
     "id": 22089,
     "homeTeam": "Арена Плей Трактор (Юг)",
     "awayTeam": "Академия Харламова",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 9,
+    "awayGoals": 10,
     "date": "2026-10-17",
     "time": "09:30",
     "groupId": 312,
@@ -1497,14 +1497,14 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "7 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 1
   },
   {
     "id": 22413,
     "homeTeam": "Буран Москва",
     "awayTeam": "Сталкер",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 8,
+    "awayGoals": 2,
     "date": "2026-10-17",
     "time": "09:45",
     "groupId": 315,
@@ -1512,14 +1512,14 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "7 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 1
   },
   {
     "id": 22410,
     "homeTeam": "Созвездие",
     "awayTeam": "Северная звезда",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 1,
+    "awayGoals": 9,
     "date": "2026-10-17",
     "time": "09:45",
     "groupId": 315,
@@ -1527,14 +1527,14 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "7 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 1
   },
   {
     "id": 22407,
     "homeTeam": "Марьино",
     "awayTeam": "Метеор",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 0,
+    "awayGoals": 0,
     "date": "2026-10-17",
     "time": "10:00",
     "groupId": 315,
@@ -1542,7 +1542,7 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "7 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 1
   },
   {
     "id": 22104,
