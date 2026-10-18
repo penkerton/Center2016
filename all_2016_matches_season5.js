@@ -1785,21 +1785,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22428,
-    "homeTeam": "Академия Бирюкова",
-    "awayTeam": "Пингвины",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-10-24",
-    "time": "",
-    "groupId": 315,
-    "tournamentId": 51,
-    "group": "Группа В",
-    "tour": "8 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 23601,
     "homeTeam": "Авангард",
     "awayTeam": "Арена Плей Трактор (Север)",
@@ -2022,6 +2007,21 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "5 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
+    "id": 22428,
+    "homeTeam": "Академия Бирюкова",
+    "awayTeam": "Пингвины",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-10-24",
+    "time": "16:15",
+    "groupId": 315,
+    "tournamentId": 51,
+    "group": "Группа В",
+    "tour": "8 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
   },
   {
