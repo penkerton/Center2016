@@ -1785,21 +1785,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23601,
-    "homeTeam": "Авангард",
-    "awayTeam": "Арена Плей Трактор (Север)",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-10-24",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "5 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
     "id": 23592,
     "homeTeam": "Академия Михайлова (Москва)",
     "awayTeam": "Спартак",
@@ -2002,6 +1987,21 @@ window.tournamentMatchesData = [
     "awayGoals": null,
     "date": "2026-10-24",
     "time": "14:30",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "5 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
+    "id": 23601,
+    "homeTeam": "Авангард",
+    "awayTeam": "Арена Плей Трактор (Север)",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-10-24",
+    "time": "15:45",
     "groupId": 309,
     "tournamentId": 48,
     "group": "Группа А",
