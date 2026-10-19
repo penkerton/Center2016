@@ -2055,21 +2055,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22137,
-    "homeTeam": "Красная машина Атлант",
-    "awayTeam": "Белые медведи",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-10-31",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "9 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22131,
     "homeTeam": "Олимпийская деревня - 80",
     "awayTeam": "Академия Петрова",
@@ -2272,6 +2257,21 @@ window.tournamentMatchesData = [
     "awayGoals": null,
     "date": "2026-10-31",
     "time": "10:45",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "9 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 22137,
+    "homeTeam": "Красная машина Атлант",
+    "awayTeam": "Белые медведи",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-10-31",
+    "time": "11:00",
     "groupId": 312,
     "tournamentId": 51,
     "group": "Группа Б",

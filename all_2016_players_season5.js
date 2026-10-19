@@ -1784,6 +1784,14 @@ window.playerGoalsData = [
     "goals": 5
   },
   {
+    "player": "Алексей Зимак",
+    "group": "Группа Б",
+    "team": "Запад - Ястребы",
+    "role": "Н",
+    "games": 6,
+    "goals": 5
+  },
+  {
     "player": "Андрей Стариков",
     "group": "Группа Б",
     "team": "Динамо - Солнцево",
@@ -2323,14 +2331,6 @@ window.playerGoalsData = [
     "player": "Александр Кириллов",
     "group": "Группа В",
     "team": "Буран Москва",
-    "role": "Н",
-    "games": 6,
-    "goals": 4
-  },
-  {
-    "player": "Алексей Зимак",
-    "group": "Группа Б",
-    "team": "Запад - Ястребы",
     "role": "Н",
     "games": 6,
     "goals": 4
@@ -4792,14 +4792,6 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
-    "player": "Алексей Бакулин",
-    "group": "Группа Б",
-    "team": "Запад - Ястребы",
-    "role": "З",
-    "games": 6,
-    "goals": 1
-  },
-  {
     "player": "Алексей Гордевич",
     "group": "Группа В",
     "team": "Синяя птица",
@@ -6620,6 +6612,14 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Красная машина Атлант",
     "role": "В",
+    "games": 6,
+    "goals": 0
+  },
+  {
+    "player": "Алексей Бакулин",
+    "group": "Группа Б",
+    "team": "Запад - Ястребы",
+    "role": "З",
     "games": 6,
     "goals": 0
   },
