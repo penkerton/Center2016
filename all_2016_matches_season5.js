@@ -1770,21 +1770,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22437,
-    "homeTeam": "Метеор",
-    "awayTeam": "Созвездие",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-10-24",
-    "time": "",
-    "groupId": 315,
-    "tournamentId": 51,
-    "group": "Группа В",
-    "tour": "8 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 23592,
     "homeTeam": "Академия Михайлова (Москва)",
     "awayTeam": "Спартак",
@@ -1818,6 +1803,21 @@ window.tournamentMatchesData = [
     "id": 22443,
     "homeTeam": "Янтарь",
     "awayTeam": "Вымпел",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-10-24",
+    "time": "09:45",
+    "groupId": 315,
+    "tournamentId": 51,
+    "group": "Группа В",
+    "tour": "8 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 22437,
+    "homeTeam": "Метеор",
+    "awayTeam": "Созвездие",
     "homeGoals": null,
     "awayGoals": null,
     "date": "2026-10-24",
@@ -1905,6 +1905,21 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
+    "id": 23589,
+    "homeTeam": "Академия Михайлова (Тула)",
+    "awayTeam": "ЦСКА",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-10-24",
+    "time": "11:30",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "5 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
     "id": 22113,
     "homeTeam": "Рыцари",
     "awayTeam": "Балашиха",
@@ -1962,21 +1977,6 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "8 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
-    "id": 23589,
-    "homeTeam": "Академия Михайлова (Тула)",
-    "awayTeam": "ЦСКА",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-10-24",
-    "time": "13:15",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "5 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
     "status": 0
   },
   {
@@ -2080,21 +2080,6 @@ window.tournamentMatchesData = [
     "groupId": 312,
     "tournamentId": 51,
     "group": "Группа Б",
-    "tour": "9 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
-    "id": 22464,
-    "homeTeam": "Серебряные акулы",
-    "awayTeam": "Синяя птица",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-10-31",
-    "time": "",
-    "groupId": 315,
-    "tournamentId": 51,
-    "group": "Группа В",
     "tour": "9 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
@@ -2257,6 +2242,21 @@ window.tournamentMatchesData = [
     "awayGoals": null,
     "date": "2026-10-31",
     "time": "09:45",
+    "groupId": 315,
+    "tournamentId": 51,
+    "group": "Группа В",
+    "tour": "9 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 22464,
+    "homeTeam": "Серебряные акулы",
+    "awayTeam": "Синяя птица",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-10-31",
+    "time": "10:00",
     "groupId": 315,
     "tournamentId": 51,
     "group": "Группа В",
@@ -3120,21 +3120,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22224,
-    "homeTeam": "Запад - Ястребы",
-    "awayTeam": "Академия Харламова",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-21",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "13 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22221,
     "homeTeam": "Балашиха",
     "awayTeam": "Академия Петрова",
@@ -3357,6 +3342,21 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "9 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
+    "id": 22224,
+    "homeTeam": "Запад - Ястребы",
+    "awayTeam": "Академия Харламова",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-21",
+    "time": "12:30",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "13 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
   },
   {
