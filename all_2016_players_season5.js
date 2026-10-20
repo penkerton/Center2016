@@ -112,14 +112,6 @@ window.playerGoalsData = [
     "goals": 17
   },
   {
-    "player": "Тимофей Пахомов",
-    "group": "Группа Б",
-    "team": "Запад - Ястребы",
-    "role": "Н",
-    "games": 6,
-    "goals": 17
-  },
-  {
     "player": "Всеволод Ширяев",
     "group": "Группа В",
     "team": "Марьино",
@@ -203,6 +195,14 @@ window.playerGoalsData = [
     "player": "Николь Гриценко",
     "group": "Группа Б",
     "team": "Русь",
+    "role": "Н",
+    "games": 6,
+    "goals": 15
+  },
+  {
+    "player": "Тимофей Пахомов",
+    "group": "Группа Б",
+    "team": "Запад - Ястребы",
     "role": "Н",
     "games": 6,
     "goals": 15
@@ -896,6 +896,14 @@ window.playerGoalsData = [
     "goals": 8
   },
   {
+    "player": "Иван Оброскин",
+    "group": "Группа Б",
+    "team": "Запад - Ястребы",
+    "role": "Н",
+    "games": 6,
+    "goals": 8
+  },
+  {
     "player": "Иван Овчаров",
     "group": "Группа В",
     "team": "Вымпел",
@@ -1427,14 +1435,6 @@ window.playerGoalsData = [
     "player": "Егор Бычков",
     "group": "Группа В",
     "team": "Буран Москва",
-    "role": "Н",
-    "games": 6,
-    "goals": 6
-  },
-  {
-    "player": "Иван Оброскин",
-    "group": "Группа Б",
-    "team": "Запад - Ястребы",
     "role": "Н",
     "games": 6,
     "goals": 6
@@ -10187,6 +10187,14 @@ window.playerGoalsData = [
     "player": "Андрей Хвостов",
     "group": "Группа А",
     "team": "Академия Михайлова (Тула)",
+    "role": "Н",
+    "games": 0,
+    "goals": 0
+  },
+  {
+    "player": "Арлан Суниев",
+    "group": "Группа Б",
+    "team": "Арена Плей Трактор (Юг)",
     "role": "Н",
     "games": 0,
     "goals": 0
