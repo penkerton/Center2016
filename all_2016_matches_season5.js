@@ -2190,21 +2190,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23607,
-    "homeTeam": "Крылья Советов",
-    "awayTeam": "Авангард",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-10-31",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "6 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
     "id": 23604,
     "homeTeam": "Динамо",
     "awayTeam": "Арена Плей Трактор (Север)",
@@ -2307,6 +2292,21 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "9 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 23607,
+    "homeTeam": "Крылья Советов",
+    "awayTeam": "Авангард",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-01",
+    "time": "",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "6 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
     "status": 0
   },
   {
