@@ -184,14 +184,6 @@ window.playerGoalsData = [
     "goals": 15
   },
   {
-    "player": "Матвей Тарасов",
-    "group": "Группа В",
-    "team": "Северная звезда",
-    "role": "Н",
-    "games": 6,
-    "goals": 15
-  },
-  {
     "player": "Николь Гриценко",
     "group": "Группа Б",
     "team": "Русь",
@@ -213,6 +205,14 @@ window.playerGoalsData = [
     "team": "Снежные барсы",
     "role": "Н",
     "games": 7,
+    "goals": 14
+  },
+  {
+    "player": "Матвей Тарасов",
+    "group": "Группа В",
+    "team": "Северная звезда",
+    "role": "Н",
+    "games": 6,
     "goals": 14
   },
   {
@@ -352,6 +352,14 @@ window.playerGoalsData = [
     "goals": 12
   },
   {
+    "player": "Платон Азенко",
+    "group": "Группа В",
+    "team": "Северная звезда",
+    "role": "Н",
+    "games": 6,
+    "goals": 12
+  },
+  {
     "player": "Дмитрий Кожухов",
     "group": "Группа Б",
     "team": "Снежные барсы",
@@ -427,14 +435,6 @@ window.playerGoalsData = [
     "player": "Николай Дмитриев",
     "group": "Группа Б",
     "team": "Академия Петрова",
-    "role": "Н",
-    "games": 6,
-    "goals": 11
-  },
-  {
-    "player": "Платон Азенко",
-    "group": "Группа В",
-    "team": "Северная звезда",
     "role": "Н",
     "games": 6,
     "goals": 11
