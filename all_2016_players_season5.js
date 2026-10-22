@@ -4,8 +4,8 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Академия Харламова",
     "role": "Н",
-    "games": 6,
-    "goals": 30
+    "games": 7,
+    "goals": 39
   },
   {
     "player": "Павел Курсин",
@@ -360,6 +360,14 @@ window.playerGoalsData = [
     "goals": 12
   },
   {
+    "player": "Александр Акатов",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "Н",
+    "games": 7,
+    "goals": 11
+  },
+  {
     "player": "Дмитрий Кожухов",
     "group": "Группа Б",
     "team": "Снежные барсы",
@@ -488,6 +496,22 @@ window.playerGoalsData = [
     "goals": 10
   },
   {
+    "player": "Павел Лисовский",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "З",
+    "games": 7,
+    "goals": 10
+  },
+  {
+    "player": "Роман Гладков",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "Н",
+    "games": 7,
+    "goals": 10
+  },
+  {
     "player": "Таисия Демская",
     "group": "Группа Б",
     "team": "Снежные барсы",
@@ -590,6 +614,14 @@ window.playerGoalsData = [
     "role": "Н",
     "games": 4,
     "goals": 10
+  },
+  {
+    "player": "Иван Синицын",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "Н",
+    "games": 8,
+    "goals": 9
   },
   {
     "player": "Анатолий Макаров",
@@ -784,6 +816,22 @@ window.playerGoalsData = [
     "goals": 9
   },
   {
+    "player": "Георгий Хоперский",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "Н",
+    "games": 8,
+    "goals": 8
+  },
+  {
+    "player": "Севастьян Ефремов",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "З",
+    "games": 8,
+    "goals": 8
+  },
+  {
     "player": "Артём Майоров",
     "group": "Группа В",
     "team": "Сталкер",
@@ -795,6 +843,14 @@ window.playerGoalsData = [
     "player": "Генрих Лефтер",
     "group": "Группа В",
     "team": "Созвездие",
+    "role": "Н",
+    "games": 7,
+    "goals": 8
+  },
+  {
+    "player": "Григорий Шаранда",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
     "role": "Н",
     "games": 7,
     "goals": 8
@@ -824,14 +880,6 @@ window.playerGoalsData = [
     "goals": 8
   },
   {
-    "player": "Иван Синицын",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "Н",
-    "games": 7,
-    "goals": 8
-  },
-  {
     "player": "Платон Скриниченко",
     "group": "Группа Б",
     "team": "Арена Плей Трактор (Юг)",
@@ -845,14 +893,6 @@ window.playerGoalsData = [
     "team": "Марьино",
     "role": "Н",
     "games": 7,
-    "goals": 8
-  },
-  {
-    "player": "Александр Акатов",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "Н",
-    "games": 6,
     "goals": 8
   },
   {
@@ -976,6 +1016,30 @@ window.playerGoalsData = [
     "goals": 8
   },
   {
+    "player": "Павел Куракин",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "Н",
+    "games": 8,
+    "goals": 7
+  },
+  {
+    "player": "Платон Гудзенко",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "Н",
+    "games": 8,
+    "goals": 7
+  },
+  {
+    "player": "Платон Гученко",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "Н",
+    "games": 8,
+    "goals": 7
+  },
+  {
     "player": "Александр Трякин",
     "group": "Группа Б",
     "team": "Арена Плей Трактор (Юг)",
@@ -1028,30 +1092,6 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Марьино",
     "role": "Н",
-    "games": 7,
-    "goals": 7
-  },
-  {
-    "player": "Платон Гудзенко",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "Н",
-    "games": 7,
-    "goals": 7
-  },
-  {
-    "player": "Платон Гученко",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "Н",
-    "games": 7,
-    "goals": 7
-  },
-  {
-    "player": "Севастьян Ефремов",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "З",
     "games": 7,
     "goals": 7
   },
@@ -1128,6 +1168,14 @@ window.playerGoalsData = [
     "goals": 7
   },
   {
+    "player": "Иван Кичайкин",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "Н",
+    "games": 6,
+    "goals": 7
+  },
+  {
     "player": "Илья Королев",
     "group": "Группа В",
     "team": "Северная звезда",
@@ -1155,22 +1203,6 @@ window.playerGoalsData = [
     "player": "Матвей Смирнов",
     "group": "Группа В",
     "team": "Буран Москва",
-    "role": "Н",
-    "games": 6,
-    "goals": 7
-  },
-  {
-    "player": "Павел Лисовский",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "З",
-    "games": 6,
-    "goals": 7
-  },
-  {
-    "player": "Роман Гладков",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
     "role": "Н",
     "games": 6,
     "goals": 7
@@ -1256,6 +1288,14 @@ window.playerGoalsData = [
     "goals": 7
   },
   {
+    "player": "Ефим Бондаренко",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "Н",
+    "games": 4,
+    "goals": 7
+  },
+  {
     "player": "Нил Хасянов",
     "group": "Группа А",
     "team": "Академия Михайлова (Москва)",
@@ -1270,6 +1310,22 @@ window.playerGoalsData = [
     "role": "Н",
     "games": 4,
     "goals": 7
+  },
+  {
+    "player": "Петр Малахов",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "Н",
+    "games": 8,
+    "goals": 6
+  },
+  {
+    "player": "Сергей Скорняков",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "Н",
+    "games": 8,
+    "goals": 6
   },
   {
     "player": "Александр Блатов",
@@ -1304,18 +1360,18 @@ window.playerGoalsData = [
     "goals": 6
   },
   {
-    "player": "Георгий Хоперский",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
+    "player": "Давид Касаткин",
+    "group": "Группа В",
+    "team": "Сталкер",
     "role": "Н",
     "games": 7,
     "goals": 6
   },
   {
-    "player": "Давид Касаткин",
-    "group": "Группа В",
-    "team": "Сталкер",
-    "role": "Н",
+    "player": "Евгений Кучеров",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "З",
     "games": 7,
     "goals": 6
   },
@@ -1363,14 +1419,6 @@ window.playerGoalsData = [
     "player": "Платон Павловский",
     "group": "Группа Б",
     "team": "Снежные барсы",
-    "role": "Н",
-    "games": 7,
-    "goals": 6
-  },
-  {
-    "player": "Сергей Скорняков",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
     "role": "Н",
     "games": 7,
     "goals": 6
@@ -1584,14 +1632,6 @@ window.playerGoalsData = [
     "goals": 6
   },
   {
-    "player": "Иван Кичайкин",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "Н",
-    "games": 5,
-    "goals": 6
-  },
-  {
     "player": "Марат Невмятуллин",
     "group": "Группа Б",
     "team": "Русь",
@@ -1712,6 +1752,22 @@ window.playerGoalsData = [
     "goals": 6
   },
   {
+    "player": "Максим Мельников",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "Н",
+    "games": 8,
+    "goals": 5
+  },
+  {
+    "player": "Александр Черкашин",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "Н",
+    "games": 7,
+    "goals": 5
+  },
+  {
     "player": "Бенджамин Юсуфов",
     "group": "Группа В",
     "team": "Созвездие",
@@ -1723,14 +1779,6 @@ window.playerGoalsData = [
     "player": "Борис Данилычев",
     "group": "Группа В",
     "team": "Сталкер",
-    "role": "Н",
-    "games": 7,
-    "goals": 5
-  },
-  {
-    "player": "Максим Мельников",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
     "role": "Н",
     "games": 7,
     "goals": 5
@@ -1760,17 +1808,9 @@ window.playerGoalsData = [
     "goals": 5
   },
   {
-    "player": "Павел Куракин",
+    "player": "Руслан Пылаев",
     "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "Н",
-    "games": 7,
-    "goals": 5
-  },
-  {
-    "player": "Петр Малахов",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
+    "team": "Академия Харламова",
     "role": "Н",
     "games": 7,
     "goals": 5
@@ -1840,6 +1880,14 @@ window.playerGoalsData = [
     "goals": 5
   },
   {
+    "player": "Глеб Княжев",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "Н",
+    "games": 6,
+    "goals": 5
+  },
+  {
     "player": "Глеб Лабутин",
     "group": "Группа Б",
     "team": "Запад - Ястребы",
@@ -1859,14 +1907,6 @@ window.playerGoalsData = [
     "player": "Дмитрий Васильев",
     "group": "Группа В",
     "team": "Северная звезда",
-    "role": "З",
-    "games": 6,
-    "goals": 5
-  },
-  {
-    "player": "Евгений Кучеров",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
     "role": "З",
     "games": 6,
     "goals": 5
@@ -2184,9 +2224,33 @@ window.playerGoalsData = [
     "goals": 5
   },
   {
+    "player": "Александр Федотов",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "З",
+    "games": 8,
+    "goals": 4
+  },
+  {
+    "player": "Георгий Давидов",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "Н",
+    "games": 8,
+    "goals": 4
+  },
+  {
     "player": "Александр Зацепин",
     "group": "Группа Б",
     "team": "Рязань - ВДВ",
+    "role": "З",
+    "games": 7,
+    "goals": 4
+  },
+  {
+    "player": "Александр Федоскин",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
     "role": "З",
     "games": 7,
     "goals": 4
@@ -2248,6 +2312,14 @@ window.playerGoalsData = [
     "goals": 4
   },
   {
+    "player": "Максим Сычев",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "Н",
+    "games": 7,
+    "goals": 4
+  },
+  {
     "player": "Марк Федотов",
     "group": "Группа Б",
     "team": "Рязань - ВДВ",
@@ -2283,6 +2355,14 @@ window.playerGoalsData = [
     "player": "Никита Сергачев",
     "group": "Группа Б",
     "team": "Витязь (Подольск)",
+    "role": "Н",
+    "games": 7,
+    "goals": 4
+  },
+  {
+    "player": "Родион Игнатков",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
     "role": "Н",
     "games": 7,
     "goals": 4
@@ -2480,6 +2560,14 @@ window.playerGoalsData = [
     "goals": 4
   },
   {
+    "player": "Матвей Решетов",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "Н",
+    "games": 6,
+    "goals": 4
+  },
+  {
     "player": "Мирон Серков",
     "group": "Группа В",
     "team": "Буран Москва",
@@ -2520,25 +2608,9 @@ window.playerGoalsData = [
     "goals": 4
   },
   {
-    "player": "Родион Игнатков",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "Н",
-    "games": 6,
-    "goals": 4
-  },
-  {
     "player": "Родион Паращенко",
     "group": "Группа Б",
     "team": "Красная машина Атлант",
-    "role": "Н",
-    "games": 6,
-    "goals": 4
-  },
-  {
-    "player": "Руслан Пылаев",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
     "role": "Н",
     "games": 6,
     "goals": 4
@@ -2563,14 +2635,6 @@ window.playerGoalsData = [
     "player": "Василий Петров",
     "group": "Группа Б",
     "team": "Русь",
-    "role": "Н",
-    "games": 5,
-    "goals": 4
-  },
-  {
-    "player": "Глеб Княжев",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
     "role": "Н",
     "games": 5,
     "goals": 4
@@ -2764,7 +2828,15 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Олимпийская деревня - 80",
     "role": "Н",
-    "games": 7,
+    "games": 8,
+    "goals": 3
+  },
+  {
+    "player": "Михаил Морозов",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "Н",
+    "games": 8,
     "goals": 3
   },
   {
@@ -2864,17 +2936,17 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
-    "player": "Михаил Морозов",
+    "player": "Никита Кренинг",
     "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
+    "team": "Рыцари",
     "role": "Н",
     "games": 7,
     "goals": 3
   },
   {
-    "player": "Никита Кренинг",
+    "player": "Рашид Токуев",
     "group": "Группа Б",
-    "team": "Рыцари",
+    "team": "Олимпийская деревня - 80",
     "role": "Н",
     "games": 7,
     "goals": 3
@@ -2893,22 +2965,6 @@ window.playerGoalsData = [
     "team": "Рыцари",
     "role": "З",
     "games": 7,
-    "goals": 3
-  },
-  {
-    "player": "Александр Федоскин",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "З",
-    "games": 6,
-    "goals": 3
-  },
-  {
-    "player": "Александр Черкашин",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "Н",
-    "games": 6,
     "goals": 3
   },
   {
@@ -2992,14 +3048,6 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
-    "player": "Григорий Шаранда",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "Н",
-    "games": 6,
-    "goals": 3
-  },
-  {
     "player": "Данила Богданович",
     "group": "Группа Б",
     "team": "Русь",
@@ -3048,9 +3096,9 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
-    "player": "Максим Сычев",
+    "player": "Марсель Белов",
     "group": "Группа Б",
-    "team": "Академия Харламова",
+    "team": "Олимпийская деревня - 80",
     "role": "Н",
     "games": 6,
     "goals": 3
@@ -3235,22 +3283,6 @@ window.playerGoalsData = [
     "player": "Максим Щетинин",
     "group": "Группа В",
     "team": "Янтарь",
-    "role": "Н",
-    "games": 5,
-    "goals": 3
-  },
-  {
-    "player": "Марсель Белов",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "Н",
-    "games": 5,
-    "goals": 3
-  },
-  {
-    "player": "Матвей Решетов",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
     "role": "Н",
     "games": 5,
     "goals": 3
@@ -3496,14 +3528,6 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
-    "player": "Ефим Бондаренко",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "Н",
-    "games": 3,
-    "goals": 3
-  },
-  {
     "player": "Тимофей Хохлов",
     "group": "Группа В",
     "team": "Пингвины",
@@ -3536,10 +3560,18 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
-    "player": "Александр Федотов",
+    "player": "Роман Чайко",
     "group": "Группа Б",
     "team": "Олимпийская деревня - 80",
-    "role": "З",
+    "role": "Н",
+    "games": 8,
+    "goals": 2
+  },
+  {
+    "player": "Александр Ткачев",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "Н",
     "games": 7,
     "goals": 2
   },
@@ -3547,6 +3579,14 @@ window.playerGoalsData = [
     "player": "Андрей Горица",
     "group": "Группа В",
     "team": "Марьино",
+    "role": "З",
+    "games": 7,
+    "goals": 2
+  },
+  {
+    "player": "Арман Навоян",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
     "role": "З",
     "games": 7,
     "goals": 2
@@ -3584,14 +3624,6 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
-    "player": "Георгий Давидов",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "Н",
-    "games": 7,
-    "goals": 2
-  },
-  {
     "player": "Георгий Лямзин",
     "group": "Группа Б",
     "team": "Рязань - ВДВ",
@@ -3604,6 +3636,14 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Сталкер",
     "role": "З",
+    "games": 7,
+    "goals": 2
+  },
+  {
+    "player": "Демид Голованов",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "Н",
     "games": 7,
     "goals": 2
   },
@@ -3728,10 +3768,18 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
-    "player": "Роман Чайко",
+    "player": "Семен Кауфман",
     "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "Н",
+    "team": "Академия Харламова",
+    "role": "З",
+    "games": 7,
+    "goals": 2
+  },
+  {
+    "player": "Степан Гусев",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "З",
     "games": 7,
     "goals": 2
   },
@@ -3740,6 +3788,14 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Витязь (Подольск)",
     "role": "Н",
+    "games": 7,
+    "goals": 2
+  },
+  {
+    "player": "Умар Устаров",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "З",
     "games": 7,
     "goals": 2
   },
@@ -3771,22 +3827,6 @@ window.playerGoalsData = [
     "player": "Александр Платов",
     "group": "Группа В",
     "team": "Янтарь",
-    "role": "З",
-    "games": 6,
-    "goals": 2
-  },
-  {
-    "player": "Александр Ткачев",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "Н",
-    "games": 6,
-    "goals": 2
-  },
-  {
-    "player": "Арман Навоян",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
     "role": "З",
     "games": 6,
     "goals": 2
@@ -4088,14 +4128,6 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
-    "player": "Рашид Токуев",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "Н",
-    "games": 6,
-    "goals": 2
-  },
-  {
     "player": "Роман Андрианов",
     "group": "Группа В",
     "team": "Метеор",
@@ -4120,14 +4152,6 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
-    "player": "Степан Гусев",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "З",
-    "games": 6,
-    "goals": 2
-  },
-  {
     "player": "Тимофей Захаров",
     "group": "Группа В",
     "team": "Центр",
@@ -4140,6 +4164,14 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Снежные барсы",
     "role": "З",
+    "games": 6,
+    "goals": 2
+  },
+  {
+    "player": "Фёдор Гусев",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "Н",
     "games": 6,
     "goals": 2
   },
@@ -4256,6 +4288,14 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
+    "player": "Олег Погорелов",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "З",
+    "games": 5,
+    "goals": 2
+  },
+  {
     "player": "Пётр Бизяев",
     "group": "Группа В",
     "team": "Академия Бирюкова",
@@ -4268,6 +4308,14 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Буран Москва",
     "role": "Н",
+    "games": 5,
+    "goals": 2
+  },
+  {
+    "player": "Раяз Хасянов",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "З",
     "games": 5,
     "goals": 2
   },
@@ -4456,26 +4504,10 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
-    "player": "Олег Погорелов",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "З",
-    "games": 4,
-    "goals": 2
-  },
-  {
     "player": "Платон Климов",
     "group": "Группа А",
     "team": "Красная машина Юниор",
     "role": "Н",
-    "games": 4,
-    "goals": 2
-  },
-  {
-    "player": "Раяз Хасянов",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "З",
     "games": 4,
     "goals": 2
   },
@@ -4624,6 +4656,14 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
+    "player": "Александр Кубарев",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "З",
+    "games": 7,
+    "goals": 1
+  },
+  {
     "player": "Александр Милько",
     "group": "Группа Б",
     "team": "Гранит",
@@ -4720,6 +4760,14 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
+    "player": "Лев Пенно",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "З",
+    "games": 7,
+    "goals": 1
+  },
+  {
     "player": "Михаил Свечников",
     "group": "Группа Б",
     "team": "Гранит",
@@ -4772,14 +4820,6 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Русь",
     "role": "Н",
-    "games": 6,
-    "goals": 1
-  },
-  {
-    "player": "Александр Кубарев",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "З",
     "games": 6,
     "goals": 1
   },
@@ -4896,14 +4936,6 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
-    "player": "Демид Голованов",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "Н",
-    "games": 6,
-    "goals": 1
-  },
-  {
     "player": "Денис Ильин",
     "group": "Группа Б",
     "team": "Русь",
@@ -4987,14 +5019,6 @@ window.playerGoalsData = [
     "player": "Лев Ваккер",
     "group": "Группа В",
     "team": "Центр",
-    "role": "З",
-    "games": 6,
-    "goals": 1
-  },
-  {
-    "player": "Лев Пенно",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
     "role": "З",
     "games": 6,
     "goals": 1
@@ -5092,14 +5116,6 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Метеор",
     "role": "Н",
-    "games": 6,
-    "goals": 1
-  },
-  {
-    "player": "Семен Кауфман",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "З",
     "games": 6,
     "goals": 1
   },
@@ -5272,6 +5288,14 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
+    "player": "Максим Потапов",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "З",
+    "games": 5,
+    "goals": 1
+  },
+  {
     "player": "Марк Кадиевский",
     "group": "Группа В",
     "team": "Академия Бирюкова",
@@ -5356,14 +5380,6 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Пингвины",
     "role": "З",
-    "games": 5,
-    "goals": 1
-  },
-  {
-    "player": "Фёдор Гусев",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "Н",
     "games": 5,
     "goals": 1
   },
@@ -5636,14 +5652,6 @@ window.playerGoalsData = [
     "group": "Группа А",
     "team": "Локомотив - 2004",
     "role": "Н",
-    "games": 4,
-    "goals": 1
-  },
-  {
-    "player": "Максим Потапов",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "З",
     "games": 4,
     "goals": 1
   },
@@ -6096,14 +6104,6 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
-    "player": "Алексей Егоров",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "Н",
-    "games": 2,
-    "goals": 1
-  },
-  {
     "player": "Андрей Гильченко",
     "group": "Группа Б",
     "team": "Русь",
@@ -6276,7 +6276,31 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Олимпийская деревня - 80",
     "role": "В",
-    "games": 7,
+    "games": 8,
+    "goals": 0
+  },
+  {
+    "player": "Илья Толпыкин",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "З",
+    "games": 8,
+    "goals": 0
+  },
+  {
+    "player": "Михаил Киреев",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "В",
+    "games": 8,
+    "goals": 0
+  },
+  {
+    "player": "Родион Чайко",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "Н",
+    "games": 8,
     "goals": 0
   },
   {
@@ -6344,6 +6368,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Гордей Торшин",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "В",
+    "games": 7,
+    "goals": 0
+  },
+  {
     "player": "Даниил Семенов",
     "group": "Группа Б",
     "team": "Витязь (Подольск)",
@@ -6380,14 +6412,6 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Витязь (Подольск)",
     "role": "В",
-    "games": 7,
-    "goals": 0
-  },
-  {
-    "player": "Илья Толпыкин",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "З",
     "games": 7,
     "goals": 0
   },
@@ -6440,6 +6464,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Марк Айзен",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "В",
+    "games": 7,
+    "goals": 0
+  },
+  {
     "player": "Марк Силкин",
     "group": "Группа В",
     "team": "Сталкер",
@@ -6488,14 +6520,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Михаил Киреев",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "В",
-    "games": 7,
-    "goals": 0
-  },
-  {
     "player": "Михаил Матвеев",
     "group": "Группа В",
     "team": "Марьино",
@@ -6520,6 +6544,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Никита Романов",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "З",
+    "games": 7,
+    "goals": 0
+  },
+  {
     "player": "Павел Глазнев",
     "group": "Группа Б",
     "team": "Гранит",
@@ -6532,14 +6564,6 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Гранит",
     "role": "З",
-    "games": 7,
-    "goals": 0
-  },
-  {
-    "player": "Родион Чайко",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "Н",
     "games": 7,
     "goals": 0
   },
@@ -6760,14 +6784,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Гордей Торшин",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "В",
-    "games": 6,
-    "goals": 0
-  },
-  {
     "player": "Григорий Зайцев",
     "group": "Группа Б",
     "team": "Запад - Ястребы",
@@ -6960,14 +6976,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Марк Айзен",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "В",
-    "games": 6,
-    "goals": 0
-  },
-  {
     "player": "Марк Коробейников",
     "group": "Группа В",
     "team": "Метеор",
@@ -7027,14 +7035,6 @@ window.playerGoalsData = [
     "player": "Никита Букан",
     "group": "Группа В",
     "team": "Северная звезда",
-    "role": "З",
-    "games": 6,
-    "goals": 0
-  },
-  {
-    "player": "Никита Романов",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
     "role": "З",
     "games": 6,
     "goals": 0
@@ -7124,14 +7124,6 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Арена Плей Трактор (Юг)",
     "role": "В",
-    "games": 6,
-    "goals": 0
-  },
-  {
-    "player": "Умар Устаров",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "З",
     "games": 6,
     "goals": 0
   },
@@ -7392,6 +7384,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Егор Чуйко",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "З",
+    "games": 5,
+    "goals": 0
+  },
+  {
     "player": "Ибрагим Исмаиел",
     "group": "Группа Б",
     "team": "Академия Петрова",
@@ -7436,6 +7436,14 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Академия Бирюкова",
     "role": "В",
+    "games": 5,
+    "goals": 0
+  },
+  {
+    "player": "Илья Ряховский",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "Н",
     "games": 5,
     "goals": 0
   },
@@ -8152,14 +8160,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Егор Чуйко",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "З",
-    "games": 4,
-    "goals": 0
-  },
-  {
     "player": "Егор Широков",
     "group": "Группа А",
     "team": "Авангард",
@@ -8212,14 +8212,6 @@ window.playerGoalsData = [
     "group": "Группа А",
     "team": "Динамо",
     "role": "З",
-    "games": 4,
-    "goals": 0
-  },
-  {
-    "player": "Илья Ряховский",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "Н",
     "games": 4,
     "goals": 0
   },
@@ -9104,6 +9096,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Алексей Егоров",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "Н",
+    "games": 2,
+    "goals": 0
+  },
+  {
     "player": "Алексей Шавлохов",
     "group": "Группа В",
     "team": "Серебряные акулы",
@@ -9616,6 +9616,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Артём Строк",
+    "group": "Группа Б",
+    "team": "Олимпийская деревня - 80",
+    "role": "Н",
+    "games": 1,
+    "goals": 0
+  },
+  {
     "player": "Артем Юрин",
     "group": "Группа В",
     "team": "Вымпел",
@@ -9635,6 +9643,14 @@ window.playerGoalsData = [
     "player": "Виталий Пахомов",
     "group": "Группа В",
     "team": "Синяя птица",
+    "role": "Н",
+    "games": 1,
+    "goals": 0
+  },
+  {
+    "player": "Владимир Громко",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
     "role": "Н",
     "games": 1,
     "goals": 0
@@ -10224,14 +10240,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Артём Строк",
-    "group": "Группа Б",
-    "team": "Олимпийская деревня - 80",
-    "role": "Н",
-    "games": 0,
-    "goals": 0
-  },
-  {
     "player": "Артемий Злуникин",
     "group": "Группа А",
     "team": "Академия Михайлова (Тула)",
@@ -10315,14 +10323,6 @@ window.playerGoalsData = [
     "player": "Владимир Бабенко",
     "group": "Группа А",
     "team": "Локомотив - 2004",
-    "role": "Н",
-    "games": 0,
-    "goals": 0
-  },
-  {
-    "player": "Владимир Громко",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
     "role": "Н",
     "games": 0,
     "goals": 0
@@ -11387,6 +11387,14 @@ window.playerGoalsData = [
     "player": "Тимофей Ханженков",
     "group": "Группа А",
     "team": "Локомотив - 2004",
+    "role": "Н",
+    "games": 0,
+    "goals": 0
+  },
+  {
+    "player": "Тимофей Чернов",
+    "group": "Группа В",
+    "team": "Академия Бирюкова",
     "role": "Н",
     "games": 0,
     "goals": 0
