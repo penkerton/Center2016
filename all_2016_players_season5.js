@@ -5,7 +5,7 @@ window.playerGoalsData = [
     "team": "Академия Харламова",
     "role": "Н",
     "games": 7,
-    "goals": 39
+    "goals": 38
   },
   {
     "player": "Павел Курсин",
@@ -6104,6 +6104,14 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
+    "player": "Алексей Егоров",
+    "group": "Группа Б",
+    "team": "Академия Харламова",
+    "role": "Н",
+    "games": 2,
+    "goals": 1
+  },
+  {
     "player": "Андрей Гильченко",
     "group": "Группа Б",
     "team": "Русь",
@@ -9096,14 +9104,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Алексей Егоров",
-    "group": "Группа Б",
-    "team": "Академия Харламова",
-    "role": "Н",
-    "games": 2,
-    "goals": 0
-  },
-  {
     "player": "Алексей Шавлохов",
     "group": "Группа В",
     "team": "Серебряные акулы",
@@ -10096,6 +10096,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Александр Степанов",
+    "group": "Группа В",
+    "team": "Арктика",
+    "role": "З",
+    "games": 0,
+    "goals": 0
+  },
+  {
     "player": "Александр Федорович",
     "group": "Группа В",
     "team": "Метеор",
@@ -10368,6 +10376,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Владислав Шифрин",
+    "group": "Группа В",
+    "team": "Арктика",
+    "role": "З",
+    "games": 0,
+    "goals": 0
+  },
+  {
     "player": "Вячеслав Королев",
     "group": "Группа Б",
     "team": "Рыцари",
@@ -10388,6 +10404,14 @@ window.playerGoalsData = [
     "group": "Группа А",
     "team": "Академия Михайлова (Новомосковск)",
     "role": "З",
+    "games": 0,
+    "goals": 0
+  },
+  {
+    "player": "Герман Созонов",
+    "group": "Группа В",
+    "team": "Арктика",
+    "role": "Н",
     "games": 0,
     "goals": 0
   },
