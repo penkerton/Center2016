@@ -2040,13 +2040,13 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22449,
-    "homeTeam": "Созвездие",
-    "awayTeam": "Центр",
+    "id": 22452,
+    "homeTeam": "Буран Москва",
+    "awayTeam": "Метеор",
     "homeGoals": null,
     "awayGoals": null,
     "date": "2026-10-31",
-    "time": "",
+    "time": "09:45",
     "groupId": 315,
     "tournamentId": 51,
     "group": "Группа В",
@@ -2055,9 +2055,9 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22452,
-    "homeTeam": "Буран Москва",
-    "awayTeam": "Метеор",
+    "id": 22449,
+    "homeTeam": "Созвездие",
+    "awayTeam": "Центр",
     "homeGoals": null,
     "awayGoals": null,
     "date": "2026-10-31",
