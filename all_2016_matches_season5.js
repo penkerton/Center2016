@@ -1983,7 +1983,7 @@ window.tournamentMatchesData = [
     "id": 23598,
     "homeTeam": "Академия Михайлова (Новомосковск)",
     "awayTeam": "Крылья Советов",
-    "homeGoals": 2,
+    "homeGoals": 4,
     "awayGoals": 2,
     "date": "2026-10-24",
     "time": "14:30",
@@ -1992,14 +1992,14 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "5 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 1
+    "status": 2
   },
   {
     "id": 23601,
     "homeTeam": "Авангард",
     "awayTeam": "Арена Плей Трактор (Север)",
-    "homeGoals": 0,
-    "awayGoals": 0,
+    "homeGoals": 2,
+    "awayGoals": 4,
     "date": "2026-10-24",
     "time": "15:45",
     "groupId": 309,
@@ -2007,14 +2007,14 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "5 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 1
+    "status": 2
   },
   {
     "id": 22428,
     "homeTeam": "Академия Бирюкова",
     "awayTeam": "Пингвины",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 16,
+    "awayGoals": 35,
     "date": "2026-10-24",
     "time": "16:15",
     "groupId": 315,
@@ -2022,7 +2022,7 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "8 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 22458,
