@@ -2025,21 +2025,6 @@ window.tournamentMatchesData = [
     "status": 2
   },
   {
-    "id": 22458,
-    "homeTeam": "Пингвины",
-    "awayTeam": "Сталкер",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-10-31",
-    "time": "",
-    "groupId": 315,
-    "tournamentId": 51,
-    "group": "Группа В",
-    "tour": "9 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22452,
     "homeTeam": "Буран Москва",
     "awayTeam": "Метеор",
@@ -2125,6 +2110,21 @@ window.tournamentMatchesData = [
     "groupId": 312,
     "tournamentId": 51,
     "group": "Группа Б",
+    "tour": "9 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 22458,
+    "homeTeam": "Пингвины",
+    "awayTeam": "Сталкер",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-10-31",
+    "time": "11:00",
+    "groupId": 315,
+    "tournamentId": 51,
+    "group": "Группа В",
     "tour": "9 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
