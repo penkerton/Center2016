@@ -3660,21 +3660,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22272,
-    "homeTeam": "Рыцари",
-    "awayTeam": "Белые медведи",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-12-05",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "15 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22269,
     "homeTeam": "Гранит",
     "awayTeam": "Академия Харламова",
@@ -3927,6 +3912,21 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "11 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
+    "id": 22272,
+    "homeTeam": "Рыцари",
+    "awayTeam": "Белые медведи",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-12-05",
+    "time": "11:45",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "15 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
   },
   {
