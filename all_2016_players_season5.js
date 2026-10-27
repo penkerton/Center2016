@@ -304,6 +304,14 @@ window.playerGoalsData = [
     "goals": 13
   },
   {
+    "player": "Платон Азенко",
+    "group": "Группа В",
+    "team": "Северная звезда",
+    "role": "Н",
+    "games": 7,
+    "goals": 13
+  },
+  {
     "player": "Сергей Ерашов",
     "group": "Группа В",
     "team": "Янтарь",
@@ -419,14 +427,6 @@ window.playerGoalsData = [
     "player": "Николай Дмитриев",
     "group": "Группа Б",
     "team": "Академия Петрова",
-    "role": "Н",
-    "games": 7,
-    "goals": 12
-  },
-  {
-    "player": "Платон Азенко",
-    "group": "Группа В",
-    "team": "Северная звезда",
     "role": "Н",
     "games": 7,
     "goals": 12
@@ -1784,14 +1784,6 @@ window.playerGoalsData = [
     "goals": 6
   },
   {
-    "player": "Максим Данилин",
-    "group": "Группа В",
-    "team": "Северная звезда",
-    "role": "З",
-    "games": 7,
-    "goals": 6
-  },
-  {
     "player": "Милан Пеикришвили",
     "group": "Группа В",
     "team": "Центр",
@@ -2163,6 +2155,14 @@ window.playerGoalsData = [
     "player": "Иван Мартьянов",
     "group": "Группа В",
     "team": "Буран Москва",
+    "role": "З",
+    "games": 7,
+    "goals": 5
+  },
+  {
+    "player": "Максим Данилин",
+    "group": "Группа В",
+    "team": "Северная звезда",
     "role": "З",
     "games": 7,
     "goals": 5
