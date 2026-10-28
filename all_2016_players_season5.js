@@ -104,14 +104,6 @@ window.playerGoalsData = [
     "goals": 18
   },
   {
-    "player": "Матвей Тарасов",
-    "group": "Группа В",
-    "team": "Северная звезда",
-    "role": "Н",
-    "games": 7,
-    "goals": 18
-  },
-  {
     "player": "Михаил Булгаков",
     "group": "Группа В",
     "team": "Буран Москва",
@@ -133,6 +125,14 @@ window.playerGoalsData = [
     "team": "Марьино",
     "role": "Н",
     "games": 8,
+    "goals": 17
+  },
+  {
+    "player": "Матвей Тарасов",
+    "group": "Группа В",
+    "team": "Северная звезда",
+    "role": "Н",
+    "games": 7,
     "goals": 17
   },
   {
@@ -944,6 +944,14 @@ window.playerGoalsData = [
     "goals": 9
   },
   {
+    "player": "Андрей Кочевалин",
+    "group": "Группа В",
+    "team": "Северная звезда",
+    "role": "Н",
+    "games": 6,
+    "goals": 9
+  },
+  {
     "player": "Артемий Старченко",
     "group": "Группа Б",
     "team": "Русь",
@@ -1141,14 +1149,6 @@ window.playerGoalsData = [
     "team": "Центр",
     "role": "Н",
     "games": 7,
-    "goals": 8
-  },
-  {
-    "player": "Андрей Кочевалин",
-    "group": "Группа В",
-    "team": "Северная звезда",
-    "role": "Н",
-    "games": 6,
     "goals": 8
   },
   {
