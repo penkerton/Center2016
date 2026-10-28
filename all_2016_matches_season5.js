@@ -2316,7 +2316,7 @@ window.tournamentMatchesData = [
     "homeGoals": null,
     "awayGoals": null,
     "date": "2026-11-04",
-    "time": "",
+    "time": "11:30",
     "groupId": 315,
     "tournamentId": 51,
     "group": "Группа В",
