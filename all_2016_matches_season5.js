@@ -2835,21 +2835,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22203,
-    "homeTeam": "Академия Харламова",
-    "awayTeam": "Балашиха",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-14",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "12 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22200,
     "homeTeam": "Белые медведи",
     "awayTeam": "Запад - Ястребы",
@@ -3072,6 +3057,21 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "8 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
+    "id": 22203,
+    "homeTeam": "Академия Харламова",
+    "awayTeam": "Балашиха",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-14",
+    "time": "10:00",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "12 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
   },
   {
