@@ -2340,21 +2340,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22167,
-    "homeTeam": "Академия Петрова",
-    "awayTeam": "Снежные барсы",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-07",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "10 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22155,
     "homeTeam": "Витязь (Подольск)",
     "awayTeam": "Запад - Ястребы",
@@ -2460,39 +2445,9 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23631,
-    "homeTeam": "Академия Михайлова (Новомосковск)",
-    "awayTeam": "Спартак",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-07",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "7 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
     "id": 23628,
     "homeTeam": "Локомотив - 2004",
     "awayTeam": "ЦСКА",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-07",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "7 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
-    "id": 23625,
-    "homeTeam": "Академия Михайлова (Москва)",
-    "awayTeam": "Локомотив",
     "homeGoals": null,
     "awayGoals": null,
     "date": "2026-11-07",
@@ -2527,6 +2482,21 @@ window.tournamentMatchesData = [
     "awayGoals": null,
     "date": "2026-11-07",
     "time": "10:00",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "10 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 22167,
+    "homeTeam": "Академия Петрова",
+    "awayTeam": "Снежные барсы",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-07",
+    "time": "10:45",
     "groupId": 312,
     "tournamentId": 51,
     "group": "Группа Б",
@@ -2580,6 +2550,21 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
+    "id": 23625,
+    "homeTeam": "Академия Михайлова (Москва)",
+    "awayTeam": "Локомотив",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-07",
+    "time": "12:00",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "7 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
     "id": 22473,
     "homeTeam": "Северная звезда",
     "awayTeam": "Пингвины",
@@ -2592,6 +2577,21 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "10 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 23631,
+    "homeTeam": "Академия Михайлова (Новомосковск)",
+    "awayTeam": "Спартак",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-07",
+    "time": "12:45",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "7 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
     "status": 0
   },
   {
