@@ -232,6 +232,10 @@ def cmd_publish(args: argparse.Namespace) -> int:
         if not status.stdout.strip():
             log("Изменений нет — коммит и публикация не нужны.")
             return 0
+        # Файлы, которые генерирует Node-апдейтер сайта, не публикуем из Python:
+        # их обновляет GitHub Actions, иначе rebase конфликтует каждые 3 часа.
+        for generated in ("all_2016_matches_season5.js", "all_2016_players_season5.js", "site_data.js"):
+            subprocess.run(["git", "checkout", "--", generated], cwd=repo, check=False)
         subprocess.run(["git", "add", "-A"], cwd=repo, check=True)
         message = args.message or "data: update FHM Hockey Predictor"
         subprocess.run(["git", "commit", "-m", message], cwd=repo, check=True)
