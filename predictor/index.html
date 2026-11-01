@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>FHM Hockey Predictor — прогноз матчей ФХМ</title>
+  <link rel="stylesheet" href="site/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-icon" aria-hidden="true">🏒</span>
+      <div>
+        <h1>FHM Hockey Predictor</h1>
+        <p>Прогноз матчей команд ФХМ 2016–2017 г.р.</p>
+      </div>
+    </div>
+    <div class="status" id="data-status">Загрузка данных…</div>
+  </header>
+
+  <nav class="tabs" id="tabs" aria-label="Разделы">
+    <button class="tab is-active" data-tab="predict">Прогноз</button>
+    <button class="tab" data-tab="table">Таблица</button>
+    <button class="tab" data-tab="players">Игроки</button>
+    <button class="tab" data-tab="compare">Сравнение</button>
+    <button class="tab" data-tab="quality">Качество модели</button>
+    <button class="tab" data-tab="data">Данные</button>
+  </nav>
+
+  <main id="view" class="view" aria-live="polite"></main>
+
+  <footer class="footer">
+    <span>Данные: fhmoscow.com</span>
+    <span>Модель: ensemble-v1</span>
+    <span>Страница не связана ссылками с основным сайтом</span>
+  </footer>
+
+  <script src="site/data.js"></script>
+  <script src="site/model.js"></script>
+  <script src="site/app.js"></script>
+</body>
+</html>

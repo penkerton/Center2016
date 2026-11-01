@@ -36,11 +36,39 @@ js/
     standings-table.js, h2h-matrix.js, matches.js, stats.js, birthdays.js
 scripts/serve.mjs              локальный статический сервер
 tests/                         проверки (node:test, без зависимостей)
+predictor/                     FHM Hockey Predictor (Python): сбор, SQLite, модели, Streamlit
 update_fhm_2016_stats.mjs      выгрузка данных с ФХМ
 all_2016_players_season5.js    ← window.playerGoalsData (генерируется)
 all_2016_matches_season5.js    ← window.tournamentMatchesData (генерируется)
 site_data.js                   ← window.siteData (генерируется)
 ```
+
+## Прогнозы матчей (predictor/)
+
+Рядом со статическим сайтом лежит Python-проект **FHM Hockey Predictor**:
+сбор данных ФХМ в SQLite, рейтинги Elo и Пуассона, логистическая регрессия,
+walk-forward backtest и русскоязычный интерфейс Streamlit.
+
+```powershell
+cd predictor
+python -m pip install -r requirements.txt
+python main.py collect     # данные ФХМ
+python main.py backtest    # проверка моделей
+.\start.bat                # интерфейс: http://localhost:8501
+```
+
+Если PowerShell не запускает `run_ui.ps1` из-за политики подписи, используйте
+`start.bat` — он не требует подписи.
+
+Отдельная страница прогноза для GitHub Pages — `predictor/`:
+`https://penkerton.github.io/Center2016/predictor/` (без ссылок с основного
+сайта, `noindex`). Локально с кнопками обновления: `predictor/bridge.bat`,
+пароль `refresh`.
+
+Подробности и ограничения — в [predictor/README.md](predictor/README.md) и
+[predictor/docs/](predictor/docs/). Рабочие данные (`predictor/data`,
+`predictor/predictions`, `predictor/backups`, `predictor/reports`) исключены из
+git и не публикуются на GitHub Pages.
 
 ## Локальный запуск
 
@@ -74,6 +102,9 @@ npm test             # node:test: расчёты, форматирование, 
 Тесты без внешних зависимостей: считают турнирную таблицу, проверяют московское
 время и склейку `.ics`, а также валидируют сами выгруженные файлы (поля игроков,
 даты матчей, состав команды, сходимость таблицы с матчами).
+
+У прогнозчика свои тесты: `cd predictor; python -m unittest discover -s tests -v`
+(21 проверка, включая отсутствие утечки будущих данных).
 
 ## Как данные попадают на страницу
 

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Локальные данные и результаты: в репозиторий сайта не попадают.
+data/
+backups/
+predictions/
+reports/
+*.log
+site/data.json
