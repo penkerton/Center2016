@@ -1,0 +1,16 @@
+# Единые переводы строк для исходников сайта: LF.
+# Без этого git с core.autocrlf=true отдаёт CRLF в рабочую копию, а сборщик
+# разборов пишет LF — и проверка «страницы не устарели» ложно падает локально.
+# Картинки помечены binary, чтобы они не проходили через текстовые фильтры.
+# Сгенерированные данные ФХМ (all_2016_*.js, site_data.js) сюда не входят,
+# чтобы не переписывать их при каждом обновлении.
+
+*.md text eol=lf
+scripts/** text eol=lf
+tests/** text eol=lf
+reviews/**/*.html text eol=lf
+reviews/**/*.css text eol=lf
+reviews/**/*.json text eol=lf
+reviews/**/*.jpg binary
+reviews/**/*.png binary
+reviews/**/*.webp binary
