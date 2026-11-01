@@ -1,0 +1,1887 @@
+{
+ "schema_version": 1,
+ "review_version": 1,
+ "status": "partial",
+ "match": {
+  "id": 22440,
+  "date": "2026-10-24",
+  "time": "11:00",
+  "tournament": "Кубок г. Москвы 2016 г.р. 26/27 (формат 4х4)",
+  "group": "Группа В, 8 тур",
+  "format": "4х4",
+  "venue": "Москва, ЛЦ «Центральный», левое поле",
+  "home": "Центр 2016",
+  "away": "Марьино 2016",
+  "score": "25:8",
+  "periods": [
+   "8:2",
+   "8:4",
+   "9:2"
+  ],
+  "official_url": "https://fhmoscow.com/game/22440",
+  "referees": [
+   "Сыромятников М. Р.",
+   "Франков А. П."
+  ],
+  "note": "Матч 4×4 из двух параллельных игр: счёт на странице — сумма двух составов"
+ },
+ "squads": [
+  {
+   "id": 1,
+   "name": "Состав 1",
+   "source": "S1",
+   "score_for": 10,
+   "score_against": 4,
+   "score": "10:4",
+   "periods": {
+    "1": "5:0",
+    "2": "2:2",
+    "3": "3:2"
+   },
+   "cumulative": {
+    "1": "5:0",
+    "2": "7:2",
+    "3": "10:4"
+   }
+  },
+  {
+   "id": 2,
+   "name": "Состав 2",
+   "source": "S2",
+   "score_for": 15,
+   "score_against": 4,
+   "score": "15:4",
+   "periods": {
+    "1": "3:2",
+    "2": "6:2",
+    "3": "6:0"
+   },
+   "cumulative": {
+    "1": "3:2",
+    "2": "9:4",
+    "3": "15:4"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "label": "Видео 1 — Состав 1",
+   "url": "https://vkvideo.ru/video-48703984_456259531",
+   "duration_s": 5826,
+   "resolution": "1920x1080, 60 к/с",
+   "fps": 60,
+   "audio": "есть, не расшифровывалось",
+   "scoreboard": "табло ФХМ слева сверху: ЦЕН / МАР / ПЕРИОД",
+   "board_lag_s": 4.7,
+   "time_link": "?t="
+  },
+  {
+   "id": "S2",
+   "label": "Видео 2 — Состав 2",
+   "url": "https://vkvideo.ru/video-48703984_456259532",
+   "duration_s": 5562,
+   "resolution": "1920x1080, 50 к/с",
+   "fps": 50,
+   "audio": "есть, не расшифровывалось",
+   "scoreboard": "табло ФХМ слева сверху; включено только с 22:30 видео",
+   "board_lag_s": 4.7,
+   "time_link": "?t="
+  }
+ ],
+ "players": [
+  {
+   "team": "Центр",
+   "number": 35,
+   "name": "Турков Алексей",
+   "squad": 1,
+   "goals": 4,
+   "goal_ids": [
+    "G09",
+    "G27",
+    "G29",
+    "G30"
+   ]
+  },
+  {
+   "team": "Центр",
+   "number": 4,
+   "name": "Хатеев Лев",
+   "squad": 2,
+   "goals": 2,
+   "goal_ids": [
+    "G06",
+    "G19"
+   ]
+  },
+  {
+   "team": "Центр",
+   "number": 7,
+   "name": "Сахаров Андрей",
+   "squad": 2,
+   "goals": 2,
+   "goal_ids": [
+    "G13",
+    "G25"
+   ]
+  },
+  {
+   "team": "Марьино",
+   "number": 11,
+   "name": "Коршунов Максим",
+   "squad": 2,
+   "goals": 2,
+   "goal_ids": [
+    "G14",
+    "G16"
+   ]
+  },
+  {
+   "team": "Центр",
+   "number": 20,
+   "name": "Дробязко Александр",
+   "squad": 1,
+   "goals": 2,
+   "goal_ids": [
+    "G07",
+    "G08"
+   ]
+  },
+  {
+   "team": "Центр",
+   "number": 25,
+   "name": "Ельцов Роман",
+   "squad": 1,
+   "goals": 2,
+   "goal_ids": [
+    "G21",
+    "G22"
+   ]
+  },
+  {
+   "team": "Центр",
+   "number": 55,
+   "name": "Крезо Павел",
+   "squad": 2,
+   "goals": 2,
+   "goal_ids": [
+    "G15",
+    "G33"
+   ]
+  },
+  {
+   "team": "Центр",
+   "number": 71,
+   "name": "Федоров Дорофей",
+   "squad": 2,
+   "goals": 2,
+   "goal_ids": [
+    "G02",
+    "G11"
+   ]
+  },
+  {
+   "team": "Марьино",
+   "number": 77,
+   "name": "Бахарев Артемий",
+   "squad": 2,
+   "goals": 2,
+   "goal_ids": [
+    "G01",
+    "G04"
+   ]
+  },
+  {
+   "team": "Центр",
+   "number": 5,
+   "name": "Власов Александр",
+   "squad": 1,
+   "goals": 1,
+   "goal_ids": [
+    "G10"
+   ]
+  },
+  {
+   "team": "Марьино",
+   "number": 8,
+   "name": "Фазлиахметов Тагир",
+   "squad": 1,
+   "goals": 1,
+   "goal_ids": [
+    "G26"
+   ]
+  },
+  {
+   "team": "Центр",
+   "number": 14,
+   "name": "Иванцивский Александр",
+   "squad": 2,
+   "goals": 1,
+   "goal_ids": [
+    "G17"
+   ]
+  },
+  {
+   "team": "Центр",
+   "number": 17,
+   "name": "Чуваткин Григорий",
+   "squad": 2,
+   "goals": 1,
+   "goal_ids": [
+    "G03"
+   ]
+  },
+  {
+   "team": "Марьино",
+   "number": 17,
+   "name": "Романцов Ярослав",
+   "squad": 1,
+   "goals": 1,
+   "goal_ids": [
+    "G24"
+   ]
+  },
+  {
+   "team": "Марьино",
+   "number": 21,
+   "name": "Рыков Ринат",
+   "squad": 1,
+   "goals": 1,
+   "goal_ids": [
+    "G12"
+   ]
+  },
+  {
+   "team": "Центр",
+   "number": 21,
+   "name": "Мещеряков Тимофей",
+   "squad": 2,
+   "goals": 1,
+   "goal_ids": [
+    "G31"
+   ]
+  },
+  {
+   "team": "Центр",
+   "number": 23,
+   "name": "Пеикришвили Милан",
+   "squad": 2,
+   "goals": 1,
+   "goal_ids": [
+    "G20"
+   ]
+  },
+  {
+   "team": "Центр",
+   "number": 26,
+   "name": "Давыденко Дарья",
+   "squad": 2,
+   "goals": 1,
+   "goal_ids": [
+    "G23"
+   ]
+  },
+  {
+   "team": "Марьино",
+   "number": 54,
+   "name": "Летягин Ярослав",
+   "squad": 1,
+   "goals": 1,
+   "goal_ids": [
+    "G18"
+   ]
+  },
+  {
+   "team": "Центр",
+   "number": 88,
+   "name": "Михейкин Андрей",
+   "squad": 2,
+   "goals": 1,
+   "goal_ids": [
+    "G32"
+   ]
+  },
+  {
+   "team": "Центр",
+   "number": 89,
+   "name": "Букатов Дмитрий",
+   "squad": 1,
+   "goals": 1,
+   "goal_ids": [
+    "G05"
+   ]
+  },
+  {
+   "team": "Центр",
+   "number": 99,
+   "name": "Ерохин Эрнест",
+   "squad": 2,
+   "goals": 1,
+   "goal_ids": [
+    "G28"
+   ]
+  }
+ ],
+ "events": [
+  {
+   "id": "G01",
+   "type": "goal",
+   "period": 1,
+   "official_time": "00:00",
+   "official_team": "Марьино",
+   "official_scorer": {
+    "number": 77,
+    "name": "Бахарев Артемий"
+   },
+   "official_cumulative": [
+    0,
+    1
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    1,
+    0
+   ],
+   "game_score_after": [
+    1,
+    1
+   ],
+   "goal_estimate_s": null,
+   "goal_time_method": "not_established",
+   "goal_time_uncertainty_s": null,
+   "board_change_s": null,
+   "banner_s": null,
+   "video_url": null,
+   "board_url": null,
+   "author_order_confirmed_by_video": true,
+   "confidence": {
+    "team": "high",
+    "time": "none",
+    "scorer": "protocol"
+   }
+  },
+  {
+   "id": "G02",
+   "type": "goal",
+   "period": 1,
+   "official_time": "00:00",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 71,
+    "name": "Федоров Дорофей"
+   },
+   "official_cumulative": [
+    1,
+    1
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    0,
+    0
+   ],
+   "game_score_after": [
+    1,
+    0
+   ],
+   "goal_estimate_s": null,
+   "goal_time_method": "not_established",
+   "goal_time_uncertainty_s": null,
+   "board_change_s": null,
+   "banner_s": null,
+   "video_url": null,
+   "board_url": null,
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "none",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G03",
+   "type": "goal",
+   "period": 1,
+   "official_time": "00:01",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 17,
+    "name": "Чуваткин Григорий"
+   },
+   "official_cumulative": [
+    2,
+    1
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    1,
+    1
+   ],
+   "game_score_after": [
+    2,
+    1
+   ],
+   "goal_estimate_s": 1533.5,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 1538.8,
+   "banner_s": 1533.5,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=25m34s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=25m39s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G04",
+   "type": "goal",
+   "period": 1,
+   "official_time": "00:01",
+   "official_team": "Марьино",
+   "official_scorer": {
+    "number": 77,
+    "name": "Бахарев Артемий"
+   },
+   "official_cumulative": [
+    2,
+    2
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    2,
+    1
+   ],
+   "game_score_after": [
+    2,
+    2
+   ],
+   "goal_estimate_s": 1692.3,
+   "goal_time_method": "board_minus_measured_lag",
+   "goal_time_uncertainty_s": 5,
+   "board_change_s": 1697.0,
+   "banner_s": null,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=28m12s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=28m17s",
+   "author_order_confirmed_by_video": true,
+   "confidence": {
+    "team": "high",
+    "time": "medium",
+    "scorer": "protocol"
+   }
+  },
+  {
+   "id": "G05",
+   "type": "goal",
+   "period": 1,
+   "official_time": "00:02",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 89,
+    "name": "Букатов Дмитрий"
+   },
+   "official_cumulative": [
+    3,
+    2
+   ],
+   "squad": 1,
+   "source": "S1",
+   "game_score_before": [
+    0,
+    0
+   ],
+   "game_score_after": [
+    1,
+    0
+   ],
+   "goal_estimate_s": 1691.5,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 1696.2,
+   "banner_s": 1691.5,
+   "video_url": "https://vkvideo.ru/video-48703984_456259531?t=28m12s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259531?t=28m16s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G06",
+   "type": "goal",
+   "period": 1,
+   "official_time": "00:03",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 4,
+    "name": "Хатеев Лев"
+   },
+   "official_cumulative": [
+    4,
+    2
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    2,
+    2
+   ],
+   "game_score_after": [
+    3,
+    2
+   ],
+   "goal_estimate_s": 1892.5,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 1897.8,
+   "banner_s": 1892.5,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=31m32s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=31m38s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G07",
+   "type": "goal",
+   "period": 1,
+   "official_time": "00:04",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 20,
+    "name": "Дробязко Александр"
+   },
+   "official_cumulative": [
+    5,
+    2
+   ],
+   "squad": 1,
+   "source": "S1",
+   "game_score_before": [
+    1,
+    0
+   ],
+   "game_score_after": [
+    2,
+    0
+   ],
+   "goal_estimate_s": 1978.5,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 1983.2,
+   "banner_s": 1978.5,
+   "video_url": "https://vkvideo.ru/video-48703984_456259531?t=32m58s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259531?t=33m3s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G08",
+   "type": "goal",
+   "period": 1,
+   "official_time": "00:05",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 20,
+    "name": "Дробязко Александр"
+   },
+   "official_cumulative": [
+    6,
+    2
+   ],
+   "squad": 1,
+   "source": "S1",
+   "game_score_before": [
+    2,
+    0
+   ],
+   "game_score_after": [
+    3,
+    0
+   ],
+   "goal_estimate_s": 2016.5,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 2021.2,
+   "banner_s": 2016.5,
+   "video_url": "https://vkvideo.ru/video-48703984_456259531?t=33m36s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259531?t=33m41s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G09",
+   "type": "goal",
+   "period": 1,
+   "official_time": "00:06",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 35,
+    "name": "Турков Алексей"
+   },
+   "official_cumulative": [
+    7,
+    2
+   ],
+   "squad": 1,
+   "source": "S1",
+   "game_score_before": [
+    3,
+    0
+   ],
+   "game_score_after": [
+    4,
+    0
+   ],
+   "goal_estimate_s": 2055.2,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 2060.0,
+   "banner_s": 2055.2,
+   "video_url": "https://vkvideo.ru/video-48703984_456259531?t=34m15s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259531?t=34m20s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G10",
+   "type": "goal",
+   "period": 1,
+   "official_time": "00:07",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 5,
+    "name": "Власов Александр"
+   },
+   "official_cumulative": [
+    8,
+    2
+   ],
+   "squad": 1,
+   "source": "S1",
+   "game_score_before": [
+    4,
+    0
+   ],
+   "game_score_after": [
+    5,
+    0
+   ],
+   "goal_estimate_s": 2368.8,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 2373.5,
+   "banner_s": 2368.8,
+   "video_url": "https://vkvideo.ru/video-48703984_456259531?t=39m29s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259531?t=39m34s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G11",
+   "type": "goal",
+   "period": 2,
+   "official_time": "18:00",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 71,
+    "name": "Федоров Дорофей"
+   },
+   "official_cumulative": [
+    9,
+    2
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    3,
+    2
+   ],
+   "game_score_after": [
+    4,
+    2
+   ],
+   "goal_estimate_s": 2496.5,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 2501.8,
+   "banner_s": 2496.5,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=41m36s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=41m42s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G12",
+   "type": "goal",
+   "period": 2,
+   "official_time": "18:00",
+   "official_team": "Марьино",
+   "official_scorer": {
+    "number": 21,
+    "name": "Рыков Ринат"
+   },
+   "official_cumulative": [
+    9,
+    3
+   ],
+   "squad": 1,
+   "source": "S1",
+   "game_score_before": [
+    5,
+    0
+   ],
+   "game_score_after": [
+    5,
+    1
+   ],
+   "goal_estimate_s": 2799.5,
+   "goal_time_method": "board_minus_measured_lag",
+   "goal_time_uncertainty_s": 5,
+   "board_change_s": 2804.2,
+   "banner_s": null,
+   "video_url": "https://vkvideo.ru/video-48703984_456259531?t=46m40s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259531?t=46m44s",
+   "author_order_confirmed_by_video": true,
+   "confidence": {
+    "team": "high",
+    "time": "medium",
+    "scorer": "protocol"
+   }
+  },
+  {
+   "id": "G13",
+   "type": "goal",
+   "period": 2,
+   "official_time": "18:01",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 7,
+    "name": "Сахаров Андрей"
+   },
+   "official_cumulative": [
+    10,
+    3
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    4,
+    2
+   ],
+   "game_score_after": [
+    5,
+    2
+   ],
+   "goal_estimate_s": 2512.2,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 2517.5,
+   "banner_s": 2512.2,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=41m52s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=41m58s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G14",
+   "type": "goal",
+   "period": 2,
+   "official_time": "18:01",
+   "official_team": "Марьино",
+   "official_scorer": {
+    "number": 11,
+    "name": "Коршунов Максим"
+   },
+   "official_cumulative": [
+    10,
+    4
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    6,
+    2
+   ],
+   "game_score_after": [
+    6,
+    3
+   ],
+   "goal_estimate_s": 2900.8,
+   "goal_time_method": "board_minus_measured_lag",
+   "goal_time_uncertainty_s": 5,
+   "board_change_s": 2905.8,
+   "banner_s": null,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=48m21s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=48m26s",
+   "author_order_confirmed_by_video": true,
+   "confidence": {
+    "team": "high",
+    "time": "medium",
+    "scorer": "protocol"
+   }
+  },
+  {
+   "id": "G15",
+   "type": "goal",
+   "period": 2,
+   "official_time": "18:02",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 55,
+    "name": "Крезо Павел"
+   },
+   "official_cumulative": [
+    11,
+    4
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    5,
+    2
+   ],
+   "game_score_after": [
+    6,
+    2
+   ],
+   "goal_estimate_s": 2797.8,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 2803.0,
+   "banner_s": 2797.8,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=46m38s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=46m43s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G16",
+   "type": "goal",
+   "period": 2,
+   "official_time": "18:02",
+   "official_team": "Марьино",
+   "official_scorer": {
+    "number": 11,
+    "name": "Коршунов Максим"
+   },
+   "official_cumulative": [
+    11,
+    5
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    7,
+    3
+   ],
+   "game_score_after": [
+    7,
+    4
+   ],
+   "goal_estimate_s": 3129.2,
+   "goal_time_method": "board_minus_measured_lag",
+   "goal_time_uncertainty_s": 5,
+   "board_change_s": 3134.2,
+   "banner_s": null,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=52m9s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=52m14s",
+   "author_order_confirmed_by_video": true,
+   "confidence": {
+    "team": "high",
+    "time": "medium",
+    "scorer": "protocol"
+   }
+  },
+  {
+   "id": "G17",
+   "type": "goal",
+   "period": 2,
+   "official_time": "18:03",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 14,
+    "name": "Иванцивский Александр"
+   },
+   "official_cumulative": [
+    12,
+    5
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    6,
+    3
+   ],
+   "game_score_after": [
+    7,
+    3
+   ],
+   "goal_estimate_s": 3035.0,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 3040.2,
+   "banner_s": 3035.0,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=50m35s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=50m40s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G18",
+   "type": "goal",
+   "period": 2,
+   "official_time": "18:03",
+   "official_team": "Марьино",
+   "official_scorer": {
+    "number": 54,
+    "name": "Летягин Ярослав"
+   },
+   "official_cumulative": [
+    12,
+    6
+   ],
+   "squad": 1,
+   "source": "S1",
+   "game_score_before": [
+    6,
+    1
+   ],
+   "game_score_after": [
+    6,
+    2
+   ],
+   "goal_estimate_s": 3823.8,
+   "goal_time_method": "board_minus_measured_lag",
+   "goal_time_uncertainty_s": 5,
+   "board_change_s": 3828.5,
+   "banner_s": null,
+   "video_url": "https://vkvideo.ru/video-48703984_456259531?t=1h3m44s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259531?t=1h3m48s",
+   "author_order_confirmed_by_video": true,
+   "confidence": {
+    "team": "high",
+    "time": "medium",
+    "scorer": "protocol"
+   }
+  },
+  {
+   "id": "G19",
+   "type": "goal",
+   "period": 2,
+   "official_time": "18:04",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 4,
+    "name": "Хатеев Лев"
+   },
+   "official_cumulative": [
+    13,
+    6
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    7,
+    4
+   ],
+   "game_score_after": [
+    8,
+    4
+   ],
+   "goal_estimate_s": 3187.5,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 3192.5,
+   "banner_s": 3187.5,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=53m8s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=53m12s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G20",
+   "type": "goal",
+   "period": 2,
+   "official_time": "18:05",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 23,
+    "name": "Пеикришвили Милан"
+   },
+   "official_cumulative": [
+    14,
+    6
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    8,
+    4
+   ],
+   "game_score_after": [
+    9,
+    4
+   ],
+   "goal_estimate_s": 3316.5,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 3321.8,
+   "banner_s": 3316.5,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=55m16s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=55m22s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G21",
+   "type": "goal",
+   "period": 2,
+   "official_time": "18:06",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 25,
+    "name": "Ельцов Роман"
+   },
+   "official_cumulative": [
+    15,
+    6
+   ],
+   "squad": 1,
+   "source": "S1",
+   "game_score_before": [
+    5,
+    1
+   ],
+   "game_score_after": [
+    6,
+    1
+   ],
+   "goal_estimate_s": 3663.8,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 3668.5,
+   "banner_s": 3663.8,
+   "video_url": "https://vkvideo.ru/video-48703984_456259531?t=1h1m4s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259531?t=1h1m8s",
+   "author_order_confirmed_by_video": true,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol"
+   }
+  },
+  {
+   "id": "G22",
+   "type": "goal",
+   "period": 2,
+   "official_time": "18:07",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 25,
+    "name": "Ельцов Роман"
+   },
+   "official_cumulative": [
+    16,
+    6
+   ],
+   "squad": 1,
+   "source": "S1",
+   "game_score_before": [
+    6,
+    2
+   ],
+   "game_score_after": [
+    7,
+    2
+   ],
+   "goal_estimate_s": 3930.8,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 3935.2,
+   "banner_s": 3930.8,
+   "video_url": "https://vkvideo.ru/video-48703984_456259531?t=1h5m31s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259531?t=1h5m35s",
+   "author_order_confirmed_by_video": true,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol"
+   }
+  },
+  {
+   "id": "G23",
+   "type": "goal",
+   "period": 3,
+   "official_time": "36:00",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 26,
+    "name": "Давыденко Дарья"
+   },
+   "official_cumulative": [
+    17,
+    6
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    9,
+    4
+   ],
+   "game_score_after": [
+    10,
+    4
+   ],
+   "goal_estimate_s": 4064.0,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 4069.2,
+   "banner_s": 4064.0,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=1h7m44s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=1h7m49s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G24",
+   "type": "goal",
+   "period": 3,
+   "official_time": "36:00",
+   "official_team": "Марьино",
+   "official_scorer": {
+    "number": 17,
+    "name": "Романцов Ярослав"
+   },
+   "official_cumulative": [
+    17,
+    7
+   ],
+   "squad": 1,
+   "source": "S1",
+   "game_score_before": [
+    7,
+    2
+   ],
+   "game_score_after": [
+    7,
+    3
+   ],
+   "goal_estimate_s": 4230.8,
+   "goal_time_method": "board_minus_measured_lag",
+   "goal_time_uncertainty_s": 5,
+   "board_change_s": 4235.5,
+   "banner_s": null,
+   "video_url": "https://vkvideo.ru/video-48703984_456259531?t=1h10m31s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259531?t=1h10m36s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "medium",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G25",
+   "type": "goal",
+   "period": 3,
+   "official_time": "36:01",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 7,
+    "name": "Сахаров Андрей"
+   },
+   "official_cumulative": [
+    18,
+    7
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    10,
+    4
+   ],
+   "game_score_after": [
+    11,
+    4
+   ],
+   "goal_estimate_s": 4416.8,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 4422.0,
+   "banner_s": 4416.8,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=1h13m37s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=1h13m42s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G26",
+   "type": "goal",
+   "period": 3,
+   "official_time": "36:01",
+   "official_team": "Марьино",
+   "official_scorer": {
+    "number": 8,
+    "name": "Фазлиахметов Тагир"
+   },
+   "official_cumulative": [
+    18,
+    8
+   ],
+   "squad": 1,
+   "source": "S1",
+   "game_score_before": [
+    8,
+    3
+   ],
+   "game_score_after": [
+    8,
+    4
+   ],
+   "goal_estimate_s": 4393.5,
+   "goal_time_method": "board_minus_measured_lag",
+   "goal_time_uncertainty_s": 5,
+   "board_change_s": 4398.2,
+   "banner_s": null,
+   "video_url": "https://vkvideo.ru/video-48703984_456259531?t=1h13m14s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259531?t=1h13m18s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "medium",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G27",
+   "type": "goal",
+   "period": 3,
+   "official_time": "36:02",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 35,
+    "name": "Турков Алексей"
+   },
+   "official_cumulative": [
+    19,
+    8
+   ],
+   "squad": 1,
+   "source": "S1",
+   "game_score_before": [
+    7,
+    3
+   ],
+   "game_score_after": [
+    8,
+    3
+   ],
+   "goal_estimate_s": 4338.5,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 4343.2,
+   "banner_s": 4338.5,
+   "video_url": "https://vkvideo.ru/video-48703984_456259531?t=1h12m18s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259531?t=1h12m23s",
+   "author_order_confirmed_by_video": true,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol"
+   }
+  },
+  {
+   "id": "G28",
+   "type": "goal",
+   "period": 3,
+   "official_time": "36:03",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 99,
+    "name": "Ерохин Эрнест"
+   },
+   "official_cumulative": [
+    20,
+    8
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    11,
+    4
+   ],
+   "game_score_after": [
+    12,
+    4
+   ],
+   "goal_estimate_s": 4427.0,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 4432.2,
+   "banner_s": 4427.0,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=1h13m47s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=1h13m52s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G29",
+   "type": "goal",
+   "period": 3,
+   "official_time": "36:04",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 35,
+    "name": "Турков Алексей"
+   },
+   "official_cumulative": [
+    21,
+    8
+   ],
+   "squad": 1,
+   "source": "S1",
+   "game_score_before": [
+    8,
+    4
+   ],
+   "game_score_after": [
+    9,
+    4
+   ],
+   "goal_estimate_s": 4557.8,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 4562.5,
+   "banner_s": 4557.8,
+   "video_url": "https://vkvideo.ru/video-48703984_456259531?t=1h15m58s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259531?t=1h16m2s",
+   "author_order_confirmed_by_video": true,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol"
+   }
+  },
+  {
+   "id": "G30",
+   "type": "goal",
+   "period": 3,
+   "official_time": "36:05",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 35,
+    "name": "Турков Алексей"
+   },
+   "official_cumulative": [
+    22,
+    8
+   ],
+   "squad": 1,
+   "source": "S1",
+   "game_score_before": [
+    9,
+    4
+   ],
+   "game_score_after": [
+    10,
+    4
+   ],
+   "goal_estimate_s": 4784.8,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 4789.5,
+   "banner_s": 4784.8,
+   "video_url": "https://vkvideo.ru/video-48703984_456259531?t=1h19m45s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259531?t=1h19m50s",
+   "author_order_confirmed_by_video": true,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol"
+   }
+  },
+  {
+   "id": "G31",
+   "type": "goal",
+   "period": 3,
+   "official_time": "36:06",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 21,
+    "name": "Мещеряков Тимофей"
+   },
+   "official_cumulative": [
+    23,
+    8
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    12,
+    4
+   ],
+   "game_score_after": [
+    13,
+    4
+   ],
+   "goal_estimate_s": 5092.5,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 5097.5,
+   "banner_s": 5092.5,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=1h24m52s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=1h24m58s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G32",
+   "type": "goal",
+   "period": 3,
+   "official_time": "36:07",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 88,
+    "name": "Михейкин Андрей"
+   },
+   "official_cumulative": [
+    24,
+    8
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    13,
+    4
+   ],
+   "game_score_after": [
+    14,
+    4
+   ],
+   "goal_estimate_s": 5212.0,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 5217.2,
+   "banner_s": 5212.0,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=1h26m52s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=1h26m57s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  },
+  {
+   "id": "G33",
+   "type": "goal",
+   "period": 3,
+   "official_time": "36:08",
+   "official_team": "Центр",
+   "official_scorer": {
+    "number": 55,
+    "name": "Крезо Павел"
+   },
+   "official_cumulative": [
+    25,
+    8
+   ],
+   "squad": 2,
+   "source": "S2",
+   "game_score_before": [
+    14,
+    4
+   ],
+   "game_score_after": [
+    15,
+    4
+   ],
+   "goal_estimate_s": 5315.2,
+   "goal_time_method": "broadcast_goal_banner",
+   "goal_time_uncertainty_s": 3,
+   "board_change_s": 5320.5,
+   "banner_s": 5315.2,
+   "video_url": "https://vkvideo.ru/video-48703984_456259532?t=1h28m35s",
+   "board_url": "https://vkvideo.ru/video-48703984_456259532?t=1h28m40s",
+   "author_order_confirmed_by_video": false,
+   "confidence": {
+    "team": "high",
+    "time": "high",
+    "scorer": "protocol_order_unverified"
+   }
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Центр",
+   "squad": 1,
+   "source": "https://fhmoscow.com/game/22440?match-preview-tab=3 (POST /api/game/player/list)",
+   "goalie": [
+    {
+     "number": 1,
+     "name": "Григорий Кузнецов"
+    }
+   ],
+   "defenders": [
+    {
+     "number": 12,
+     "name": "Марк Шевченко"
+    },
+    {
+     "number": 13,
+     "name": "Ярослав Зеленский"
+    },
+    {
+     "number": 27,
+     "name": "Илья Кулагин"
+    },
+    {
+     "number": 86,
+     "name": "Кирилл Мекеня"
+    },
+    {
+     "number": 89,
+     "name": "Дмитрий Букатов"
+    }
+   ],
+   "forwards": [
+    {
+     "number": 3,
+     "name": "Ильяс Айнетдинов"
+    },
+    {
+     "number": 5,
+     "name": "Александр Власов"
+    },
+    {
+     "number": 10,
+     "name": "Тимофей Захаров"
+    },
+    {
+     "number": 20,
+     "name": "Александр Дробязко"
+    },
+    {
+     "number": 24,
+     "name": "Фёдор Квасов"
+    },
+    {
+     "number": 25,
+     "name": "Роман Ельцов"
+    },
+    {
+     "number": 30,
+     "name": "Роман Друев"
+    },
+    {
+     "number": 35,
+     "name": "Алексей Турков"
+    }
+   ]
+  },
+  {
+   "team": "Центр",
+   "squad": 2,
+   "source": "https://fhmoscow.com/game/22440?match-preview-tab=3 (POST /api/game/player/list)",
+   "goalie": [
+    {
+     "number": 44,
+     "name": "Геннадий Чертков"
+    }
+   ],
+   "defenders": [
+    {
+     "number": 14,
+     "name": "Александр Иванцивский"
+    },
+    {
+     "number": 18,
+     "name": "Илья Гастев"
+    },
+    {
+     "number": 23,
+     "name": "Милан Пеикришвили"
+    },
+    {
+     "number": 26,
+     "name": "Дарья Давыденко"
+    },
+    {
+     "number": 80,
+     "name": "Лев Ваккер"
+    }
+   ],
+   "forwards": [
+    {
+     "number": 4,
+     "name": "Лев Хатеев"
+    },
+    {
+     "number": 7,
+     "name": "Андрей Сахаров"
+    },
+    {
+     "number": 17,
+     "name": "Григорий Чуваткин"
+    },
+    {
+     "number": 21,
+     "name": "Тимофей Мещеряков"
+    },
+    {
+     "number": 55,
+     "name": "Павел Крезо"
+    },
+    {
+     "number": 71,
+     "name": "Дорофей Федоров"
+    },
+    {
+     "number": 88,
+     "name": "Андрей Михейкин"
+    },
+    {
+     "number": 99,
+     "name": "Эрнест Ерохин"
+    }
+   ]
+  },
+  {
+   "team": "Марьино",
+   "squad": 1,
+   "source": "https://fhmoscow.com/game/22440?match-preview-tab=3 (POST /api/game/player/list)",
+   "goalie": [
+    {
+     "number": 1,
+     "name": "Иоанн Мирошниченко"
+    }
+   ],
+   "defenders": [
+    {
+     "number": 2,
+     "name": "Михаил Матвеев"
+    },
+    {
+     "number": 3,
+     "name": "Егор Зуйков"
+    },
+    {
+     "number": 13,
+     "name": "Андрей Горица"
+    },
+    {
+     "number": 17,
+     "name": "Ярослав Романцов"
+    }
+   ],
+   "forwards": [
+    {
+     "number": 8,
+     "name": "Тагир Фазлиахметов"
+    },
+    {
+     "number": 19,
+     "name": "Пётр Пундель"
+    },
+    {
+     "number": 21,
+     "name": "Ринат Рыков"
+    },
+    {
+     "number": 24,
+     "name": "Ярослав Филин"
+    },
+    {
+     "number": 25,
+     "name": "Артём Андреев"
+    },
+    {
+     "number": 29,
+     "name": "Арсений Джуромский"
+    },
+    {
+     "number": 54,
+     "name": "Ярослав Летягин"
+    },
+    {
+     "number": 55,
+     "name": "Андрей Галактионов"
+    }
+   ]
+  },
+  {
+   "team": "Марьино",
+   "squad": 2,
+   "source": "https://fhmoscow.com/game/22440?match-preview-tab=3 (POST /api/game/player/list)",
+   "goalie": [
+    {
+     "number": 88,
+     "name": "Леонид Поликарпов"
+    }
+   ],
+   "defenders": [
+    {
+     "number": 6,
+     "name": "Максим Ткаченко"
+    },
+    {
+     "number": 7,
+     "name": "Анатолий Шаров"
+    },
+    {
+     "number": 38,
+     "name": "Макар Шамыгин"
+    },
+    {
+     "number": 95,
+     "name": "Михаил Дуков"
+    }
+   ],
+   "forwards": [
+    {
+     "number": 11,
+     "name": "Максим Коршунов"
+    },
+    {
+     "number": 20,
+     "name": "Владислав Булгаков"
+    },
+    {
+     "number": 35,
+     "name": "Сергей Дарданов"
+    },
+    {
+     "number": 67,
+     "name": "Владимир Халимов"
+    },
+    {
+     "number": 70,
+     "name": "Иван Минаев"
+    },
+    {
+     "number": 77,
+     "name": "Артемий Бахарев"
+    },
+    {
+     "number": 96,
+     "name": "Всеволод Ширяев"
+    },
+    {
+     "number": 99,
+     "name": "Савелий Миронов"
+    }
+   ]
+  }
+ ],
+ "line_assignments": [],
+ "penalty_shots": {
+  "awarded": null,
+  "attempted": null,
+  "scored": null,
+  "missed": null,
+  "protocol_infractions": 0,
+  "status": "не установлено: сплошного поиска эпизодов «один на один» с освобождённой площадкой не выполнялось",
+  "checked_windows": [],
+  "episodes": []
+ },
+ "shifts": [],
+ "possession_intervals": [],
+ "coverage": [
+  {
+   "source": "S1",
+   "method": "таймлайн табло 4 к/с + OCR цифр + детектор плашки «ГОЛ!»",
+   "board_range_s": [
+    1166,
+    5477
+   ],
+   "reviewed_continuously": false,
+   "notes": "игровое покрытие 19:26–91:17 видео; далее концовка с повторной нарезкой голов"
+  },
+  {
+   "source": "S2",
+   "method": "таймлайн табло 4 к/с + OCR цифр + детектор плашки «ГОЛ!»",
+   "board_range_s": [
+    1350,
+    5320
+   ],
+   "reviewed_continuously": false,
+   "notes": "табло включилось только на 22:30 видео, уже при счёте 1:1"
+  }
+ ],
+ "corrections": [],
+ "limitations": [
+  "Нет непрерывного покадрового просмотра: броски, сейвы, владение, смены не размечены",
+  "Порядок авторов внутри периода по протоколу не совпадает с порядком на площадке; 22 гола помечены как неподтверждённые",
+  "Два гола Состава 2 не датированы: табло включилось при счёте 1:1",
+  "Звенья не установлены: цветные метки на шлемах не читаются вместе с номером",
+  "Штрафные броски не искались сплошным проходом",
+  "Концовки записей содержат повторную нарезку голов, повторы не считались новыми голами"
+ ]
+}

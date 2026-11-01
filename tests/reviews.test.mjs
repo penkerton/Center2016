@@ -312,3 +312,138 @@ test("оглавление не дублирует номера разделов
     assert.ok(!/^\d+\.\s+\d+\.\s/.test(text), `двойная нумерация: ${text}`);
   }
 });
+
+// --- разбор 22440 ---------------------------------------------------------
+
+const review2Dir = path.join(reviewsDir, "22440");
+const markdown2 = fs.readFileSync(path.join(review2Dir, "22440-review.md"), "utf8");
+const data2 = JSON.parse(fs.readFileSync(path.join(review2Dir, "22440-review-data.json"), "utf8"));
+
+test("разбор 22440: 33 гола, суммы по составам и периодам сходятся", () => {
+  assert.equal(data2.status, "partial");
+  assert.equal(data2.events.length, 33);
+
+  const squadSum = { 1: [0, 0], 2: [0, 0] };
+  const periodSum = { 1: [0, 0], 2: [0, 0], 3: [0, 0] };
+  const teamSum = { "Центр": 0, "Марьино": 0 };
+
+  for (const event of data2.events) {
+    assert.equal(event.type, "goal");
+    const index = event.official_team === "Центр" ? 0 : 1;
+    squadSum[event.squad][index] += 1;
+    periodSum[event.period][index] += 1;
+    teamSum[event.official_team] += 1;
+    assert.ok(["S1", "S2"].includes(event.source));
+  }
+
+  assert.deepEqual(squadSum[1], [10, 4]);
+  assert.deepEqual(squadSum[2], [15, 4]);
+  assert.deepEqual(periodSum[1], [8, 2]);
+  assert.deepEqual(periodSum[2], [8, 4]);
+  assert.deepEqual(periodSum[3], [9, 2]);
+  assert.equal(teamSum["Центр"], 25);
+  assert.equal(teamSum["Марьино"], 8);
+  assert.equal(squadSum[1][0] + squadSum[2][0], 25);
+  assert.equal(squadSum[1][1] + squadSum[2][1], 8);
+});
+
+test("разбор 22440: накопительный счёт событий совпадает с протоколом", () => {
+  let home = 0;
+  let away = 0;
+  for (const event of data2.events) {
+    if (event.official_team === "Центр") home += 1;
+    else away += 1;
+    assert.deepEqual([home, away], event.official_cumulative, `счёт после ${event.id} не совпал`);
+  }
+  assert.deepEqual([home, away], [25, 8]);
+});
+
+test("разбор 22440: голы игроков сходятся с командными", () => {
+  const byTeam = {};
+  for (const player of data2.players) {
+    byTeam[player.team] = (byTeam[player.team] || 0) + player.goals;
+    assert.equal(player.goal_ids.length, player.goals, `у ${player.name} не совпало число голов`);
+    assert.ok(player.number > 0 && player.name.length > 0);
+  }
+  assert.equal(byTeam["Центр"], 25);
+  assert.equal(byTeam["Марьино"], 8);
+});
+
+test("разбор 22440: время голов привязано к видео, два гола без времени отмечены", () => {
+  let withoutTime = 0;
+  for (const event of data2.events) {
+    if (event.goal_estimate_s === null) {
+      withoutTime += 1;
+      assert.equal(event.goal_time_method, "not_established");
+      assert.equal(event.video_url, null);
+      continue;
+    }
+    assert.ok(["broadcast_goal_banner", "board_minus_measured_lag"].includes(event.goal_time_method));
+    assert.match(event.video_url, /\?t=(\d+h)?(\d+m)?\d+s$/);
+    assert.ok(event.goal_estimate_s < event.board_change_s, `${event.id}: гол позже смены табло`);
+    const lag = event.board_change_s - event.goal_estimate_s;
+    assert.ok(lag >= 3 && lag <= 30, `${event.id}: подозрительная задержка ${lag} с`);
+    if (event.goal_time_method === "broadcast_goal_banner") assert.ok(event.banner_s > 0);
+  }
+  assert.equal(withoutTime, 2, "у Состава 2 два гола прошли до включения табло");
+});
+
+test("разбор 22440: заявки на игру полные, голы в них укладываются", () => {
+  assert.equal(data2.lineups.length, 4);
+  const roster = new Map();
+  for (const lineup of data2.lineups) {
+    assert.ok(["Центр", "Марьино"].includes(lineup.team));
+    assert.equal(lineup.goalie.length, 1, `${lineup.team}/${lineup.squad}: вратарь должен быть один`);
+    assert.ok(lineup.defenders.length >= 4);
+    assert.ok(lineup.forwards.length >= 7);
+    assert.match(lineup.source, /match-preview-tab=3/);
+    for (const player of [...lineup.goalie, ...lineup.defenders, ...lineup.forwards]) {
+      const key = `${lineup.team}|${lineup.squad}|${player.number}`;
+      assert.ok(!roster.has(key), `дубль в заявке: ${key}`);
+      roster.set(key, player.name);
+    }
+  }
+  for (const event of data2.events) {
+    const key = `${event.official_team}|${event.squad}|${event.official_scorer.number}`;
+    assert.ok(roster.has(key), `гол ${event.id}: ${event.official_scorer.name} не в заявке состава ${event.squad}`);
+  }
+});
+
+test("разбор 22440: кадры-доказательства существуют и все использованы", () => {
+  const referenced = [...markdown2.matchAll(/!\[[^\]]*\]\(([^)\s]+)\)/g)].map((m) => m[1]);
+  assert.ok(referenced.length >= 4, "в отчёте мало подтверждающих кадров");
+  for (const file of referenced) {
+    assert.ok(!/^https?:/.test(file), `кадр должен быть локальным: ${file}`);
+    assert.ok(fs.existsSync(path.join(review2Dir, file)), `нет файла кадра ${file}`);
+  }
+  for (const file of fs.readdirSync(path.join(review2Dir, "evidence"))) {
+    assert.ok(referenced.includes(`evidence/${file}`), `кадр ${file} не используется в отчёте`);
+  }
+});
+
+test("разбор 22440: статус частичный, ограничения описаны явно", () => {
+  for (const heading of [
+    "## 1. Как устроен этот матч",
+    "## 3. Хронология голов",
+    "## 9. Что установлено, а что нет",
+    "## 10. Покрытие и источники",
+    "## 11. Ограничения",
+    "## 12. Рекомендации",
+  ]) {
+    assert.ok(markdown2.includes(heading), `нет раздела «${heading}»`);
+  }
+  assert.match(markdown2, /не установлено/);
+  assert.ok(data2.limitations.length >= 5, "мало ограничений");
+  assert.match(markdown2, /порядок авторов внутри периода/i);
+});
+
+test("страница разбора 22440 собрана и есть в списке", () => {
+  const page = fs.readFileSync(path.join(review2Dir, "index.html"), "utf8");
+  assert.match(page, /<meta name="robots" content="noindex, nofollow">/);
+  assert.match(page, /reviews\.css/);
+  assert.match(page, /25:8/);
+  assert.ok(page.includes("Состав 1 <b>10:4</b>"));
+  const list = fs.readFileSync(path.join(reviewsDir, "index.html"), "utf8");
+  assert.match(list, /href="22440\/"/);
+  assert.match(list, /Центр 2016 — Марьино 2016/);
+});
