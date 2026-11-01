@@ -35,8 +35,13 @@ js/
     theme.js, header.js, motion.js, meta.js, dashboard.js,
     standings-table.js, h2h-matrix.js, matches.js, stats.js, birthdays.js
 scripts/serve.mjs              локальный статический сервер
+scripts/build-reviews.mjs      сборка страниц разбора из Markdown → HTML
 tests/                         проверки (node:test, без зависимостей)
 predictor/                     FHM Hockey Predictor (Python): сбор, SQLite, модели, Streamlit
+reviews/                       разборы матчей (отдельный раздел, без ссылок с главной):
+  index.html                     список разборов (генерируется)
+  22449/                         разбор матча № 22449: Markdown, JSON, кадры, index.html
+  reviews.css                    оформление раздела
 update_fhm_2016_stats.mjs      выгрузка данных с ФХМ
 all_2016_players_season5.js    ← window.playerGoalsData (генерируется)
 all_2016_matches_season5.js    ← window.tournamentMatchesData (генерируется)
@@ -78,6 +83,37 @@ git и не публикуются на GitHub Pages.
 ```powershell
 npm start            # http://127.0.0.1:4173/
 ```
+
+Локальный сервер отдаёт каталоги их `index.html`, как GitHub Pages: открывать
+по `http://127.0.0.1:4173/reviews/` и `…/predictor/` без имени файла.
+
+## Разборы матчей (reviews/)
+
+Отдельный раздел видеоразборов, устроенный так же, как `predictor/`: страница
+живёт по прямому адресу `https://penkerton.github.io/Center2016/reviews/`,
+помечена `noindex, nofollow` и **не имеет ссылок с основного сайта**.
+
+```
+reviews/22449/22449-review.md          исходный текст разбора (Markdown)
+reviews/22449/22449-review-data.json   машинная разметка: голы, составы, покрытие
+reviews/22449/evidence/*.jpg           кадры-доказательства
+reviews/22449/index.html               сгенерированная страница
+reviews/index.html                     список разборов
+```
+
+Страницы собираются скриптом из Markdown и JSON, поэтому руками `index.html`
+править не нужно:
+
+```powershell
+node scripts/build-reviews.mjs            # пересобрать страницы
+node scripts/build-reviews.mjs --check    # проверить, что страницы не устарели
+```
+
+Новый разбор: создать каталог `reviews/<id>/`, положить `<id>-review.md` и
+`<id>-review-data.json` (метаданные матча берутся из поля `match`, статус — из
+`status`), при необходимости кадры в `evidence/`, затем запустить сборку.
+Оформление раздела — `reviews/reviews.css`, рендер Markdown —
+`scripts/lib/markdown.mjs`, проверки — `tests/reviews.test.mjs`.
 
 ## Обновление данных
 

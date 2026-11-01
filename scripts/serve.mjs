@@ -40,10 +40,13 @@ const server = http.createServer(async (request, response) => {
     return;
   }
 
+  // Как на GitHub Pages: каталог отдаётся своим index.html.
+  const target = await resolveIndex(filePath);
+
   try {
-    const data = await fs.readFile(filePath);
+    const data = await fs.readFile(target);
     response.writeHead(200, {
-      "Content-Type": CONTENT_TYPES[path.extname(filePath).toLowerCase()] ?? "application/octet-stream",
+      "Content-Type": CONTENT_TYPES[path.extname(target).toLowerCase()] ?? "application/octet-stream",
       "Cache-Control": "no-cache",
     });
     response.end(data);
@@ -51,6 +54,19 @@ const server = http.createServer(async (request, response) => {
     response.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" }).end("Not found");
   }
 });
+
+/** Если путь — каталог (в том числе без завершающего слэша), добавляем index.html. */
+async function resolveIndex(filePath) {
+  try {
+    const stat = await fs.stat(filePath);
+    if (stat.isDirectory()) {
+      return path.join(filePath, "index.html");
+    }
+    return filePath;
+  } catch {
+    return filePath;
+  }
+}
 
 server.listen(port, "127.0.0.1", () => {
   console.log(`Сайт доступен: http://127.0.0.1:${port}/`);

@@ -1,0 +1,480 @@
+/* ==========================================================================
+   Разборы матчей — отдельный раздел сайта.
+
+   Страница живёт по адресу /reviews/ и намеренно не связана ссылками с главной.
+   Оформление повторяет клубную палитру (красный акцент), но не зависит от
+   остальных CSS сайта: раздел можно открыть и отдать как отдельный документ.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+  --bg: #f6f4f5;
+  --bg-soft: #ffffff;
+  --panel: rgba(255, 255, 255, 0.86);
+  --line: rgba(24, 18, 20, 0.12);
+  --line-strong: rgba(24, 18, 20, 0.24);
+  --text: #171113;
+  --muted: #6b6367;
+  --accent: #b3121f;
+  --accent-soft: rgba(179, 18, 31, 0.08);
+  --green: #0f7a4f;
+  --amber: #a8560a;
+  --shadow: 0 24px 60px -34px rgba(90, 12, 22, 0.35);
+  --radius: 16px;
+  --max-width: 1080px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #0a0a0c;
+    --bg-soft: #131316;
+    --panel: rgba(255, 255, 255, 0.05);
+    --line: rgba(255, 255, 255, 0.11);
+    --line-strong: rgba(255, 255, 255, 0.22);
+    --text: #f6f2f3;
+    --muted: #a49ea2;
+    --accent: #ff5f6d;
+    --accent-soft: rgba(255, 95, 109, 0.14);
+    --green: #3ec98a;
+    --amber: #ffb03a;
+    --shadow: 0 24px 70px -30px rgba(0, 0, 0, 0.92);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(1100px 520px at 8% -12%, var(--accent-soft) 0%, transparent 62%), var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", "Inter", system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+/* --- шапка ---------------------------------------------------------------- */
+
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 26px clamp(16px, 4vw, 56px) 18px;
+  background: linear-gradient(120deg, #16060a 0%, #4a0a12 55%, var(--accent) 100%);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.brand h1 {
+  margin: 6px 0 0;
+  font-size: clamp(22px, 3.2vw, 34px);
+}
+
+.brand p {
+  margin: 6px 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 62ch;
+}
+
+.brand__back {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+
+.brand__back:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.brand__score {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffd7db;
+}
+
+.topbar__side {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.topbar__link {
+  color: #fff;
+  font-size: 13px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+/* --- плашки --------------------------------------------------------------- */
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 16px clamp(16px, 4vw, 56px) 0;
+  max-width: var(--max-width);
+}
+
+.chip {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.topbar .chip {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.chip--squad b {
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+.topbar .chip--squad b {
+  color: #fff;
+}
+
+/* --- макет ---------------------------------------------------------------- */
+
+.layout {
+  flex: 1;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 22px clamp(16px, 4vw, 56px) 48px;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    grid-template-columns: 232px minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+.layout--list {
+  display: block;
+  max-width: var(--max-width);
+}
+
+/* --- содержание ----------------------------------------------------------- */
+
+.toc {
+  position: sticky;
+  top: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  font-size: 13px;
+}
+
+@media (max-width: 1023px) {
+  .toc {
+    position: static;
+  }
+  .toc__list {
+    columns: 2;
+    column-gap: 18px;
+  }
+}
+
+.toc__title {
+  margin: 0 0 8px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Номера разделов уже стоят в тексте заголовка — список без своих маркеров. */
+.toc__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.toc__list li {
+  margin: 4px 0;
+}
+
+.toc a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.toc a:hover {
+  color: var(--accent);
+}
+
+/* --- статья --------------------------------------------------------------- */
+
+.article {
+  min-width: 0;
+}
+
+.article h2 {
+  margin: 40px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  font-size: clamp(20px, 2.4vw, 26px);
+}
+
+.article h3 {
+  margin: 28px 0 10px;
+  font-size: 18px;
+}
+
+.article h4 {
+  margin: 20px 0 8px;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.article p {
+  margin: 0 0 14px;
+}
+
+.article ul,
+.article ol {
+  margin: 0 0 16px;
+  padding-left: 22px;
+}
+
+.article li {
+  margin: 6px 0;
+}
+
+.article blockquote {
+  margin: 18px 0;
+  padding: 12px 16px;
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 12px 12px 0;
+}
+
+.article blockquote p {
+  margin: 0;
+}
+
+.article code {
+  padding: 1px 5px;
+  border-radius: 6px;
+  background: var(--accent-soft);
+  font-family: "Cascadia Mono", "Consolas", monospace;
+  font-size: 0.92em;
+}
+
+.article pre {
+  overflow-x: auto;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--bg-soft);
+}
+
+.article pre code {
+  background: none;
+  padding: 0;
+}
+
+.article hr {
+  margin: 32px 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+.md-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 8px 0 18px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+/* --- таблицы -------------------------------------------------------------- */
+
+.md-table-wrap {
+  margin: 0 0 20px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-soft);
+}
+
+.md-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+.md-table th,
+.md-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.md-table th {
+  position: sticky;
+  top: 0;
+  background: var(--bg-soft);
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.md-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.md-table tbody tr:hover {
+  background: var(--accent-soft);
+}
+
+/* --- список разборов ------------------------------------------------------ */
+
+.cards {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card {
+  display: grid;
+  gap: 6px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.card__status {
+  justify-self: start;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.card__teams {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card__score {
+  font-size: 26px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+}
+
+.card__meta,
+.card__squads {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.empty {
+  color: var(--muted);
+}
+
+/* --- подвал --------------------------------------------------------------- */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  justify-content: space-between;
+  padding: 18px clamp(16px, 4vw, 56px) 28px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* --- печать --------------------------------------------------------------- */
+
+@media print {
+  body {
+    background: #fff;
+  }
+  .topbar {
+    background: #fff;
+    color: #000;
+    box-shadow: none;
+  }
+  .topbar .chip,
+  .brand__back,
+  .toc {
+    display: none;
+  }
+  .layout {
+    display: block;
+    max-width: none;
+  }
+  .md-table-wrap {
+    overflow: visible;
+  }
+}

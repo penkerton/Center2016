@@ -10,6 +10,7 @@
   "scripts": {
     "start": "node scripts/serve.mjs",
     "update": "node update_fhm_2016_stats.mjs",
+    "reviews": "node scripts/build-reviews.mjs",
     "test": "node --test"
   }
 }
