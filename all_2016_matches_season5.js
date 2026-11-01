@@ -2298,8 +2298,8 @@ window.tournamentMatchesData = [
     "id": 23607,
     "homeTeam": "Крылья Советов",
     "awayTeam": "Авангард",
-    "homeGoals": 3,
-    "awayGoals": 7,
+    "homeGoals": 4,
+    "awayGoals": 12,
     "date": "2026-11-01",
     "time": "14:00",
     "groupId": 309,
@@ -2307,7 +2307,7 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "6 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 1
+    "status": 2
   },
   {
     "id": 22497,
