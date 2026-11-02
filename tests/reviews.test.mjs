@@ -446,7 +446,7 @@ test("разбор 22440: структура 2.1/2.3/7 по правилам н�
   assert.ok(!/\|\s*Длительность\s*\|/.test(s21), "в 2.1 не должно быть столбца «Длительность»");
   // 2.3 — в ФХМ 4×4 раздела нет вовсе
   assert.ok(!markdown2.includes("### 2.3"), "раздел 2.3 в 4×4 не включается");
-  assert.ok(!markdown2.includes("Голы игроков"), "персональной сводки голов в 4×4 быть не должно");
+  assert.ok(!/\|\s*Игрок\s*\|\s*Голы\s*\|/.test(markdown2), "персональной сводки голов в 4×4 быть не должно");
   assert.match(markdown2, /Голевые передачи в турнире ФХМ не ведутся/);
   // 7 — нарушения только по видео, протокол их не ведёт
   const s7 = markdown2.slice(markdown2.indexOf("## 7."), markdown2.indexOf("## 8."));
@@ -454,6 +454,36 @@ test("разбор 22440: структура 2.1/2.3/7 по правилам н�
   assert.match(s7, /штрафным броском/);
   assert.ok(!/нет ни одного нарушения/.test(s7), "нельзя опираться на пустой фильтр протокола");
   assert.match(s7, /не установлен/);
+});
+
+test("разбор 22440: звенья «Центра» — шесть групп, все полевые, голы сходятся", () => {
+  const lines = data2.line_assignments;
+  assert.equal(lines.length, 6, "ожидаются три звена в каждом из двух составов");
+
+  for (const line of lines) {
+    assert.equal(line.team, "Центр");
+    assert.ok(["red", "yellow", "green"].includes(line.color), `неизвестный цвет ${line.color}`);
+    assert.ok([1, 2].includes(line.squad));
+    assert.equal(line.players.length, line.names.length);
+    assert.ok(line.players.length >= 4, `в звене ${line.squad}/${line.color} меньше четырёх игроков`);
+    assert.match(line.source, /со слов пользователя/);
+    assert.ok(line.method.length > 20, "не описан способ привязки звена");
+    assert.ok(Number.isInteger(line.goals) && line.goals >= 0);
+  }
+
+  for (const squad of [1, 2]) {
+    const ofSquad = lines.filter((l) => l.squad === squad);
+    assert.deepEqual(ofSquad.map((l) => l.color).sort(), ["green", "red", "yellow"]);
+    const numbers = ofSquad.flatMap((l) => l.players);
+    assert.equal(numbers.length, 13, `состав ${squad}: в звеньях должно быть 13 полевых`);
+    assert.equal(new Set(numbers).size, 13, `состав ${squad}: игрок попал в два звена`);
+    const lineup = data2.lineups.find((l) => l.team === "Центр" && l.squad === squad);
+    const roster = new Set([...lineup.defenders, ...lineup.forwards].map((p) => p.number));
+    for (const n of numbers) assert.ok(roster.has(n), `состав ${squad}: № ${n} нет в заявке`);
+    const lineGoals = ofSquad.reduce((sum, l) => sum + l.goals, 0);
+    const squadGoals = data2.squads.find((s) => s.id === squad).score_for;
+    assert.equal(lineGoals, squadGoals, `состав ${squad}: голы звеньев не равны голам состава`);
+  }
 });
 
 test("страница разбора 22440 собрана и есть в списке", () => {
