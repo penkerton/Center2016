@@ -409,15 +409,18 @@ test("разбор 22440: заявки на игру полные, голы в �
   }
 });
 
-test("разбор 22440: кадры-доказательства существуют и все использованы", () => {
-  const referenced = [...markdown2.matchAll(/!\[[^\]]*\]\(([^)\s]+)\)/g)].map((m) => m[1]);
-  assert.ok(referenced.length >= 4, "в отчёте мало подтверждающих кадров");
-  for (const file of referenced) {
-    assert.ok(!/^https?:/.test(file), `кадр должен быть локальным: ${file}`);
-    assert.ok(fs.existsSync(path.join(review2Dir, file)), `нет файла кадра ${file}`);
-  }
-  for (const file of fs.readdirSync(path.join(review2Dir, "evidence"))) {
-    assert.ok(referenced.includes(`evidence/${file}`), `кадр ${file} не используется в отчёте`);
+test("разбор 22440: в обзоре нет картинок, время только в мм:сс", () => {
+  assert.equal((markdown2.match(/!\[[^\]]*\]\(/g) ?? []).length, 0, "в обзор нельзя вставлять картинки");
+  assert.ok(!/evidence\//.test(markdown2), "ссылок на папку кадров в тексте быть не должно");
+  // координаты на записи — только мм:сс / ч:мм:сс, не число секунд
+  const secondTimes = [...markdown2.matchAll(/\[(\d+) с\]\(/g)];
+  assert.equal(secondTimes.length, 0, `время в секундах вместо мм:сс: ${secondTimes.map((m) => m[0]).join(", ")}`);
+  const goalRows = markdown2.split("\n").filter((line) => /^\| \d+ \| [123] \|/.test(line));
+  assert.equal(goalRows.length, 33, "в таблицах хронологии должно быть 33 строки");
+  for (const row of goalRows) {
+    if (row.includes("не установлено")) continue;
+    const times = [...row.matchAll(/\[(\d+:\d{2}(?::\d{2})?)\]/g)].map((m) => m[1]);
+    assert.equal(times.length, 2, `в строке нет двух времён: ${row}`);
   }
 });
 
