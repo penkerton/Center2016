@@ -440,6 +440,22 @@ test("разбор 22440: статус частичный, ограничени�
   assert.match(markdown2, /порядок авторов внутри периода/i);
 });
 
+test("разбор 22440: структура 2.1/2.3/7 по правилам навыка", () => {
+  // 2.1 — без столбца «Длительность» (длительность живёт в разделе 10)
+  const s21 = markdown2.slice(markdown2.indexOf("### 2.1"), markdown2.indexOf("### 2.2"));
+  assert.ok(!/\|\s*Длительность\s*\|/.test(s21), "в 2.1 не должно быть столбца «Длительность»");
+  // 2.3 — таблица с колонкой голов, а не перечисление в строку
+  const s23 = markdown2.slice(markdown2.indexOf("### 2.3"), markdown2.indexOf("## 3."));
+  assert.match(s23, /\|\s*Команда\s*\|\s*Состав\s*\|\s*№\s*\|\s*Игрок\s*\|\s*Голы\s*\|/, "2.3 должна быть таблицей");
+  assert.ok((s23.match(/^\|/gm) ?? []).length >= 20, "в таблице 2.3 мало строк");
+  // 7 — нарушения только по видео, протокол их не ведёт
+  const s7 = markdown2.slice(markdown2.indexOf("## 7."), markdown2.indexOf("## 8."));
+  assert.match(s7, /только по видео/);
+  assert.match(s7, /штрафным броском/);
+  assert.ok(!/нет ни одного нарушения/.test(s7), "нельзя опираться на пустой фильтр протокола");
+  assert.match(s7, /не установлен/);
+});
+
 test("страница разбора 22440 собрана и есть в списке", () => {
   const page = fs.readFileSync(path.join(review2Dir, "index.html"), "utf8");
   assert.match(page, /<meta name="robots" content="noindex, nofollow">/);
