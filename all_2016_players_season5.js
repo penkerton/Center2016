@@ -53,7 +53,7 @@ window.playerGoalsData = [
     "team": "Балашиха",
     "role": "Н",
     "games": 8,
-    "goals": 24
+    "goals": 23
   },
   {
     "player": "Марк Видилин",
@@ -88,7 +88,7 @@ window.playerGoalsData = [
     "goals": 22
   },
   {
-    "player": "Владислав Булгаков",
+    "player": "Иван Минаев",
     "group": "Группа В",
     "team": "Марьино",
     "role": "Н",
@@ -96,17 +96,17 @@ window.playerGoalsData = [
     "goals": 21
   },
   {
-    "player": "Дмитрий Харитохин",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
+    "player": "Владислав Булгаков",
+    "group": "Группа В",
+    "team": "Марьино",
     "role": "Н",
     "games": 9,
     "goals": 20
   },
   {
-    "player": "Иван Минаев",
-    "group": "Группа В",
-    "team": "Марьино",
+    "player": "Дмитрий Харитохин",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
     "role": "Н",
     "games": 9,
     "goals": 20
@@ -1064,6 +1064,14 @@ window.playerGoalsData = [
     "goals": 9
   },
   {
+    "player": "Савелий Жариков",
+    "group": "Группа Б",
+    "team": "Балашиха",
+    "role": "Н",
+    "games": 8,
+    "goals": 9
+  },
+  {
     "player": "Владислав Иус",
     "group": "Группа Б",
     "team": "Динамо - Солнцево",
@@ -1284,14 +1292,6 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Арена Плей Трактор (Юг)",
     "role": "З",
-    "games": 8,
-    "goals": 8
-  },
-  {
-    "player": "Савелий Жариков",
-    "group": "Группа Б",
-    "team": "Балашиха",
-    "role": "Н",
     "games": 8,
     "goals": 8
   },
@@ -2384,14 +2384,6 @@ window.playerGoalsData = [
     "goals": 5
   },
   {
-    "player": "Всеволод Петров",
-    "group": "Группа Б",
-    "team": "Рыцари",
-    "role": "З",
-    "games": 8,
-    "goals": 5
-  },
-  {
     "player": "Григорий Нестеров",
     "group": "Группа В",
     "team": "Янтарь",
@@ -2792,6 +2784,14 @@ window.playerGoalsData = [
     "goals": 4
   },
   {
+    "player": "Максим Краснопольский",
+    "group": "Группа Б",
+    "team": "Рыцари",
+    "role": "Н",
+    "games": 9,
+    "goals": 4
+  },
+  {
     "player": "Матвей Волков",
     "group": "Группа Б",
     "team": "Витязь (Подольск)",
@@ -2843,6 +2843,14 @@ window.playerGoalsData = [
     "player": "Владимир Кузнецов",
     "group": "Группа Б",
     "team": "Динамо - Солнцево",
+    "role": "З",
+    "games": 8,
+    "goals": 4
+  },
+  {
+    "player": "Всеволод Петров",
+    "group": "Группа Б",
+    "team": "Рыцари",
     "role": "З",
     "games": 8,
     "goals": 4
@@ -3428,14 +3436,6 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Снежные барсы",
     "role": "З",
-    "games": 9,
-    "goals": 3
-  },
-  {
-    "player": "Максим Краснопольский",
-    "group": "Группа Б",
-    "team": "Рыцари",
-    "role": "Н",
     "games": 9,
     "goals": 3
   },
@@ -6080,14 +6080,6 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
-    "player": "Тимофей Лушников",
-    "group": "Группа А",
-    "team": "Академия Михайлова (Новомосковск)",
-    "role": "З",
-    "games": 6,
-    "goals": 1
-  },
-  {
     "player": "Федор Кончаков",
     "group": "Группа А",
     "team": "Спартак",
@@ -6244,6 +6236,14 @@ window.playerGoalsData = [
     "group": "Группа А",
     "team": "ЦСКА",
     "role": "З",
+    "games": 5,
+    "goals": 1
+  },
+  {
+    "player": "Матвей Спирин",
+    "group": "Группа А",
+    "team": "Академия Михайлова (Новомосковск)",
+    "role": "Н",
     "games": 5,
     "goals": 1
   },
@@ -8304,6 +8304,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Тимофей Лушников",
+    "group": "Группа А",
+    "team": "Академия Михайлова (Новомосковск)",
+    "role": "З",
+    "games": 6,
+    "goals": 0
+  },
+  {
     "player": "Тимофей Москалёв",
     "group": "Группа А",
     "team": "Локомотив - 2004",
@@ -8668,14 +8676,6 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Рязань - ВДВ",
     "role": "З",
-    "games": 5,
-    "goals": 0
-  },
-  {
-    "player": "Матвей Спирин",
-    "group": "Группа А",
-    "team": "Академия Михайлова (Новомосковск)",
-    "role": "Н",
     "games": 5,
     "goals": 0
   },
