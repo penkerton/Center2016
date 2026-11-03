@@ -119,19 +119,11 @@ test("разбор 22449: голы игроков сходятся с коман
   assert.equal(byTeam["Центр"], 18);
 });
 
-test("разбор 22449: кадры-доказательства существуют и вставлены в отчёт", () => {
-  const referenced = [...markdown.matchAll(/!\[[^\]]*\]\(([^)\s]+)\)/g)].map((m) => m[1]);
-  assert.ok(referenced.length >= 4, "в отчёте мало подтверждающих кадров");
-  for (const file of referenced) {
-    assert.ok(!/^https?:/.test(file), `кадр должен быть локальным: ${file}`);
-    assert.ok(fs.existsSync(path.join(reviewDir, file)), `нет файла кадра ${file}`);
-  }
-  const evidence = fs.readdirSync(path.join(reviewDir, "evidence"));
-  for (const file of evidence) {
-    assert.ok(referenced.includes(`evidence/${file}`), `кадр ${file} не используется в отчёте`);
-  }
+test("разбор 22449: в отчёте нет картинок-доказательств", () => {
+  // по просьбе владельца картинки убраны: доказательства — только ссылки на эпизоды
+  assert.equal((markdown.match(/!\[[^\]]*\]\(/g) ?? []).length, 0, "в отчёте остались картинки");
+  assert.equal(fs.existsSync(path.join(reviewDir, "evidence")), false, "папка evidence должна быть удалена");
 });
-
 test("разбор 22449: обязательные разделы отчёта на месте", () => {
   for (const heading of [
     "## 1. Как устроен этот матч",
