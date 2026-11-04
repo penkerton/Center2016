@@ -2313,8 +2313,8 @@ window.tournamentMatchesData = [
     "id": 22497,
     "homeTeam": "Пингвины",
     "awayTeam": "Метеор",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 16,
+    "awayGoals": 15,
     "date": "2026-11-04",
     "time": "11:30",
     "groupId": 315,
@@ -2322,7 +2322,7 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "11 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 22170,
