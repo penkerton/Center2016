@@ -360,14 +360,6 @@ window.playerGoalsData = [
     "goals": 14
   },
   {
-    "player": "Всеволод Станчинский",
-    "group": "Группа В",
-    "team": "Пингвины",
-    "role": "Н",
-    "games": 8,
-    "goals": 14
-  },
-  {
     "player": "Дариус Корня",
     "group": "Группа В",
     "team": "Буран Москва",
@@ -435,6 +427,22 @@ window.playerGoalsData = [
     "player": "Виктор Алексеев",
     "group": "Группа В",
     "team": "Янтарь",
+    "role": "Н",
+    "games": 8,
+    "goals": 13
+  },
+  {
+    "player": "Всеволод Станчинский",
+    "group": "Группа В",
+    "team": "Пингвины",
+    "role": "Н",
+    "games": 8,
+    "goals": 13
+  },
+  {
+    "player": "Роман Бабич",
+    "group": "Группа В",
+    "team": "Пингвины",
     "role": "Н",
     "games": 8,
     "goals": 13
@@ -571,14 +579,6 @@ window.playerGoalsData = [
     "player": "Михаил Платонов",
     "group": "Группа Б",
     "team": "Динамо - Солнцево",
-    "role": "Н",
-    "games": 8,
-    "goals": 12
-  },
-  {
-    "player": "Роман Бабич",
-    "group": "Группа В",
-    "team": "Пингвины",
     "role": "Н",
     "games": 8,
     "goals": 12
@@ -912,14 +912,6 @@ window.playerGoalsData = [
     "goals": 10
   },
   {
-    "player": "Михей Шаляпин",
-    "group": "Группа В",
-    "team": "Пингвины",
-    "role": "Н",
-    "games": 7,
-    "goals": 10
-  },
-  {
     "player": "Никита Чура",
     "group": "Группа Б",
     "team": "Балашиха",
@@ -1155,6 +1147,14 @@ window.playerGoalsData = [
     "player": "Марк Розенталь",
     "group": "Группа В",
     "team": "Северная звезда",
+    "role": "Н",
+    "games": 7,
+    "goals": 9
+  },
+  {
+    "player": "Михей Шаляпин",
+    "group": "Группа В",
+    "team": "Пингвины",
     "role": "Н",
     "games": 7,
     "goals": 9
@@ -3640,6 +3640,14 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
+    "player": "Тимофей Данзурун",
+    "group": "Группа В",
+    "team": "Пингвины",
+    "role": "З",
+    "games": 8,
+    "goals": 3
+  },
+  {
     "player": "Виктор Полянчиков",
     "group": "Группа Б",
     "team": "Русь",
@@ -4491,14 +4499,6 @@ window.playerGoalsData = [
     "player": "Семен Кауфман",
     "group": "Группа Б",
     "team": "Академия Харламова",
-    "role": "З",
-    "games": 8,
-    "goals": 2
-  },
-  {
-    "player": "Тимофей Данзурун",
-    "group": "Группа В",
-    "team": "Пингвины",
     "role": "З",
     "games": 8,
     "goals": 2
@@ -11180,6 +11180,14 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Метеор",
     "role": "Н",
+    "games": 0,
+    "goals": 0
+  },
+  {
+    "player": "Мэттью Улитенко",
+    "group": "Группа В",
+    "team": "Сталкер",
+    "role": "З",
     "games": 0,
     "goals": 0
   },

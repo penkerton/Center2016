@@ -2640,21 +2640,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22176,
-    "homeTeam": "Красная машина Атлант",
-    "awayTeam": "Академия Петрова",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-10",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "11 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22173,
     "homeTeam": "Снежные барсы",
     "awayTeam": "Арена Плей Трактор (Юг)",
@@ -2745,6 +2730,21 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
+    "id": 22176,
+    "homeTeam": "Красная машина Атлант",
+    "awayTeam": "Академия Петрова",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-10",
+    "time": "12:15",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "11 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
     "id": 22506,
     "homeTeam": "Синяя птица",
     "awayTeam": "Академия Бирюкова",
@@ -2820,21 +2820,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22206,
-    "homeTeam": "Академия Петрова",
-    "awayTeam": "Динамо - Солнцево",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-14",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "12 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22200,
     "homeTeam": "Белые медведи",
     "awayTeam": "Запад - Ястребы",
@@ -2883,21 +2868,6 @@ window.tournamentMatchesData = [
     "id": 22527,
     "homeTeam": "Марьино",
     "awayTeam": "Созвездие",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-14",
-    "time": "",
-    "groupId": 315,
-    "tournamentId": 51,
-    "group": "Группа В",
-    "tour": "12 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
-    "id": 22524,
-    "homeTeam": "Вымпел",
-    "awayTeam": "Буран Москва",
     "homeGoals": null,
     "awayGoals": null,
     "date": "2026-11-14",
@@ -2985,21 +2955,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23646,
-    "homeTeam": "Спартак",
-    "awayTeam": "Авангард",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-14",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "8 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
     "id": 23643,
     "homeTeam": "Красная машина Юниор",
     "awayTeam": "Арена Плей Трактор (Север)",
@@ -3060,6 +3015,21 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
+    "id": 22524,
+    "homeTeam": "Вымпел",
+    "awayTeam": "Буран Москва",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-14",
+    "time": "10:15",
+    "groupId": 315,
+    "tournamentId": 51,
+    "group": "Группа В",
+    "tour": "12 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
     "id": 22512,
     "homeTeam": "Северная звезда",
     "awayTeam": "Серебряные акулы",
@@ -3072,6 +3042,36 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "12 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 22206,
+    "homeTeam": "Академия Петрова",
+    "awayTeam": "Динамо - Солнцево",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-14",
+    "time": "12:30",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "12 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 23646,
+    "homeTeam": "Спартак",
+    "awayTeam": "Авангард",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-14",
+    "time": "12:45",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "8 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
     "status": 0
   },
   {
