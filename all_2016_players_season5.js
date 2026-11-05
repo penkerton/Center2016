@@ -10225,8 +10225,8 @@ window.playerGoalsData = [
   },
   {
     "player": "Александр Черкасов",
-    "group": "Группа А",
-    "team": "Крылья Советов",
+    "group": "Группа Б",
+    "team": "Белые медведи",
     "role": "З",
     "games": 0,
     "goals": 0
@@ -11329,8 +11329,8 @@ window.playerGoalsData = [
   },
   {
     "player": "Ростислав Ковров",
-    "group": "Группа А",
-    "team": "Спартак",
+    "group": "Группа Б",
+    "team": "Белые медведи",
     "role": "В",
     "games": 0,
     "goals": 0

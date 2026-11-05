@@ -2625,36 +2625,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22182,
-    "homeTeam": "Балашиха",
-    "awayTeam": "Белые медведи",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-10",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "11 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
-    "id": 22173,
-    "homeTeam": "Снежные барсы",
-    "awayTeam": "Арена Плей Трактор (Юг)",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-10",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "11 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22500,
     "homeTeam": "Арктика",
     "awayTeam": "Северная звезда",
@@ -2745,6 +2715,21 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
+    "id": 22182,
+    "homeTeam": "Балашиха",
+    "awayTeam": "Белые медведи",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-10",
+    "time": "13:00",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "11 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
     "id": 22506,
     "homeTeam": "Синяя птица",
     "awayTeam": "Академия Бирюкова",
@@ -2755,6 +2740,21 @@ window.tournamentMatchesData = [
     "groupId": 315,
     "tournamentId": 51,
     "group": "Группа В",
+    "tour": "11 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 22173,
+    "homeTeam": "Снежные барсы",
+    "awayTeam": "Арена Плей Трактор (Юг)",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-10",
+    "time": "15:10",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
     "tour": "11 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
@@ -2790,48 +2790,18 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22212,
-    "homeTeam": "Олимпийская деревня - 80",
-    "awayTeam": "Снежные барсы",
+    "id": 23652,
+    "homeTeam": "Локомотив",
+    "awayTeam": "Локомотив - 2004",
     "homeGoals": null,
     "awayGoals": null,
-    "date": "2026-11-14",
+    "date": "2026-11-13",
     "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "12 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
-    "id": 22209,
-    "homeTeam": "Арена Плей Трактор (Юг)",
-    "awayTeam": "Красная машина Атлант",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-14",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "12 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
-    "id": 22200,
-    "homeTeam": "Белые медведи",
-    "awayTeam": "Запад - Ястребы",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-14",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "12 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "8 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
     "status": 0
   },
   {
@@ -2925,36 +2895,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23652,
-    "homeTeam": "Локомотив",
-    "awayTeam": "Локомотив - 2004",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-14",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "8 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
-    "id": 23649,
-    "homeTeam": "ЦСКА",
-    "awayTeam": "Академия Михайлова (Новомосковск)",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-14",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "8 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
     "id": 23643,
     "homeTeam": "Красная машина Юниор",
     "awayTeam": "Арена Плей Трактор (Север)",
@@ -2982,6 +2922,21 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "8 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
+    "id": 22209,
+    "homeTeam": "Арена Плей Трактор (Юг)",
+    "awayTeam": "Красная машина Атлант",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-14",
+    "time": "09:30",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "12 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
   },
   {
@@ -3030,6 +2985,21 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
+    "id": 22200,
+    "homeTeam": "Белые медведи",
+    "awayTeam": "Запад - Ястребы",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-14",
+    "time": "11:00",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "12 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
     "id": 22512,
     "homeTeam": "Северная звезда",
     "awayTeam": "Серебряные акулы",
@@ -3060,6 +3030,21 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
+    "id": 23649,
+    "homeTeam": "ЦСКА",
+    "awayTeam": "Академия Михайлова (Новомосковск)",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-14",
+    "time": "12:30",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "8 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
     "id": 23646,
     "homeTeam": "Спартак",
     "awayTeam": "Авангард",
@@ -3072,6 +3057,21 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "8 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
+    "id": 22212,
+    "homeTeam": "Олимпийская деревня - 80",
+    "awayTeam": "Снежные барсы",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-14",
+    "time": "13:30",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "12 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
   },
   {
