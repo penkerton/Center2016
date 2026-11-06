@@ -4056,14 +4056,6 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
-    "player": "Александр Тишкин",
-    "group": "Группа А",
-    "team": "ЦСКА",
-    "role": "Н",
-    "games": 3,
-    "goals": 3
-  },
-  {
     "player": "Гавриил Чадов",
     "group": "Группа Б",
     "team": "Белые медведи",
@@ -6501,14 +6493,6 @@ window.playerGoalsData = [
     "team": "Академия Михайлова (Москва)",
     "role": "Н",
     "games": 3,
-    "goals": 1
-  },
-  {
-    "player": "Александр Коротич",
-    "group": "Группа А",
-    "team": "Академия Михайлова (Москва)",
-    "role": "Н",
-    "games": 2,
     "goals": 1
   },
   {
@@ -8968,14 +8952,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Марк Полтарыхин",
-    "group": "Группа А",
-    "team": "Авангард",
-    "role": "Н",
-    "games": 4,
-    "goals": 0
-  },
-  {
     "player": "Никита Битейкин",
     "group": "Группа В",
     "team": "Арктика",
@@ -9200,14 +9176,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Евгений Голубцов",
-    "group": "Группа А",
-    "team": "Арена Плей Трактор (Север)",
-    "role": "Н",
-    "games": 3,
-    "goals": 0
-  },
-  {
     "player": "Евгений Дедков",
     "group": "Группа А",
     "team": "Спартак",
@@ -9416,14 +9384,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Артём Генрихс",
-    "group": "Группа А",
-    "team": "Красная машина Юниор",
-    "role": "Н",
-    "games": 2,
-    "goals": 0
-  },
-  {
     "player": "Артем Зимин",
     "group": "Группа Б",
     "team": "Динамо - Солнцево",
@@ -9539,14 +9499,6 @@ window.playerGoalsData = [
     "player": "Леонид Мордовин",
     "group": "Группа В",
     "team": "Созвездие",
-    "role": "Н",
-    "games": 2,
-    "goals": 0
-  },
-  {
-    "player": "Макар Брагин",
-    "group": "Группа А",
-    "team": "Красная машина Юниор",
     "role": "Н",
     "games": 2,
     "goals": 0
@@ -9904,14 +9856,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Захар Соколов",
-    "group": "Группа А",
-    "team": "Красная машина Юниор",
-    "role": "Н",
-    "games": 1,
-    "goals": 0
-  },
-  {
     "player": "Игорь Козлов",
     "group": "Группа А",
     "team": "Арена Плей Трактор (Север)",
@@ -10168,6 +10112,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Александр Коротич",
+    "group": "Группа А",
+    "team": "Крылья Советов",
+    "role": "Н",
+    "games": 0,
+    "goals": 0
+  },
+  {
     "player": "Александр Купреенко",
     "group": "Группа В",
     "team": "Буран Москва",
@@ -10196,6 +10148,14 @@ window.playerGoalsData = [
     "group": "Группа А",
     "team": "ЦСКА",
     "role": "В",
+    "games": 0,
+    "goals": 0
+  },
+  {
+    "player": "Александр Тишкин",
+    "group": "Группа А",
+    "team": "Авангард",
+    "role": "Н",
     "games": 0,
     "goals": 0
   },
@@ -10282,7 +10242,7 @@ window.playerGoalsData = [
   {
     "player": "Андрей Купревич",
     "group": "Группа А",
-    "team": "Арена Плей Трактор (Север)",
+    "team": "Красная машина Юниор",
     "role": "Н",
     "games": 0,
     "goals": 0
@@ -10666,7 +10626,7 @@ window.playerGoalsData = [
   {
     "player": "Егор Аушев",
     "group": "Группа А",
-    "team": "Спартак",
+    "team": "Динамо",
     "role": "З",
     "games": 0,
     "goals": 0
@@ -11027,6 +10987,14 @@ window.playerGoalsData = [
     "player": "Марк Поликарпов",
     "group": "Группа А",
     "team": "Спартак",
+    "role": "Н",
+    "games": 0,
+    "goals": 0
+  },
+  {
+    "player": "Марк Полтарыхин",
+    "group": "Группа А",
+    "team": "Красная машина Юниор",
     "role": "Н",
     "games": 0,
     "goals": 0
@@ -11498,7 +11466,7 @@ window.playerGoalsData = [
   {
     "player": "Фёдор Лавыгин",
     "group": "Группа А",
-    "team": "Спартак",
+    "team": "Динамо",
     "role": "З",
     "games": 0,
     "goals": 0
