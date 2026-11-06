@@ -664,6 +664,14 @@ window.playerGoalsData = [
     "goals": 12
   },
   {
+    "player": "Владимир Ликманов",
+    "group": "Группа В",
+    "team": "Метеор",
+    "role": "Н",
+    "games": 9,
+    "goals": 11
+  },
+  {
     "player": "Ратибор Мандрыка",
     "group": "Группа Б",
     "team": "Гранит",
@@ -771,14 +779,6 @@ window.playerGoalsData = [
     "player": "Владимир Коновалов",
     "group": "Группа Б",
     "team": "Снежные барсы",
-    "role": "Н",
-    "games": 9,
-    "goals": 10
-  },
-  {
-    "player": "Владимир Ликманов",
-    "group": "Группа В",
-    "team": "Метеор",
     "role": "Н",
     "games": 9,
     "goals": 10
@@ -3408,14 +3408,6 @@ window.playerGoalsData = [
     "goals": 4
   },
   {
-    "player": "Александр Паршанов",
-    "group": "Группа В",
-    "team": "Метеор",
-    "role": "З",
-    "games": 9,
-    "goals": 3
-  },
-  {
     "player": "Алексей Дроняев",
     "group": "Группа Б",
     "team": "Олимпийская деревня - 80",
@@ -4110,6 +4102,14 @@ window.playerGoalsData = [
     "role": "З",
     "games": 2,
     "goals": 3
+  },
+  {
+    "player": "Александр Паршанов",
+    "group": "Группа В",
+    "team": "Метеор",
+    "role": "З",
+    "games": 9,
+    "goals": 2
   },
   {
     "player": "Андрей Горица",
@@ -9416,14 +9416,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Андрей Евдан",
-    "group": "Группа А",
-    "team": "Спартак",
-    "role": "Н",
-    "games": 2,
-    "goals": 0
-  },
-  {
     "player": "Артём Генрихс",
     "group": "Группа А",
     "team": "Красная машина Юниор",
@@ -10275,6 +10267,14 @@ window.playerGoalsData = [
     "player": "Андрей Викторов",
     "group": "Группа А",
     "team": "Крылья Советов",
+    "role": "Н",
+    "games": 0,
+    "goals": 0
+  },
+  {
+    "player": "Андрей Евдан",
+    "group": "Группа А",
+    "team": "ЦСКА",
     "role": "Н",
     "games": 0,
     "goals": 0

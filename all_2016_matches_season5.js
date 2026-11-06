@@ -2796,7 +2796,7 @@ window.tournamentMatchesData = [
     "homeGoals": null,
     "awayGoals": null,
     "date": "2026-11-13",
-    "time": "",
+    "time": "11:15",
     "groupId": 309,
     "tournamentId": 48,
     "group": "Группа А",
@@ -2910,21 +2910,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23640,
-    "homeTeam": "Динамо",
-    "awayTeam": "Крылья Советов",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-14",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "8 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
     "id": 22209,
     "homeTeam": "Арена Плей Трактор (Юг)",
     "awayTeam": "Красная машина Атлант",
@@ -2982,6 +2967,21 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "12 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 23640,
+    "homeTeam": "Динамо",
+    "awayTeam": "Крылья Советов",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-14",
+    "time": "10:45",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "8 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
     "status": 0
   },
   {
