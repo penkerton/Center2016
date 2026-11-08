@@ -4064,6 +4064,14 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
+    "player": "Иван Уколов",
+    "group": "Группа А",
+    "team": "Локомотив - 2004",
+    "role": "Н",
+    "games": 7,
+    "goals": 3
+  },
+  {
     "player": "Илья Анохин",
     "group": "Группа А",
     "team": "ЦСКА",
@@ -4241,14 +4249,6 @@ window.playerGoalsData = [
   },
   {
     "player": "Иван Карпов",
-    "group": "Группа А",
-    "team": "Локомотив - 2004",
-    "role": "Н",
-    "games": 6,
-    "goals": 3
-  },
-  {
-    "player": "Иван Уколов",
     "group": "Группа А",
     "team": "Локомотив - 2004",
     "role": "Н",
@@ -4936,6 +4936,14 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
+    "player": "Александр Абрамов",
+    "group": "Группа А",
+    "team": "Локомотив - 2004",
+    "role": "Н",
+    "games": 7,
+    "goals": 2
+  },
+  {
     "player": "Александр Булюбашич",
     "group": "Группа Б",
     "team": "Динамо - Солнцево",
@@ -5051,6 +5059,14 @@ window.playerGoalsData = [
     "player": "Данила Штукин",
     "group": "Группа А",
     "team": "Академия Михайлова (Тула)",
+    "role": "Н",
+    "games": 7,
+    "goals": 2
+  },
+  {
+    "player": "Данис Кунакаев",
+    "group": "Группа А",
+    "team": "ЦСКА",
     "role": "Н",
     "games": 7,
     "goals": 2
@@ -5240,14 +5256,6 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
-    "player": "Александр Абрамов",
-    "group": "Группа А",
-    "team": "Локомотив - 2004",
-    "role": "Н",
-    "games": 6,
-    "goals": 2
-  },
-  {
     "player": "Аркадий Слеповичев",
     "group": "Группа Б",
     "team": "Красная машина Атлант",
@@ -5267,14 +5275,6 @@ window.playerGoalsData = [
     "player": "Вячеслав Стюфляев",
     "group": "Группа В",
     "team": "Арктика",
-    "role": "Н",
-    "games": 6,
-    "goals": 2
-  },
-  {
-    "player": "Данис Кунакаев",
-    "group": "Группа А",
-    "team": "ЦСКА",
     "role": "Н",
     "games": 6,
     "goals": 2
@@ -5920,6 +5920,14 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
+    "player": "Даниил Панков",
+    "group": "Группа А",
+    "team": "Локомотив - 2004",
+    "role": "Н",
+    "games": 7,
+    "goals": 1
+  },
+  {
     "player": "Дмитрий Белов",
     "group": "Группа А",
     "team": "Локомотив",
@@ -6012,6 +6020,14 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Вымпел",
     "role": "З",
+    "games": 7,
+    "goals": 1
+  },
+  {
+    "player": "Макар Майер",
+    "group": "Группа А",
+    "team": "Локомотив - 2004",
+    "role": "Н",
     "games": 7,
     "goals": 1
   },
@@ -6136,6 +6152,14 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
+    "player": "Сергей Троицкий",
+    "group": "Группа А",
+    "team": "ЦСКА",
+    "role": "Н",
+    "games": 7,
+    "goals": 1
+  },
+  {
     "player": "Тимофей Кононов",
     "group": "Группа А",
     "team": "Локомотив",
@@ -6216,14 +6240,6 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
-    "player": "Даниил Панков",
-    "group": "Группа А",
-    "team": "Локомотив - 2004",
-    "role": "Н",
-    "games": 6,
-    "goals": 1
-  },
-  {
     "player": "Дмитрий Богданов",
     "group": "Группа В",
     "team": "Вымпел",
@@ -6288,14 +6304,6 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
-    "player": "Макар Майер",
-    "group": "Группа А",
-    "team": "Локомотив - 2004",
-    "role": "Н",
-    "games": 6,
-    "goals": 1
-  },
-  {
     "player": "Максим Потапов",
     "group": "Группа Б",
     "team": "Олимпийская деревня - 80",
@@ -6307,6 +6315,14 @@ window.playerGoalsData = [
     "player": "Марк Грибачев",
     "group": "Группа В",
     "team": "Вымпел",
+    "role": "З",
+    "games": 6,
+    "goals": 1
+  },
+  {
+    "player": "Матвей Ручко",
+    "group": "Группа А",
+    "team": "ЦСКА",
     "role": "З",
     "games": 6,
     "goals": 1
@@ -6355,14 +6371,6 @@ window.playerGoalsData = [
     "player": "Сергей Корнев",
     "group": "Группа Б",
     "team": "Рязань - ВДВ",
-    "role": "Н",
-    "games": 6,
-    "goals": 1
-  },
-  {
-    "player": "Сергей Троицкий",
-    "group": "Группа А",
-    "team": "ЦСКА",
     "role": "Н",
     "games": 6,
     "goals": 1
@@ -6476,14 +6484,6 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Балашиха",
     "role": "Н",
-    "games": 5,
-    "goals": 1
-  },
-  {
-    "player": "Матвей Ручко",
-    "group": "Группа А",
-    "team": "ЦСКА",
-    "role": "З",
     "games": 5,
     "goals": 1
   },
@@ -7680,6 +7680,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Андрей Шитов",
+    "group": "Группа А",
+    "team": "Локомотив - 2004",
+    "role": "З",
+    "games": 7,
+    "goals": 0
+  },
+  {
     "player": "Антон Апокин",
     "group": "Группа В",
     "team": "Академия Бирюкова",
@@ -7700,6 +7708,14 @@ window.playerGoalsData = [
     "group": "Группа А",
     "team": "Динамо",
     "role": "Н",
+    "games": 7,
+    "goals": 0
+  },
+  {
+    "player": "Богдан Марченко",
+    "group": "Группа А",
+    "team": "ЦСКА",
+    "role": "З",
     "games": 7,
     "goals": 0
   },
@@ -7736,10 +7752,26 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Владимир Лощилов",
+    "group": "Группа А",
+    "team": "ЦСКА",
+    "role": "З",
+    "games": 7,
+    "goals": 0
+  },
+  {
     "player": "Владимир Смирнов",
     "group": "Группа В",
     "team": "Серебряные акулы",
     "role": "В",
+    "games": 7,
+    "goals": 0
+  },
+  {
+    "player": "Владимир Цветков",
+    "group": "Группа А",
+    "team": "Локомотив - 2004",
+    "role": "Н",
     "games": 7,
     "goals": 0
   },
@@ -7880,6 +7912,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Евгений Русинов",
+    "group": "Группа А",
+    "team": "Локомотив - 2004",
+    "role": "Н",
+    "games": 7,
+    "goals": 0
+  },
+  {
     "player": "Егор Баскаков",
     "group": "Группа А",
     "team": "Арена Плей Трактор (Север)",
@@ -7939,6 +7979,14 @@ window.playerGoalsData = [
     "player": "Иван Терехов",
     "group": "Группа А",
     "team": "Арена Плей Трактор (Север)",
+    "role": "З",
+    "games": 7,
+    "goals": 0
+  },
+  {
+    "player": "Илья Гаврилычев",
+    "group": "Группа А",
+    "team": "Локомотив - 2004",
     "role": "З",
     "games": 7,
     "goals": 0
@@ -8328,14 +8376,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Андрей Шитов",
-    "group": "Группа А",
-    "team": "Локомотив - 2004",
-    "role": "З",
-    "games": 6,
-    "goals": 0
-  },
-  {
     "player": "Арарат Чобанян",
     "group": "Группа В",
     "team": "Пингвины",
@@ -8364,14 +8404,6 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Вымпел",
     "role": "Н",
-    "games": 6,
-    "goals": 0
-  },
-  {
-    "player": "Богдан Марченко",
-    "group": "Группа А",
-    "team": "ЦСКА",
-    "role": "З",
     "games": 6,
     "goals": 0
   },
@@ -8408,14 +8440,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Владимир Лощилов",
-    "group": "Группа А",
-    "team": "ЦСКА",
-    "role": "З",
-    "games": 6,
-    "goals": 0
-  },
-  {
     "player": "Владимир Лукьянов",
     "group": "Группа В",
     "team": "Марьино",
@@ -8428,14 +8452,6 @@ window.playerGoalsData = [
     "group": "Группа А",
     "team": "Академия Михайлова (Москва)",
     "role": "В",
-    "games": 6,
-    "goals": 0
-  },
-  {
-    "player": "Владимир Цветков",
-    "group": "Группа А",
-    "team": "Локомотив - 2004",
-    "role": "Н",
     "games": 6,
     "goals": 0
   },
@@ -8488,18 +8504,18 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Евгений Захаров",
+    "player": "Данила Федоров",
     "group": "Группа А",
-    "team": "Арена Плей Трактор (Север)",
-    "role": "З",
+    "team": "ЦСКА",
+    "role": "Н",
     "games": 6,
     "goals": 0
   },
   {
-    "player": "Евгений Русинов",
+    "player": "Евгений Захаров",
     "group": "Группа А",
-    "team": "Локомотив - 2004",
-    "role": "Н",
+    "team": "Арена Плей Трактор (Север)",
+    "role": "З",
     "games": 6,
     "goals": 0
   },
@@ -8564,14 +8580,6 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Академия Бирюкова",
     "role": "Н",
-    "games": 6,
-    "goals": 0
-  },
-  {
-    "player": "Илья Гаврилычев",
-    "group": "Группа А",
-    "team": "Локомотив - 2004",
-    "role": "З",
     "games": 6,
     "goals": 0
   },
@@ -8848,14 +8856,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Данила Федоров",
-    "group": "Группа А",
-    "team": "ЦСКА",
-    "role": "Н",
-    "games": 5,
-    "goals": 0
-  },
-  {
     "player": "Евгений Николин",
     "group": "Группа Б",
     "team": "Рязань - ВДВ",
@@ -9027,6 +9027,14 @@ window.playerGoalsData = [
     "player": "Тимофей Титов",
     "group": "Группа В",
     "team": "Арктика",
+    "role": "З",
+    "games": 5,
+    "goals": 0
+  },
+  {
+    "player": "Эмир Хамдамов",
+    "group": "Группа А",
+    "team": "ЦСКА",
     "role": "З",
     "games": 5,
     "goals": 0
@@ -9244,14 +9252,6 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Белые медведи",
     "role": "В",
-    "games": 4,
-    "goals": 0
-  },
-  {
-    "player": "Эмир Хамдамов",
-    "group": "Группа А",
-    "team": "ЦСКА",
-    "role": "З",
     "games": 4,
     "goals": 0
   },
@@ -9616,6 +9616,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Ефим Орлов",
+    "group": "Группа А",
+    "team": "ЦСКА",
+    "role": "З",
+    "games": 2,
+    "goals": 0
+  },
+  {
     "player": "Иван Хаустов",
     "group": "Группа Б",
     "team": "Витязь (Подольск)",
@@ -9948,14 +9956,6 @@ window.playerGoalsData = [
     "group": "Группа А",
     "team": "Академия Михайлова (Новомосковск)",
     "role": "Н",
-    "games": 1,
-    "goals": 0
-  },
-  {
-    "player": "Ефим Орлов",
-    "group": "Группа А",
-    "team": "ЦСКА",
-    "role": "З",
     "games": 1,
     "goals": 0
   },
