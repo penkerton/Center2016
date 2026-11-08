@@ -4064,6 +4064,14 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
+    "player": "Иван Карпов",
+    "group": "Группа А",
+    "team": "Локомотив - 2004",
+    "role": "Н",
+    "games": 7,
+    "goals": 3
+  },
+  {
     "player": "Иван Уколов",
     "group": "Группа А",
     "team": "Локомотив - 2004",
@@ -4244,14 +4252,6 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Академия Петрова",
     "role": "З",
-    "games": 6,
-    "goals": 3
-  },
-  {
-    "player": "Иван Карпов",
-    "group": "Группа А",
-    "team": "Локомотив - 2004",
-    "role": "Н",
     "games": 6,
     "goals": 3
   },
@@ -5864,6 +5864,14 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
+    "player": "Артемий Алмазов",
+    "group": "Группа А",
+    "team": "Локомотив - 2004",
+    "role": "Н",
+    "games": 7,
+    "goals": 1
+  },
+  {
     "player": "Аскар Зайнуллин",
     "group": "Группа А",
     "team": "Академия Михайлова (Новомосковск)",
@@ -6227,14 +6235,6 @@ window.playerGoalsData = [
     "player": "Арсений Соломатин",
     "group": "Группа А",
     "team": "Арена Плей Трактор (Север)",
-    "role": "Н",
-    "games": 6,
-    "goals": 1
-  },
-  {
-    "player": "Артемий Алмазов",
-    "group": "Группа А",
-    "team": "Локомотив - 2004",
     "role": "Н",
     "games": 6,
     "goals": 1
