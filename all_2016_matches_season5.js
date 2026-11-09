@@ -2613,8 +2613,8 @@ window.tournamentMatchesData = [
     "id": 22500,
     "homeTeam": "Арктика",
     "awayTeam": "Северная звезда",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 7,
+    "awayGoals": 18,
     "date": "2026-11-09",
     "time": "09:15",
     "groupId": 315,
@@ -2622,7 +2622,7 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "11 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 22491,
@@ -3180,21 +3180,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22542,
-    "homeTeam": "Серебряные акулы",
-    "awayTeam": "Метеор",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-21",
-    "time": "",
-    "groupId": 315,
-    "tournamentId": 51,
-    "group": "Группа В",
-    "tour": "13 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22539,
     "homeTeam": "Арктика",
     "awayTeam": "Центр",
@@ -3322,6 +3307,21 @@ window.tournamentMatchesData = [
     "awayGoals": null,
     "date": "2026-11-21",
     "time": "09:45",
+    "groupId": 315,
+    "tournamentId": 51,
+    "group": "Группа В",
+    "tour": "13 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 22542,
+    "homeTeam": "Серебряные акулы",
+    "awayTeam": "Метеор",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-21",
+    "time": "10:00",
     "groupId": 315,
     "tournamentId": 51,
     "group": "Группа В",
