@@ -960,14 +960,6 @@ window.playerGoalsData = [
     "goals": 11
   },
   {
-    "player": "Тимофей Веденин",
-    "group": "Группа Б",
-    "team": "Белые медведи",
-    "role": "Н",
-    "games": 8,
-    "goals": 11
-  },
-  {
     "player": "Леонид Бедарев",
     "group": "Группа В",
     "team": "Академия Бирюкова",
@@ -1171,6 +1163,14 @@ window.playerGoalsData = [
     "player": "Савелий Кудашов",
     "group": "Группа Б",
     "team": "Русь",
+    "role": "Н",
+    "games": 8,
+    "goals": 10
+  },
+  {
+    "player": "Тимофей Веденин",
+    "group": "Группа Б",
+    "team": "Белые медведи",
     "role": "Н",
     "games": 8,
     "goals": 10
@@ -2096,14 +2096,6 @@ window.playerGoalsData = [
     "goals": 7
   },
   {
-    "player": "Игорь Сапунов",
-    "group": "Группа А",
-    "team": "Динамо",
-    "role": "Н",
-    "games": 7,
-    "goals": 7
-  },
-  {
     "player": "Илья Соколов",
     "group": "Группа Б",
     "team": "Арена Плей Трактор (Юг)",
@@ -2392,6 +2384,14 @@ window.playerGoalsData = [
     "goals": 6
   },
   {
+    "player": "Михаил Хомик",
+    "group": "Группа Б",
+    "team": "Белые медведи",
+    "role": "Н",
+    "games": 8,
+    "goals": 6
+  },
+  {
     "player": "Петр Сухов",
     "group": "Группа Б",
     "team": "Динамо - Солнцево",
@@ -2507,6 +2507,14 @@ window.playerGoalsData = [
     "player": "Екатерина Никифорова",
     "group": "Группа Б",
     "team": "Рязань - ВДВ",
+    "role": "Н",
+    "games": 7,
+    "goals": 6
+  },
+  {
+    "player": "Игорь Сапунов",
+    "group": "Группа А",
+    "team": "Динамо",
     "role": "Н",
     "games": 7,
     "goals": 6
@@ -2820,14 +2828,6 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Русь",
     "role": "З",
-    "games": 8,
-    "goals": 5
-  },
-  {
-    "player": "Михаил Хомик",
-    "group": "Группа Б",
-    "team": "Белые медведи",
-    "role": "Н",
     "games": 8,
     "goals": 5
   },
@@ -4144,14 +4144,6 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
-    "player": "Платон Климов",
-    "group": "Группа А",
-    "team": "Красная машина Юниор",
-    "role": "Н",
-    "games": 7,
-    "goals": 3
-  },
-  {
     "player": "Роберт Гордиенко",
     "group": "Группа А",
     "team": "Академия Михайлова (Москва)",
@@ -5208,6 +5200,14 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
+    "player": "Платон Климов",
+    "group": "Группа А",
+    "team": "Красная машина Юниор",
+    "role": "Н",
+    "games": 7,
+    "goals": 2
+  },
+  {
     "player": "Раяз Хасянов",
     "group": "Группа Б",
     "team": "Академия Харламова",
@@ -5308,6 +5308,14 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Академия Харламова",
     "role": "З",
+    "games": 6,
+    "goals": 2
+  },
+  {
+    "player": "Тимур Звягинцев",
+    "group": "Группа А",
+    "team": "Красная машина Юниор",
+    "role": "Н",
     "games": 6,
     "goals": 2
   },
@@ -6168,6 +6176,14 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
+    "player": "Степан Кузнецов",
+    "group": "Группа А",
+    "team": "Динамо",
+    "role": "З",
+    "games": 7,
+    "goals": 1
+  },
+  {
     "player": "Тимофей Кононов",
     "group": "Группа А",
     "team": "Локомотив",
@@ -6371,14 +6387,6 @@ window.playerGoalsData = [
     "player": "Сергей Корнев",
     "group": "Группа Б",
     "team": "Рязань - ВДВ",
-    "role": "Н",
-    "games": 6,
-    "goals": 1
-  },
-  {
-    "player": "Тимур Звягинцев",
-    "group": "Группа А",
-    "team": "Красная машина Юниор",
     "role": "Н",
     "games": 6,
     "goals": 1
@@ -8268,14 +8276,6 @@ window.playerGoalsData = [
     "group": "Группа А",
     "team": "Авангард",
     "role": "В",
-    "games": 7,
-    "goals": 0
-  },
-  {
-    "player": "Степан Кузнецов",
-    "group": "Группа А",
-    "team": "Динамо",
-    "role": "З",
     "games": 7,
     "goals": 0
   },

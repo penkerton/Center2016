@@ -2820,21 +2820,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23655,
-    "homeTeam": "Академия Михайлова (Тула)",
-    "awayTeam": "Академия Михайлова (Москва)",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-14",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "8 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
     "id": 22209,
     "homeTeam": "Арена Плей Трактор (Юг)",
     "awayTeam": "Красная машина Атлант",
@@ -3067,6 +3052,21 @@ window.tournamentMatchesData = [
     "awayGoals": null,
     "date": "2026-11-14",
     "time": "13:30",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "8 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
+    "id": 23655,
+    "homeTeam": "Академия Михайлова (Тула)",
+    "awayTeam": "Академия Михайлова (Москва)",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-14",
+    "time": "14:00",
     "groupId": 309,
     "tournamentId": 48,
     "group": "Группа А",
