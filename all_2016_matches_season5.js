@@ -2778,8 +2778,8 @@ window.tournamentMatchesData = [
     "id": 22179,
     "homeTeam": "Динамо - Солнцево",
     "awayTeam": "Академия Харламова",
-    "homeGoals": 12,
-    "awayGoals": 8,
+    "homeGoals": 15,
+    "awayGoals": 13,
     "date": "2026-11-11",
     "time": "15:15",
     "groupId": 312,
@@ -2787,7 +2787,7 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "11 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 1
+    "status": 2
   },
   {
     "id": 23652,
