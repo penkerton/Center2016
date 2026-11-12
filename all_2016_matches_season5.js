@@ -2820,21 +2820,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23643,
-    "homeTeam": "Красная машина Юниор",
-    "awayTeam": "Арена Плей Трактор (Север)",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-14",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "8 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
     "id": 22209,
     "homeTeam": "Арена Плей Трактор (Юг)",
     "awayTeam": "Красная машина Атлант",
@@ -2952,6 +2937,21 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "12 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 23643,
+    "homeTeam": "Красная машина Юниор",
+    "awayTeam": "Арена Плей Трактор (Север)",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-14",
+    "time": "11:00",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "8 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
     "status": 0
   },
   {
