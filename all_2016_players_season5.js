@@ -872,14 +872,6 @@ window.playerGoalsData = [
     "goals": 12
   },
   {
-    "player": "Владислав Иус",
-    "group": "Группа Б",
-    "team": "Динамо - Солнцево",
-    "role": "Н",
-    "games": 9,
-    "goals": 12
-  },
-  {
     "player": "Давид Юсипов",
     "group": "Группа Б",
     "team": "Красная машина Атлант",
@@ -1051,6 +1043,14 @@ window.playerGoalsData = [
     "player": "Владимир Ликманов",
     "group": "Группа В",
     "team": "Метеор",
+    "role": "Н",
+    "games": 9,
+    "goals": 11
+  },
+  {
+    "player": "Владислав Иус",
+    "group": "Группа Б",
+    "team": "Динамо - Солнцево",
     "role": "Н",
     "games": 9,
     "goals": 11
@@ -1728,6 +1728,14 @@ window.playerGoalsData = [
     "goals": 8
   },
   {
+    "player": "Мирон Трушин",
+    "group": "Группа Б",
+    "team": "Динамо - Солнцево",
+    "role": "Н",
+    "games": 10,
+    "goals": 8
+  },
+  {
     "player": "Платон Гученко",
     "group": "Группа Б",
     "team": "Олимпийская деревня - 80",
@@ -2035,14 +2043,6 @@ window.playerGoalsData = [
     "player": "Максим Сычев",
     "group": "Группа Б",
     "team": "Академия Харламова",
-    "role": "Н",
-    "games": 10,
-    "goals": 7
-  },
-  {
-    "player": "Мирон Трушин",
-    "group": "Группа Б",
-    "team": "Динамо - Солнцево",
     "role": "Н",
     "games": 10,
     "goals": 7

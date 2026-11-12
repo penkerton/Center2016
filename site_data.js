@@ -1,5 +1,5 @@
 window.siteData = {
-  "generatedAt": "2026-11-12T05:04:29.074Z",
+  "generatedAt": "2026-11-12T14:22:44.515Z",
   "seasonId": 5,
   "source": {
     "label": "Федерация хоккея Москвы",
@@ -250,7 +250,7 @@ window.siteData = {
     {
       "player": "Александр Козлов",
       "role": "В",
-      "number": 59,
+      "number": 50,
       "dateOfBirth": "18.10.2016"
     },
     {
