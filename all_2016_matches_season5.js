@@ -3120,21 +3120,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23658,
-    "homeTeam": "Академия Михайлова (Москва)",
-    "awayTeam": "Динамо",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-21",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "9 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
     "id": 22230,
     "homeTeam": "Гранит",
     "awayTeam": "Русь",
@@ -3147,6 +3132,21 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "13 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 23658,
+    "homeTeam": "Академия Михайлова (Москва)",
+    "awayTeam": "Динамо",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-21",
+    "time": "09:30",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "9 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
     "status": 0
   },
   {
@@ -3930,12 +3930,12 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23727,
-    "homeTeam": "Академия Михайлова (Новомосковск)",
-    "awayTeam": "Локомотив - 2004",
+    "id": 23724,
+    "homeTeam": "Авангард",
+    "awayTeam": "Академия Михайлова (Москва)",
     "homeGoals": null,
     "awayGoals": null,
-    "date": "2026-12-19",
+    "date": "2026-12-12",
     "time": "",
     "groupId": 309,
     "tournamentId": 48,
@@ -3945,9 +3945,9 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23724,
-    "homeTeam": "Авангард",
-    "awayTeam": "Академия Михайлова (Москва)",
+    "id": 23727,
+    "homeTeam": "Академия Михайлова (Новомосковск)",
+    "awayTeam": "Локомотив - 2004",
     "homeGoals": null,
     "awayGoals": null,
     "date": "2026-12-19",
