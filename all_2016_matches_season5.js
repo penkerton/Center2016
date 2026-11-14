@@ -3048,7 +3048,7 @@ window.tournamentMatchesData = [
     "id": 23655,
     "homeTeam": "Академия Михайлова (Тула)",
     "awayTeam": "Академия Михайлова (Москва)",
-    "homeGoals": 1,
+    "homeGoals": 2,
     "awayGoals": 4,
     "date": "2026-11-14",
     "time": "14:00",
@@ -3057,7 +3057,7 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "8 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 1
+    "status": 2
   },
   {
     "id": 22194,
