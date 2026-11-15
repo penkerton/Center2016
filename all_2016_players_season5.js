@@ -696,6 +696,14 @@ window.playerGoalsData = [
     "goals": 14
   },
   {
+    "player": "Семён Гоголев",
+    "group": "Группа В",
+    "team": "Пингвины",
+    "role": "Н",
+    "games": 10,
+    "goals": 14
+  },
+  {
     "player": "Сергей Равшанов",
     "group": "Группа В",
     "team": "Серебряные акулы",
@@ -843,14 +851,6 @@ window.playerGoalsData = [
     "player": "Николай Снегирев",
     "group": "Группа Б",
     "team": "Красная машина Атлант",
-    "role": "Н",
-    "games": 10,
-    "goals": 13
-  },
-  {
-    "player": "Семён Гоголев",
-    "group": "Группа В",
-    "team": "Пингвины",
     "role": "Н",
     "games": 10,
     "goals": 13
@@ -1936,14 +1936,6 @@ window.playerGoalsData = [
     "goals": 8
   },
   {
-    "player": "Андрей Киселев",
-    "group": "Группа В",
-    "team": "Пингвины",
-    "role": "Н",
-    "games": 10,
-    "goals": 8
-  },
-  {
     "player": "Даниил Барановский",
     "group": "Группа В",
     "team": "Синяя птица",
@@ -2221,6 +2213,14 @@ window.playerGoalsData = [
     "team": "Сталкер",
     "role": "З",
     "games": 11,
+    "goals": 7
+  },
+  {
+    "player": "Андрей Киселев",
+    "group": "Группа В",
+    "team": "Пингвины",
+    "role": "Н",
+    "games": 10,
     "goals": 7
   },
   {
