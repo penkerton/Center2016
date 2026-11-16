@@ -72,6 +72,14 @@ window.playerGoalsData = [
     "goals": 29
   },
   {
+    "player": "Георгий Адоньев",
+    "group": "Группа В",
+    "team": "Буран Москва",
+    "role": "Н",
+    "games": 11,
+    "goals": 28
+  },
+  {
     "player": "Дмитрий Харитохин",
     "group": "Группа Б",
     "team": "Витязь (Подольск)",
@@ -86,14 +94,6 @@ window.playerGoalsData = [
     "role": "Н",
     "games": 10,
     "goals": 28
-  },
-  {
-    "player": "Георгий Адоньев",
-    "group": "Группа В",
-    "team": "Буран Москва",
-    "role": "Н",
-    "games": 11,
-    "goals": 27
   },
   {
     "player": "Михаил Булгаков",
@@ -656,14 +656,6 @@ window.playerGoalsData = [
     "goals": 14
   },
   {
-    "player": "Алексей Шатунов",
-    "group": "Группа В",
-    "team": "Синяя птица",
-    "role": "Н",
-    "games": 10,
-    "goals": 14
-  },
-  {
     "player": "Артем Николаев",
     "group": "Группа Б",
     "team": "Красная машина Атлант",
@@ -808,6 +800,14 @@ window.playerGoalsData = [
     "goals": 13
   },
   {
+    "player": "Алексей Шатунов",
+    "group": "Группа В",
+    "team": "Синяя птица",
+    "role": "Н",
+    "games": 10,
+    "goals": 13
+  },
+  {
     "player": "Артемий Якушкин",
     "group": "Группа В",
     "team": "Марьино",
@@ -939,6 +939,14 @@ window.playerGoalsData = [
     "player": "Леонид Рыбников",
     "group": "Группа Б",
     "team": "Динамо - Солнцево",
+    "role": "Н",
+    "games": 11,
+    "goals": 12
+  },
+  {
+    "player": "Максим Коршунов",
+    "group": "Группа В",
+    "team": "Марьино",
     "role": "Н",
     "games": 11,
     "goals": 12
@@ -1155,14 +1163,6 @@ window.playerGoalsData = [
     "player": "Денис Швыкин",
     "group": "Группа Б",
     "team": "Белые медведи",
-    "role": "Н",
-    "games": 11,
-    "goals": 11
-  },
-  {
-    "player": "Максим Коршунов",
-    "group": "Группа В",
-    "team": "Марьино",
     "role": "Н",
     "games": 11,
     "goals": 11
@@ -2752,14 +2752,6 @@ window.playerGoalsData = [
     "goals": 6
   },
   {
-    "player": "Савелий Миронов",
-    "group": "Группа В",
-    "team": "Марьино",
-    "role": "Н",
-    "games": 10,
-    "goals": 6
-  },
-  {
     "player": "Семен Мелендер",
     "group": "Группа В",
     "team": "Серебряные акулы",
@@ -3179,6 +3171,14 @@ window.playerGoalsData = [
     "player": "Ратимир Сеняев",
     "group": "Группа Б",
     "team": "Гранит",
+    "role": "Н",
+    "games": 10,
+    "goals": 5
+  },
+  {
+    "player": "Савелий Миронов",
+    "group": "Группа В",
+    "team": "Марьино",
     "role": "Н",
     "games": 10,
     "goals": 5
@@ -3640,6 +3640,14 @@ window.playerGoalsData = [
     "goals": 4
   },
   {
+    "player": "Владимир Борисов",
+    "group": "Группа В",
+    "team": "Синяя птица",
+    "role": "Н",
+    "games": 10,
+    "goals": 4
+  },
+  {
     "player": "Всеволод Петров",
     "group": "Группа Б",
     "team": "Рыцари",
@@ -4000,14 +4008,6 @@ window.playerGoalsData = [
     "goals": 4
   },
   {
-    "player": "Петр Кошелев",
-    "group": "Группа В",
-    "team": "Буран Москва",
-    "role": "Н",
-    "games": 7,
-    "goals": 4
-  },
-  {
     "player": "Артём Талыков",
     "group": "Группа А",
     "team": "Спартак",
@@ -4155,14 +4155,6 @@ window.playerGoalsData = [
     "player": "Артем Зубов",
     "group": "Группа В",
     "team": "Янтарь",
-    "role": "Н",
-    "games": 10,
-    "goals": 3
-  },
-  {
-    "player": "Владимир Борисов",
-    "group": "Группа В",
-    "team": "Синяя птица",
     "role": "Н",
     "games": 10,
     "goals": 3
@@ -4668,6 +4660,14 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Белые медведи",
     "role": "З",
+    "games": 7,
+    "goals": 3
+  },
+  {
+    "player": "Петр Кошелев",
+    "group": "Группа В",
+    "team": "Буран Москва",
+    "role": "Н",
     "games": 7,
     "goals": 3
   },
