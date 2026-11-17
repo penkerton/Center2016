@@ -3034,7 +3034,7 @@ window.tournamentMatchesData = [
     "homeTeam": "Олимпийская деревня - 80",
     "awayTeam": "Снежные барсы",
     "homeGoals": 6,
-    "awayGoals": 36,
+    "awayGoals": 37,
     "date": "2026-11-14",
     "time": "13:30",
     "groupId": 312,
@@ -3063,8 +3063,8 @@ window.tournamentMatchesData = [
     "id": 22194,
     "homeTeam": "Витязь (Подольск)",
     "awayTeam": "Гранит",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 21,
+    "awayGoals": 13,
     "date": "2026-11-17",
     "time": "11:00",
     "groupId": 312,
@@ -3072,7 +3072,7 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "12 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 22227,
@@ -3360,6 +3360,21 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
+    "id": 23676,
+    "homeTeam": "Динамо",
+    "awayTeam": "Красная машина Юниор",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-27",
+    "time": "",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "10 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
     "id": 22254,
     "homeTeam": "Снежные барсы",
     "awayTeam": "Красная машина Атлант",
@@ -3618,21 +3633,6 @@ window.tournamentMatchesData = [
     "id": 23679,
     "homeTeam": "Спартак",
     "awayTeam": "Крылья Советов",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-28",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "10 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
-    "id": 23676,
-    "homeTeam": "Динамо",
-    "awayTeam": "Красная машина Юниор",
     "homeGoals": null,
     "awayGoals": null,
     "date": "2026-11-28",

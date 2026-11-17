@@ -72,17 +72,17 @@ window.playerGoalsData = [
     "goals": 29
   },
   {
-    "player": "Георгий Адоньев",
-    "group": "Группа В",
-    "team": "Буран Москва",
-    "role": "Н",
-    "games": 11,
-    "goals": 28
-  },
-  {
     "player": "Дмитрий Харитохин",
     "group": "Группа Б",
     "team": "Витязь (Подольск)",
+    "role": "Н",
+    "games": 12,
+    "goals": 28
+  },
+  {
+    "player": "Георгий Адоньев",
+    "group": "Группа В",
+    "team": "Буран Москва",
     "role": "Н",
     "games": 11,
     "goals": 28
@@ -168,19 +168,19 @@ window.playerGoalsData = [
     "goals": 24
   },
   {
-    "player": "Михаил Краморенко",
+    "player": "Матвей Лопухов",
     "group": "Группа Б",
-    "team": "Академия Петрова",
+    "team": "Гранит",
     "role": "Н",
     "games": 11,
     "goals": 23
   },
   {
-    "player": "Матвей Лопухов",
+    "player": "Михаил Краморенко",
     "group": "Группа Б",
-    "team": "Гранит",
+    "team": "Академия Петрова",
     "role": "Н",
-    "games": 10,
+    "games": 11,
     "goals": 23
   },
   {
@@ -352,6 +352,14 @@ window.playerGoalsData = [
     "goals": 18
   },
   {
+    "player": "Иван Киселев",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "Н",
+    "games": 11,
+    "goals": 18
+  },
+  {
     "player": "Лев Пимочкин",
     "group": "Группа Б",
     "team": "Арена Плей Трактор (Юг)",
@@ -432,14 +440,6 @@ window.playerGoalsData = [
     "goals": 17
   },
   {
-    "player": "Иван Киселев",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "Н",
-    "games": 10,
-    "goals": 17
-  },
-  {
     "player": "Марк Розенталь",
     "group": "Группа В",
     "team": "Северная звезда",
@@ -472,6 +472,14 @@ window.playerGoalsData = [
     "goals": 16
   },
   {
+    "player": "Андрей Гненков",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "Н",
+    "games": 11,
+    "goals": 16
+  },
+  {
     "player": "Давид Касаткин",
     "group": "Группа В",
     "team": "Сталкер",
@@ -493,14 +501,6 @@ window.playerGoalsData = [
     "team": "Академия Петрова",
     "role": "Н",
     "games": 11,
-    "goals": 16
-  },
-  {
-    "player": "Андрей Гненков",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "Н",
-    "games": 10,
     "goals": 16
   },
   {
@@ -624,6 +624,14 @@ window.playerGoalsData = [
     "goals": 15
   },
   {
+    "player": "Максим Кучеров",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "Н",
+    "games": 12,
+    "goals": 14
+  },
+  {
     "player": "Андрей Зорин",
     "group": "Группа Б",
     "team": "Арена Плей Трактор (Юг)",
@@ -651,6 +659,14 @@ window.playerGoalsData = [
     "player": "Ксения Хесина",
     "group": "Группа Б",
     "team": "Динамо - Солнцево",
+    "role": "Н",
+    "games": 11,
+    "goals": 14
+  },
+  {
+    "player": "Ратибор Мандрыка",
+    "group": "Группа Б",
+    "team": "Гранит",
     "role": "Н",
     "games": 11,
     "goals": 14
@@ -888,6 +904,14 @@ window.playerGoalsData = [
     "goals": 13
   },
   {
+    "player": "Ярослав Степанов",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "Н",
+    "games": 9,
+    "goals": 13
+  },
+  {
     "player": "Елизавета  Васильева",
     "group": "Группа В",
     "team": "Синяя птица",
@@ -1008,14 +1032,6 @@ window.playerGoalsData = [
     "goals": 12
   },
   {
-    "player": "Ратибор Мандрыка",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "Н",
-    "games": 10,
-    "goals": 12
-  },
-  {
     "player": "Тимофей Веденин",
     "group": "Группа Б",
     "team": "Белые медведи",
@@ -1035,6 +1051,14 @@ window.playerGoalsData = [
     "player": "Анна Шабатура",
     "group": "Группа В",
     "team": "Метеор",
+    "role": "Н",
+    "games": 9,
+    "goals": 12
+  },
+  {
+    "player": "Артём Божко",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
     "role": "Н",
     "games": 9,
     "goals": 12
@@ -1123,6 +1147,14 @@ window.playerGoalsData = [
     "player": "Генрих Лефтер",
     "group": "Группа В",
     "team": "Созвездие",
+    "role": "Н",
+    "games": 12,
+    "goals": 11
+  },
+  {
+    "player": "Мирон Епифанов",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
     "role": "Н",
     "games": 12,
     "goals": 11
@@ -1392,14 +1424,6 @@ window.playerGoalsData = [
     "goals": 10
   },
   {
-    "player": "Максим Кучеров",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "Н",
-    "games": 11,
-    "goals": 10
-  },
-  {
     "player": "Матвей Смирнов",
     "group": "Группа В",
     "team": "Буран Москва",
@@ -1496,14 +1520,6 @@ window.playerGoalsData = [
     "goals": 10
   },
   {
-    "player": "Артём Божко",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "Н",
-    "games": 8,
-    "goals": 10
-  },
-  {
     "player": "Егор Макарчев",
     "group": "Группа А",
     "team": "Арена Плей Трактор (Север)",
@@ -1576,6 +1592,14 @@ window.playerGoalsData = [
     "goals": 9
   },
   {
+    "player": "Тимофей Комаров",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "Н",
+    "games": 12,
+    "goals": 9
+  },
+  {
     "player": "Артемий Овсянников",
     "group": "Группа В",
     "team": "Сталкер",
@@ -1619,14 +1643,6 @@ window.playerGoalsData = [
     "player": "Илья Опальчук",
     "group": "Группа Б",
     "team": "Запад - Ястребы",
-    "role": "Н",
-    "games": 11,
-    "goals": 9
-  },
-  {
-    "player": "Мирон Епифанов",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
     "role": "Н",
     "games": 11,
     "goals": 9
@@ -1792,12 +1808,12 @@ window.playerGoalsData = [
     "goals": 9
   },
   {
-    "player": "Ярослав Степанов",
+    "player": "Никита Сергачев",
     "group": "Группа Б",
     "team": "Витязь (Подольск)",
     "role": "Н",
-    "games": 8,
-    "goals": 9
+    "games": 12,
+    "goals": 8
   },
   {
     "player": "Фёдор Андреев",
@@ -1856,6 +1872,14 @@ window.playerGoalsData = [
     "goals": 8
   },
   {
+    "player": "Иван Шурыгин",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "Н",
+    "games": 11,
+    "goals": 8
+  },
+  {
     "player": "Лев Елагин",
     "group": "Группа Б",
     "team": "Красная машина Атлант",
@@ -1884,14 +1908,6 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Сталкер",
     "role": "З",
-    "games": 11,
-    "goals": 8
-  },
-  {
-    "player": "Никита Сергачев",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "Н",
     "games": 11,
     "goals": 8
   },
@@ -2144,6 +2160,14 @@ window.playerGoalsData = [
     "goals": 7
   },
   {
+    "player": "Аркадий Илясов",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "З",
+    "games": 11,
+    "goals": 7
+  },
+  {
     "player": "Арсений Максимов",
     "group": "Группа В",
     "team": "Буран Москва",
@@ -2156,6 +2180,14 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Буран Москва",
     "role": "Н",
+    "games": 11,
+    "goals": 7
+  },
+  {
+    "player": "Злата Кашурникова",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "З",
     "games": 11,
     "goals": 7
   },
@@ -2224,14 +2256,6 @@ window.playerGoalsData = [
     "goals": 7
   },
   {
-    "player": "Аркадий Илясов",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "З",
-    "games": 10,
-    "goals": 7
-  },
-  {
     "player": "Артём Краснов",
     "group": "Группа Б",
     "team": "Снежные барсы",
@@ -2275,6 +2299,14 @@ window.playerGoalsData = [
     "player": "Данила Костин",
     "group": "Группа В",
     "team": "Янтарь",
+    "role": "Н",
+    "games": 10,
+    "goals": 7
+  },
+  {
+    "player": "Дмитрий Димитриев",
+    "group": "Группа Б",
+    "team": "Гранит",
     "role": "Н",
     "games": 10,
     "goals": 7
@@ -2368,6 +2400,14 @@ window.playerGoalsData = [
     "goals": 7
   },
   {
+    "player": "Пётр Герасимчук",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "Н",
+    "games": 9,
+    "goals": 7
+  },
+  {
     "player": "Родион Паращенко",
     "group": "Группа Б",
     "team": "Красная машина Атлант",
@@ -2432,14 +2472,6 @@ window.playerGoalsData = [
     "goals": 7
   },
   {
-    "player": "Пётр Герасимчук",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "Н",
-    "games": 8,
-    "goals": 7
-  },
-  {
     "player": "Сергей Ерёмин",
     "group": "Группа В",
     "team": "Пингвины",
@@ -2470,6 +2502,14 @@ window.playerGoalsData = [
     "role": "Н",
     "games": 6,
     "goals": 7
+  },
+  {
+    "player": "Иван Торченюк",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "Н",
+    "games": 12,
+    "goals": 6
   },
   {
     "player": "Илья Гребнев",
@@ -2520,6 +2560,14 @@ window.playerGoalsData = [
     "goals": 6
   },
   {
+    "player": "Денис Хлебников",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "З",
+    "games": 11,
+    "goals": 6
+  },
+  {
     "player": "Дмитрий Шашин",
     "group": "Группа Б",
     "team": "Динамо - Солнцево",
@@ -2547,14 +2595,6 @@ window.playerGoalsData = [
     "player": "Иван Кухарев",
     "group": "Группа В",
     "team": "Буран Москва",
-    "role": "Н",
-    "games": 11,
-    "goals": 6
-  },
-  {
-    "player": "Иван Торченюк",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
     "role": "Н",
     "games": 11,
     "goals": 6
@@ -2595,14 +2635,6 @@ window.playerGoalsData = [
     "player": "Сергей Скорняков",
     "group": "Группа Б",
     "team": "Олимпийская деревня - 80",
-    "role": "Н",
-    "games": 11,
-    "goals": 6
-  },
-  {
-    "player": "Тимофей Комаров",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
     "role": "Н",
     "games": 11,
     "goals": 6
@@ -2680,25 +2712,9 @@ window.playerGoalsData = [
     "goals": 6
   },
   {
-    "player": "Денис Хлебников",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "З",
-    "games": 10,
-    "goals": 6
-  },
-  {
     "player": "Егор Боярский",
     "group": "Группа В",
     "team": "Пингвины",
-    "role": "Н",
-    "games": 10,
-    "goals": 6
-  },
-  {
-    "player": "Иван Шурыгин",
-    "group": "Группа Б",
-    "team": "Гранит",
     "role": "Н",
     "games": 10,
     "goals": 6
@@ -2752,6 +2768,14 @@ window.playerGoalsData = [
     "goals": 6
   },
   {
+    "player": "Семен Мелащенко",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "Н",
+    "games": 10,
+    "goals": 6
+  },
+  {
     "player": "Семен Мелендер",
     "group": "Группа В",
     "team": "Серебряные акулы",
@@ -2772,6 +2796,14 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Красная машина Атлант",
     "role": "Н",
+    "games": 9,
+    "goals": 6
+  },
+  {
+    "player": "Василий Гринёв",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "З",
     "games": 9,
     "goals": 6
   },
@@ -2856,14 +2888,6 @@ window.playerGoalsData = [
     "goals": 6
   },
   {
-    "player": "Василий Гринёв",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "З",
-    "games": 8,
-    "goals": 6
-  },
-  {
     "player": "Виктор Семкичев",
     "group": "Группа А",
     "team": "ЦСКА",
@@ -2936,6 +2960,14 @@ window.playerGoalsData = [
     "goals": 6
   },
   {
+    "player": "Богдан Покидько",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "З",
+    "games": 12,
+    "goals": 5
+  },
+  {
     "player": "Виктор Чадаев",
     "group": "Группа В",
     "team": "Созвездие",
@@ -2956,6 +2988,14 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Снежные барсы",
     "role": "Н",
+    "games": 12,
+    "goals": 5
+  },
+  {
+    "player": "Матвей Волков",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "З",
     "games": 12,
     "goals": 5
   },
@@ -3011,6 +3051,14 @@ window.playerGoalsData = [
     "player": "Никита Кренинг",
     "group": "Группа Б",
     "team": "Рыцари",
+    "role": "Н",
+    "games": 11,
+    "goals": 5
+  },
+  {
+    "player": "Ратимир Сеняев",
+    "group": "Группа Б",
+    "team": "Гранит",
     "role": "Н",
     "games": 11,
     "goals": 5
@@ -3168,14 +3216,6 @@ window.playerGoalsData = [
     "goals": 5
   },
   {
-    "player": "Ратимир Сеняев",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "Н",
-    "games": 10,
-    "goals": 5
-  },
-  {
     "player": "Савелий Миронов",
     "group": "Группа В",
     "team": "Марьино",
@@ -3216,14 +3256,6 @@ window.playerGoalsData = [
     "goals": 5
   },
   {
-    "player": "Дмитрий Димитриев",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "Н",
-    "games": 9,
-    "goals": 5
-  },
-  {
     "player": "Дмитрий Лакке",
     "group": "Группа Б",
     "team": "Красная машина Атлант",
@@ -3243,14 +3275,6 @@ window.playerGoalsData = [
     "player": "Роман Пастухов",
     "group": "Группа В",
     "team": "Янтарь",
-    "role": "Н",
-    "games": 9,
-    "goals": 5
-  },
-  {
-    "player": "Семен Мелащенко",
-    "group": "Группа Б",
-    "team": "Гранит",
     "role": "Н",
     "games": 9,
     "goals": 5
@@ -3432,6 +3456,30 @@ window.playerGoalsData = [
     "goals": 5
   },
   {
+    "player": "Денис Барановский",
+    "group": "Группа Б",
+    "team": "Снежные барсы",
+    "role": "З",
+    "games": 12,
+    "goals": 4
+  },
+  {
+    "player": "Матвей Елин",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "Н",
+    "games": 12,
+    "goals": 4
+  },
+  {
+    "player": "Роман Романов",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "Н",
+    "games": 12,
+    "goals": 4
+  },
+  {
     "player": "Александр Ткачев",
     "group": "Группа Б",
     "team": "Академия Харламова",
@@ -3448,14 +3496,6 @@ window.playerGoalsData = [
     "goals": 4
   },
   {
-    "player": "Богдан Покидько",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "З",
-    "games": 11,
-    "goals": 4
-  },
-  {
     "player": "Владимир Кузнецов",
     "group": "Группа Б",
     "team": "Динамо - Солнцево",
@@ -3467,6 +3507,22 @@ window.playerGoalsData = [
     "player": "Георгий Донченко",
     "group": "Группа Б",
     "team": "Академия Петрова",
+    "role": "З",
+    "games": 11,
+    "goals": 4
+  },
+  {
+    "player": "Даниил Ибрагимов",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "З",
+    "games": 11,
+    "goals": 4
+  },
+  {
+    "player": "Данил Лысов",
+    "group": "Группа Б",
+    "team": "Гранит",
     "role": "З",
     "games": 11,
     "goals": 4
@@ -3512,22 +3568,6 @@ window.playerGoalsData = [
     "goals": 4
   },
   {
-    "player": "Матвей Волков",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "З",
-    "games": 11,
-    "goals": 4
-  },
-  {
-    "player": "Матвей Елин",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "Н",
-    "games": 11,
-    "goals": 4
-  },
-  {
     "player": "Матвей Ильин",
     "group": "Группа Б",
     "team": "Рязань - ВДВ",
@@ -3568,9 +3608,9 @@ window.playerGoalsData = [
     "goals": 4
   },
   {
-    "player": "Роман Романов",
+    "player": "Савелий Архаров",
     "group": "Группа Б",
-    "team": "Витязь (Подольск)",
+    "team": "Гранит",
     "role": "Н",
     "games": 11,
     "goals": 4
@@ -3680,14 +3720,6 @@ window.playerGoalsData = [
     "goals": 4
   },
   {
-    "player": "Злата Кашурникова",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "З",
-    "games": 10,
-    "goals": 4
-  },
-  {
     "player": "Мирон Катумин",
     "group": "Группа Б",
     "team": "Рыцари",
@@ -3724,14 +3756,6 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Буран Москва",
     "role": "З",
-    "games": 10,
-    "goals": 4
-  },
-  {
-    "player": "Савелий Архаров",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "Н",
     "games": 10,
     "goals": 4
   },
@@ -4056,14 +4080,6 @@ window.playerGoalsData = [
     "goals": 4
   },
   {
-    "player": "Денис Барановский",
-    "group": "Группа Б",
-    "team": "Снежные барсы",
-    "role": "З",
-    "games": 12,
-    "goals": 3
-  },
-  {
     "player": "Игорь Князев",
     "group": "Группа Б",
     "team": "Снежные барсы",
@@ -4080,9 +4096,25 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
+    "player": "Фёдор Чибисов",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "З",
+    "games": 12,
+    "goals": 3
+  },
+  {
     "player": "Артемий Панарин",
     "group": "Группа Б",
     "team": "Рыцари",
+    "role": "Н",
+    "games": 11,
+    "goals": 3
+  },
+  {
+    "player": "Дмитрий Чернявский",
+    "group": "Группа Б",
+    "team": "Гранит",
     "role": "Н",
     "games": 11,
     "goals": 3
@@ -4115,14 +4147,6 @@ window.playerGoalsData = [
     "player": "Семен Кауфман",
     "group": "Группа Б",
     "team": "Академия Харламова",
-    "role": "З",
-    "games": 11,
-    "goals": 3
-  },
-  {
-    "player": "Фёдор Чибисов",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
     "role": "З",
     "games": 11,
     "goals": 3
@@ -4168,33 +4192,9 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
-    "player": "Даниил Ибрагимов",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "З",
-    "games": 10,
-    "goals": 3
-  },
-  {
-    "player": "Данил Лысов",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "З",
-    "games": 10,
-    "goals": 3
-  },
-  {
     "player": "Денис Ильин",
     "group": "Группа Б",
     "team": "Русь",
-    "role": "Н",
-    "games": 10,
-    "goals": 3
-  },
-  {
-    "player": "Дмитрий Чернявский",
-    "group": "Группа Б",
-    "team": "Гранит",
     "role": "Н",
     "games": 10,
     "goals": 3
@@ -4340,6 +4340,14 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Пингвины",
     "role": "З",
+    "games": 9,
+    "goals": 3
+  },
+  {
+    "player": "Павел Гордеев",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "Н",
     "games": 9,
     "goals": 3
   },
@@ -4512,6 +4520,14 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
+    "player": "Никита Вялов",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "Н",
+    "games": 8,
+    "goals": 3
+  },
+  {
     "player": "Павел Федотов",
     "group": "Группа В",
     "team": "Марьино",
@@ -4648,14 +4664,6 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
-    "player": "Никита Вялов",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "Н",
-    "games": 7,
-    "goals": 3
-  },
-  {
     "player": "Николай Павлов",
     "group": "Группа Б",
     "team": "Белые медведи",
@@ -4752,11 +4760,43 @@ window.playerGoalsData = [
     "goals": 3
   },
   {
+    "player": "Матвей Терехин",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "З",
+    "games": 12,
+    "goals": 2
+  },
+  {
     "player": "Михаил Черенков",
     "group": "Группа Б",
     "team": "Снежные барсы",
     "role": "З",
     "games": 12,
+    "goals": 2
+  },
+  {
+    "player": "Фёдор Широков",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "З",
+    "games": 12,
+    "goals": 2
+  },
+  {
+    "player": "Фёдор Шишкин",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "Н",
+    "games": 12,
+    "goals": 2
+  },
+  {
+    "player": "Александр Милько",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "З",
+    "games": 11,
     "goals": 2
   },
   {
@@ -4816,7 +4856,15 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
-    "player": "Матвей Терехин",
+    "player": "Максим Карасев",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "Н",
+    "games": 11,
+    "goals": 2
+  },
+  {
+    "player": "Максим Шевчук",
     "group": "Группа Б",
     "team": "Витязь (Подольск)",
     "role": "З",
@@ -4912,35 +4960,11 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
-    "player": "Фёдор Широков",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "З",
-    "games": 11,
-    "goals": 2
-  },
-  {
-    "player": "Фёдор Шишкин",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "Н",
-    "games": 11,
-    "goals": 2
-  },
-  {
     "player": "Филипп Ходеев",
     "group": "Группа В",
     "team": "Сталкер",
     "role": "З",
     "games": 11,
-    "goals": 2
-  },
-  {
-    "player": "Александр Милько",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "З",
-    "games": 10,
     "goals": 2
   },
   {
@@ -5024,6 +5048,14 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
+    "player": "Денис Тарасов",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "Н",
+    "games": 10,
+    "goals": 2
+  },
+  {
     "player": "Дмитрий Водовозов",
     "group": "Группа В",
     "team": "Северная звезда",
@@ -5075,14 +5107,6 @@ window.playerGoalsData = [
     "player": "Лев Филиппов",
     "group": "Группа В",
     "team": "Серебряные акулы",
-    "role": "Н",
-    "games": 10,
-    "goals": 2
-  },
-  {
-    "player": "Максим Карасев",
-    "group": "Группа Б",
-    "team": "Гранит",
     "role": "Н",
     "games": 10,
     "goals": 2
@@ -5188,14 +5212,6 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Метеор",
     "role": "З",
-    "games": 9,
-    "goals": 2
-  },
-  {
-    "player": "Денис Тарасов",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "Н",
     "games": 9,
     "goals": 2
   },
@@ -5504,14 +5520,6 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
-    "player": "Павел Гордеев",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "Н",
-    "games": 8,
-    "goals": 2
-  },
-  {
     "player": "Степан Пугачев",
     "group": "Группа А",
     "team": "Академия Михайлова (Москва)",
@@ -5760,6 +5768,14 @@ window.playerGoalsData = [
     "goals": 2
   },
   {
+    "player": "Аделина Акматбекова",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "Н",
+    "games": 2,
+    "goals": 2
+  },
+  {
     "player": "Александр Тишкин",
     "group": "Группа А",
     "team": "Авангард",
@@ -5779,6 +5795,14 @@ window.playerGoalsData = [
     "player": "Вадим Климков",
     "group": "Группа В",
     "team": "Созвездие",
+    "role": "З",
+    "games": 12,
+    "goals": 1
+  },
+  {
+    "player": "Дмитрий Киселев",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
     "role": "З",
     "games": 12,
     "goals": 1
@@ -5848,14 +5872,6 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
-    "player": "Дмитрий Киселев",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "З",
-    "games": 11,
-    "goals": 1
-  },
-  {
     "player": "Илья Толпыкин",
     "group": "Группа Б",
     "team": "Олимпийская деревня - 80",
@@ -5880,6 +5896,14 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
+    "player": "Михаил Свечников",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "Н",
+    "games": 11,
+    "goals": 1
+  },
+  {
     "player": "Михаил Спиряков",
     "group": "Группа В",
     "team": "Сталкер",
@@ -5899,6 +5923,14 @@ window.playerGoalsData = [
     "player": "Тимофей Николаев",
     "group": "Группа Б",
     "team": "Динамо - Солнцево",
+    "role": "З",
+    "games": 11,
+    "goals": 1
+  },
+  {
+    "player": "Тимофей Хитенков",
+    "group": "Группа Б",
+    "team": "Гранит",
     "role": "З",
     "games": 11,
     "goals": 1
@@ -5968,14 +6000,6 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
-    "player": "Максим Шевчук",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "З",
-    "games": 10,
-    "goals": 1
-  },
-  {
     "player": "Марк Шевченко",
     "group": "Группа В",
     "team": "Центр",
@@ -5992,14 +6016,6 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
-    "player": "Михаил Свечников",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "Н",
-    "games": 10,
-    "goals": 1
-  },
-  {
     "player": "Петр Дмитриев",
     "group": "Группа В",
     "team": "Сталкер",
@@ -6011,14 +6027,6 @@ window.playerGoalsData = [
     "player": "Степан Григорян",
     "group": "Группа В",
     "team": "Янтарь",
-    "role": "З",
-    "games": 10,
-    "goals": 1
-  },
-  {
-    "player": "Тимофей Хитенков",
-    "group": "Группа Б",
-    "team": "Гранит",
     "role": "З",
     "games": 10,
     "goals": 1
@@ -7016,14 +7024,6 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
-    "player": "Аделина Акматбекова",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "Н",
-    "games": 1,
-    "goals": 1
-  },
-  {
     "player": "Анна Клеева",
     "group": "Группа В",
     "team": "Северная звезда",
@@ -7043,6 +7043,14 @@ window.playerGoalsData = [
     "player": "Евгений Семёнов",
     "group": "Группа Б",
     "team": "Снежные барсы",
+    "role": "В",
+    "games": 12,
+    "goals": 0
+  },
+  {
+    "player": "Игорь Богомолов",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
     "role": "В",
     "games": 12,
     "goals": 0
@@ -7152,14 +7160,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Игорь Богомолов",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "В",
-    "games": 11,
-    "goals": 0
-  },
-  {
     "player": "Илья Бугаев",
     "group": "Группа Б",
     "team": "Белые медведи",
@@ -7236,6 +7236,14 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Витязь (Подольск)",
     "role": "З",
+    "games": 11,
+    "goals": 0
+  },
+  {
+    "player": "Павел Глазнев",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "В",
     "games": 11,
     "goals": 0
   },
@@ -7368,6 +7376,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Денис Куляш",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "З",
+    "games": 10,
+    "goals": 0
+  },
+  {
     "player": "Дмитрий Бауэр",
     "group": "Группа Б",
     "team": "Балашиха",
@@ -7388,6 +7404,14 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Красная машина Атлант",
     "role": "З",
+    "games": 10,
+    "goals": 0
+  },
+  {
+    "player": "Иван Сабадаш",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "В",
     "games": 10,
     "goals": 0
   },
@@ -7432,6 +7456,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Максим Ильинский",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "В",
+    "games": 10,
+    "goals": 0
+  },
+  {
     "player": "Марк Айзен",
     "group": "Группа Б",
     "team": "Академия Харламова",
@@ -7456,10 +7488,10 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Павел Глазнев",
+    "player": "Павел Потапов",
     "group": "Группа Б",
     "team": "Гранит",
-    "role": "В",
+    "role": "З",
     "games": 10,
     "goals": 0
   },
@@ -7648,14 +7680,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Денис Куляш",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "З",
-    "games": 9,
-    "goals": 0
-  },
-  {
     "player": "Дмитрий Филькин",
     "group": "Группа Б",
     "team": "Красная машина Атлант",
@@ -7680,14 +7704,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Иван Сабадаш",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "В",
-    "games": 9,
-    "goals": 0
-  },
-  {
     "player": "Клим Звягинцев",
     "group": "Группа В",
     "team": "Синяя птица",
@@ -7696,17 +7712,17 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Максим Александровский",
-    "group": "Группа В",
-    "team": "Янтарь",
-    "role": "В",
+    "player": "Ксения Коновалова",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "З",
     "games": 9,
     "goals": 0
   },
   {
-    "player": "Максим Ильинский",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
+    "player": "Максим Александровский",
+    "group": "Группа В",
+    "team": "Янтарь",
     "role": "В",
     "games": 9,
     "goals": 0
@@ -7760,10 +7776,10 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Павел Потапов",
+    "player": "Платон Степин",
     "group": "Группа Б",
-    "team": "Гранит",
-    "role": "З",
+    "team": "Витязь (Подольск)",
+    "role": "Н",
     "games": 9,
     "goals": 0
   },
@@ -7932,6 +7948,14 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Академия Бирюкова",
     "role": "З",
+    "games": 8,
+    "goals": 0
+  },
+  {
+    "player": "Виктория Свахина",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "В",
     "games": 8,
     "goals": 0
   },
@@ -8168,14 +8192,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Ксения Коновалова",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "З",
-    "games": 8,
-    "goals": 0
-  },
-  {
     "player": "Лука Королев",
     "group": "Группа В",
     "team": "Сталкер",
@@ -8264,6 +8280,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Михаил Родин",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "В",
+    "games": 8,
+    "goals": 0
+  },
+  {
     "player": "Наум Ерыгин",
     "group": "Группа А",
     "team": "Крылья Советов",
@@ -8284,14 +8308,6 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Рыцари",
     "role": "З",
-    "games": 8,
-    "goals": 0
-  },
-  {
-    "player": "Платон Степин",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "Н",
     "games": 8,
     "goals": 0
   },
@@ -8488,14 +8504,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Виктория Свахина",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "В",
-    "games": 7,
-    "goals": 0
-  },
-  {
     "player": "Владимир Лукьянов",
     "group": "Группа В",
     "team": "Марьино",
@@ -8651,14 +8659,6 @@ window.playerGoalsData = [
     "player": "Михаил Мерзликин",
     "group": "Группа А",
     "team": "Локомотив",
-    "role": "В",
-    "games": 7,
-    "goals": 0
-  },
-  {
-    "player": "Михаил Родин",
-    "group": "Группа Б",
-    "team": "Гранит",
     "role": "В",
     "games": 7,
     "goals": 0
@@ -9592,6 +9592,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Али-Аскер Пашаев",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "З",
+    "games": 2,
+    "goals": 0
+  },
+  {
     "player": "Алиса Марцынкевич",
     "group": "Группа В",
     "team": "Арктика",
@@ -9832,6 +9840,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Семен Нагорный",
+    "group": "Группа Б",
+    "team": "Гранит",
+    "role": "Н",
+    "games": 2,
+    "goals": 0
+  },
+  {
     "player": "Семен Хромов",
     "group": "Группа В",
     "team": "Синяя птица",
@@ -9900,14 +9916,6 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Арктика",
     "role": "Н",
-    "games": 1,
-    "goals": 0
-  },
-  {
-    "player": "Али-Аскер Пашаев",
-    "group": "Группа Б",
-    "team": "Гранит",
-    "role": "З",
     "games": 1,
     "goals": 0
   },
@@ -10080,6 +10088,14 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
+    "player": "Макар Катагаров",
+    "group": "Группа Б",
+    "team": "Витязь (Подольск)",
+    "role": "Н",
+    "games": 1,
+    "goals": 0
+  },
+  {
     "player": "Максим Андрианов",
     "group": "Группа А",
     "team": "Локомотив",
@@ -10179,14 +10195,6 @@ window.playerGoalsData = [
     "player": "Семен Лавров",
     "group": "Группа А",
     "team": "Локомотив - 2004",
-    "role": "Н",
-    "games": 1,
-    "goals": 0
-  },
-  {
-    "player": "Семен Нагорный",
-    "group": "Группа Б",
-    "team": "Гранит",
     "role": "Н",
     "games": 1,
     "goals": 0
@@ -10395,6 +10403,14 @@ window.playerGoalsData = [
     "player": "Андрей Абрамов",
     "group": "Группа А",
     "team": "Крылья Советов",
+    "role": "З",
+    "games": 0,
+    "goals": 0
+  },
+  {
+    "player": "Андрей Бессонов",
+    "group": "Группа Б",
+    "team": "Рыцари",
     "role": "З",
     "games": 0,
     "goals": 0
@@ -11004,14 +11020,6 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Буран Москва",
     "role": "В",
-    "games": 0,
-    "goals": 0
-  },
-  {
-    "player": "Макар Катагаров",
-    "group": "Группа Б",
-    "team": "Витязь (Подольск)",
-    "role": "Н",
     "games": 0,
     "goals": 0
   },
