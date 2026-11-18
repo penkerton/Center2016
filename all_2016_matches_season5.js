@@ -2940,21 +2940,6 @@ window.tournamentMatchesData = [
     "status": 2
   },
   {
-    "id": 22515,
-    "homeTeam": "Метеор",
-    "awayTeam": "Арктика",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-14",
-    "time": "12:00",
-    "groupId": 315,
-    "tournamentId": 51,
-    "group": "Группа В",
-    "tour": "12 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22197,
     "homeTeam": "Русь",
     "awayTeam": "Рязань - ВДВ",
@@ -3555,21 +3540,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22551,
-    "homeTeam": "Северная звезда",
-    "awayTeam": "Академия Бирюкова",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-28",
-    "time": "",
-    "groupId": 315,
-    "tournamentId": 51,
-    "group": "Группа В",
-    "tour": "14 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 23691,
     "homeTeam": "Академия Михайлова (Москва)",
     "awayTeam": "Локомотив - 2004",
@@ -3642,6 +3612,36 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "10 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
+    "id": 22551,
+    "homeTeam": "Северная звезда",
+    "awayTeam": "Академия Бирюкова",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-28",
+    "time": "12:15",
+    "groupId": 315,
+    "tournamentId": 51,
+    "group": "Группа В",
+    "tour": "14 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 22515,
+    "homeTeam": "Метеор",
+    "awayTeam": "Арктика",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-29",
+    "time": "",
+    "groupId": 315,
+    "tournamentId": 51,
+    "group": "Группа В",
+    "tour": "12 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
   },
   {

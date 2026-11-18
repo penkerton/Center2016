@@ -1744,6 +1744,14 @@ window.playerGoalsData = [
     "goals": 9
   },
   {
+    "player": "Святослав Генба",
+    "group": "Группа Б",
+    "team": "Арена Плей Трактор (Юг)",
+    "role": "Н",
+    "games": 10,
+    "goals": 9
+  },
+  {
     "player": "Эрнест Ерохин",
     "group": "Группа В",
     "team": "Центр",
@@ -2036,14 +2044,6 @@ window.playerGoalsData = [
     "group": "Группа Б",
     "team": "Красная машина Атлант",
     "role": "З",
-    "games": 9,
-    "goals": 8
-  },
-  {
-    "player": "Илья Соколов",
-    "group": "Группа Б",
-    "team": "Арена Плей Трактор (Юг)",
-    "role": "Н",
     "games": 9,
     "goals": 8
   },
@@ -2344,14 +2344,6 @@ window.playerGoalsData = [
     "goals": 7
   },
   {
-    "player": "Святослав Генба",
-    "group": "Группа Б",
-    "team": "Арена Плей Трактор (Юг)",
-    "role": "Н",
-    "games": 10,
-    "goals": 7
-  },
-  {
     "player": "Тагир Фазлиахметов",
     "group": "Группа В",
     "team": "Марьино",
@@ -2379,6 +2371,14 @@ window.playerGoalsData = [
     "player": "Захар Заикин",
     "group": "Группа В",
     "team": "Метеор",
+    "role": "Н",
+    "games": 9,
+    "goals": 7
+  },
+  {
+    "player": "Илья Соколов",
+    "group": "Группа Б",
+    "team": "Арена Плей Трактор (Юг)",
     "role": "Н",
     "games": 9,
     "goals": 7
@@ -3064,14 +3064,6 @@ window.playerGoalsData = [
     "goals": 5
   },
   {
-    "player": "Роман Семенов",
-    "group": "Группа Б",
-    "team": "Арена Плей Трактор (Юг)",
-    "role": "З",
-    "games": 11,
-    "goals": 5
-  },
-  {
     "player": "Степан Гусев",
     "group": "Группа Б",
     "team": "Академия Харламова",
@@ -3608,6 +3600,14 @@ window.playerGoalsData = [
     "goals": 4
   },
   {
+    "player": "Роман Семенов",
+    "group": "Группа Б",
+    "team": "Арена Плей Трактор (Юг)",
+    "role": "З",
+    "games": 11,
+    "goals": 4
+  },
+  {
     "player": "Савелий Архаров",
     "group": "Группа Б",
     "team": "Гранит",
@@ -3675,14 +3675,6 @@ window.playerGoalsData = [
     "player": "Виктория Кузьмина",
     "group": "Группа Б",
     "team": "Балашиха",
-    "role": "Н",
-    "games": 10,
-    "goals": 4
-  },
-  {
-    "player": "Владимир Борисов",
-    "group": "Группа В",
-    "team": "Синяя птица",
     "role": "Н",
     "games": 10,
     "goals": 4
@@ -4179,6 +4171,14 @@ window.playerGoalsData = [
     "player": "Артем Зубов",
     "group": "Группа В",
     "team": "Янтарь",
+    "role": "Н",
+    "games": 10,
+    "goals": 3
+  },
+  {
+    "player": "Владимир Борисов",
+    "group": "Группа В",
+    "team": "Синяя птица",
     "role": "Н",
     "games": 10,
     "goals": 3
@@ -6032,6 +6032,14 @@ window.playerGoalsData = [
     "goals": 1
   },
   {
+    "player": "Тимофей Балабаев",
+    "group": "Группа В",
+    "team": "Синяя птица",
+    "role": "З",
+    "games": 10,
+    "goals": 1
+  },
+  {
     "player": "Ярослав Зеленский",
     "group": "Группа В",
     "team": "Центр",
@@ -7524,14 +7532,6 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Буран Москва",
     "role": "В",
-    "games": 10,
-    "goals": 0
-  },
-  {
-    "player": "Тимофей Балабаев",
-    "group": "Группа В",
-    "team": "Синяя птица",
-    "role": "З",
     "games": 10,
     "goals": 0
   },
