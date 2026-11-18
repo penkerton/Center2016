@@ -3420,36 +3420,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22242,
-    "homeTeam": "Академия Харламова",
-    "awayTeam": "Рязань - ВДВ",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-28",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "14 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
-    "id": 22239,
-    "homeTeam": "Белые медведи",
-    "awayTeam": "Гранит",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-28",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "14 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22236,
     "homeTeam": "Русь",
     "awayTeam": "Рыцари",
@@ -3615,6 +3585,21 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
+    "id": 22239,
+    "homeTeam": "Белые медведи",
+    "awayTeam": "Гранит",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-28",
+    "time": "11:00",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "14 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
     "id": 22551,
     "homeTeam": "Северная звезда",
     "awayTeam": "Академия Бирюкова",
@@ -3625,6 +3610,21 @@ window.tournamentMatchesData = [
     "groupId": 315,
     "tournamentId": 51,
     "group": "Группа В",
+    "tour": "14 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 22242,
+    "homeTeam": "Академия Харламова",
+    "awayTeam": "Рязань - ВДВ",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-28",
+    "time": "14:45",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
     "tour": "14 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
