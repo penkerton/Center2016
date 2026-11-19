@@ -3450,21 +3450,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22563,
-    "homeTeam": "Вымпел",
-    "awayTeam": "Пингвины",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-28",
-    "time": "",
-    "groupId": 315,
-    "tournamentId": 51,
-    "group": "Группа В",
-    "tour": "14 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22560,
     "homeTeam": "Янтарь",
     "awayTeam": "Арктика",
@@ -3540,21 +3525,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23685,
-    "homeTeam": "Локомотив",
-    "awayTeam": "Авангард",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-28",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "10 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
     "id": 23682,
     "homeTeam": "ЦСКА",
     "awayTeam": "Арена Плей Трактор (Север)",
@@ -3570,18 +3540,18 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23679,
-    "homeTeam": "Спартак",
-    "awayTeam": "Крылья Советов",
+    "id": 22563,
+    "homeTeam": "Вымпел",
+    "awayTeam": "Пингвины",
     "homeGoals": null,
     "awayGoals": null,
     "date": "2026-11-28",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "10 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "time": "09:45",
+    "groupId": 315,
+    "tournamentId": 51,
+    "group": "Группа В",
+    "tour": "14 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
   },
   {
@@ -3612,6 +3582,36 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "14 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 23679,
+    "homeTeam": "Спартак",
+    "awayTeam": "Крылья Советов",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-28",
+    "time": "13:00",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "10 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
+    "id": 23685,
+    "homeTeam": "Локомотив",
+    "awayTeam": "Авангард",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-28",
+    "time": "13:30",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "10 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
     "status": 0
   },
   {

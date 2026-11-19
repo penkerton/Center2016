@@ -1336,14 +1336,6 @@ window.playerGoalsData = [
     "goals": 11
   },
   {
-    "player": "Нил Хасянов",
-    "group": "Группа А",
-    "team": "Академия Михайлова (Москва)",
-    "role": "Н",
-    "games": 7,
-    "goals": 11
-  },
-  {
     "player": "Жанна Акулич",
     "group": "Группа Б",
     "team": "Академия Петрова",
@@ -11348,6 +11340,14 @@ window.playerGoalsData = [
     "group": "Группа А",
     "team": "Локомотив",
     "role": "Н",
+    "games": 0,
+    "goals": 0
+  },
+  {
+    "player": "Нил Хасянов",
+    "group": "Группа А",
+    "team": "ЦСКА",
+    "role": "З",
     "games": 0,
     "goals": 0
   },
