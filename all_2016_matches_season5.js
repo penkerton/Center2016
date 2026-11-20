@@ -2877,7 +2877,7 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "12 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 1
+    "status": 2
   },
   {
     "id": 22524,
@@ -3375,21 +3375,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22248,
-    "homeTeam": "Арена Плей Трактор (Юг)",
-    "awayTeam": "Балашиха",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-28",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "14 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22236,
     "homeTeam": "Русь",
     "awayTeam": "Рыцари",
@@ -3487,6 +3472,21 @@ window.tournamentMatchesData = [
     "awayGoals": null,
     "date": "2026-11-28",
     "time": "09:00",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "14 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 22248,
+    "homeTeam": "Арена Плей Трактор (Юг)",
+    "awayTeam": "Балашиха",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-28",
+    "time": "09:30",
     "groupId": 312,
     "tournamentId": 51,
     "group": "Группа Б",
