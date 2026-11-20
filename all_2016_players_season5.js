@@ -5507,7 +5507,7 @@ window.playerGoalsData = [
     "player": "Никита Попов",
     "group": "Группа А",
     "team": "Крылья Советов",
-    "role": "Н",
+    "role": "З",
     "games": 8,
     "goals": 2
   },
@@ -6755,14 +6755,6 @@ window.playerGoalsData = [
     "player": "Александр Хохлов",
     "group": "Группа В",
     "team": "Арктика",
-    "role": "Н",
-    "games": 5,
-    "goals": 1
-  },
-  {
-    "player": "Георгий Тузани",
-    "group": "Группа А",
-    "team": "Красная машина Юниор",
     "role": "Н",
     "games": 5,
     "goals": 1
@@ -8768,14 +8760,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Вячеслав Клюкин",
-    "group": "Группа А",
-    "team": "Красная машина Юниор",
-    "role": "З",
-    "games": 6,
-    "goals": 0
-  },
-  {
     "player": "Даниил Колбасов",
     "group": "Группа В",
     "team": "Сталкер",
@@ -8965,14 +8949,6 @@ window.playerGoalsData = [
     "team": "Авангард",
     "role": "З",
     "games": 6,
-    "goals": 0
-  },
-  {
-    "player": "Александр Кривовязь",
-    "group": "Группа А",
-    "team": "Красная машина Юниор",
-    "role": "З",
-    "games": 5,
     "goals": 0
   },
   {
@@ -9704,14 +9680,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Макар Мазаев",
-    "group": "Группа А",
-    "team": "Академия Михайлова (Москва)",
-    "role": "З",
-    "games": 2,
-    "goals": 0
-  },
-  {
     "player": "Макар Радостев",
     "group": "Группа Б",
     "team": "Олимпийская деревня - 80",
@@ -10184,14 +10152,6 @@ window.playerGoalsData = [
     "goals": 0
   },
   {
-    "player": "Тимофей Кузин",
-    "group": "Группа А",
-    "team": "ЦСКА",
-    "role": "Н",
-    "games": 1,
-    "goals": 0
-  },
-  {
     "player": "Тимур Батурин",
     "group": "Группа А",
     "team": "Авангард",
@@ -10475,14 +10435,6 @@ window.playerGoalsData = [
     "player": "Артемий Косарев",
     "group": "Группа А",
     "team": "ЦСКА",
-    "role": "Н",
-    "games": 0,
-    "goals": 0
-  },
-  {
-    "player": "Артемий Попов",
-    "group": "Группа А",
-    "team": "Красная машина Юниор",
     "role": "Н",
     "games": 0,
     "goals": 0
@@ -11476,6 +11428,14 @@ window.playerGoalsData = [
     "group": "Группа В",
     "team": "Метеор",
     "role": "В",
+    "games": 0,
+    "goals": 0
+  },
+  {
+    "player": "Тимофей Кузин",
+    "group": "Группа А",
+    "team": "Красная машина Юниор",
+    "role": "Н",
     "games": 0,
     "goals": 0
   },
