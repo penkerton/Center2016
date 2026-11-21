@@ -3093,8 +3093,8 @@ window.tournamentMatchesData = [
     "id": 22230,
     "homeTeam": "Гранит",
     "awayTeam": "Русь",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 11,
+    "awayGoals": 23,
     "date": "2026-11-21",
     "time": "09:30",
     "groupId": 312,
@@ -3102,14 +3102,14 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "13 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 23658,
     "homeTeam": "Академия Михайлова (Москва)",
     "awayTeam": "Динамо",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 4,
+    "awayGoals": 5,
     "date": "2026-11-21",
     "time": "09:30",
     "groupId": 309,
@@ -3117,14 +3117,14 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "9 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 22530,
     "homeTeam": "Буран Москва",
     "awayTeam": "Марьино",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 23,
+    "awayGoals": 12,
     "date": "2026-11-21",
     "time": "09:45",
     "groupId": 315,
@@ -3132,14 +3132,14 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "13 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 22542,
     "homeTeam": "Серебряные акулы",
     "awayTeam": "Метеор",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 10,
+    "awayGoals": 31,
     "date": "2026-11-21",
     "time": "10:00",
     "groupId": 315,
@@ -3147,14 +3147,14 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "13 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 23664,
     "homeTeam": "Академия Михайлова (Новомосковск)",
     "awayTeam": "Локомотив",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 3,
+    "awayGoals": 5,
     "date": "2026-11-21",
     "time": "10:00",
     "groupId": 309,
@@ -3162,14 +3162,14 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "9 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 23661,
     "homeTeam": "Локомотив - 2004",
     "awayTeam": "Академия Михайлова (Тула)",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 1,
+    "awayGoals": 2,
     "date": "2026-11-21",
     "time": "10:00",
     "groupId": 309,
@@ -3177,14 +3177,14 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "9 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 22215,
     "homeTeam": "Красная машина Атлант",
     "awayTeam": "Олимпийская деревня - 80",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 24,
+    "awayGoals": 8,
     "date": "2026-11-21",
     "time": "10:30",
     "groupId": 312,
@@ -3192,14 +3192,14 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "13 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 22536,
     "homeTeam": "Пингвины",
     "awayTeam": "Янтарь",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 20,
+    "awayGoals": 17,
     "date": "2026-11-21",
     "time": "11:00",
     "groupId": 315,
@@ -3207,14 +3207,14 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "13 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 23673,
     "homeTeam": "Красная машина Юниор",
     "awayTeam": "Крылья Советов",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 3,
+    "awayGoals": 7,
     "date": "2026-11-21",
     "time": "11:00",
     "groupId": 309,
@@ -3222,14 +3222,14 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "9 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 22545,
     "homeTeam": "Синяя птица",
     "awayTeam": "Северная звезда",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 8,
+    "awayGoals": 35,
     "date": "2026-11-21",
     "time": "11:30",
     "groupId": 315,
@@ -3237,14 +3237,14 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "13 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 22233,
     "homeTeam": "Рыцари",
     "awayTeam": "Витязь (Подольск)",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 8,
+    "awayGoals": 15,
     "date": "2026-11-21",
     "time": "11:45",
     "groupId": 312,
@@ -3252,14 +3252,14 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "13 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 2
   },
   {
     "id": 22224,
     "homeTeam": "Запад - Ястребы",
     "awayTeam": "Академия Харламова",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 7,
+    "awayGoals": 13,
     "date": "2026-11-21",
     "time": "12:30",
     "groupId": 312,
@@ -3267,14 +3267,14 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "13 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 1
   },
   {
     "id": 22221,
     "homeTeam": "Балашиха",
     "awayTeam": "Академия Петрова",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 0,
+    "awayGoals": 0,
     "date": "2026-11-21",
     "time": "12:45",
     "groupId": 312,
@@ -3282,14 +3282,14 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "13 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 1
   },
   {
     "id": 22218,
     "homeTeam": "Динамо - Солнцево",
     "awayTeam": "Арена Плей Трактор (Юг)",
-    "homeGoals": null,
-    "awayGoals": null,
+    "homeGoals": 4,
+    "awayGoals": 12,
     "date": "2026-11-21",
     "time": "12:45",
     "groupId": 312,
@@ -3297,7 +3297,7 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "13 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
+    "status": 1
   },
   {
     "id": 23670,
@@ -3366,7 +3366,7 @@ window.tournamentMatchesData = [
     "homeGoals": null,
     "awayGoals": null,
     "date": "2026-11-27",
-    "time": "",
+    "time": "10:15",
     "groupId": 309,
     "tournamentId": 48,
     "group": "Группа А",
@@ -3402,21 +3402,6 @@ window.tournamentMatchesData = [
     "group": "Группа В",
     "tour": "14 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
-    "id": 23688,
-    "homeTeam": "Академия Михайлова (Тула)",
-    "awayTeam": "Академия Михайлова (Новомосковск)",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-28",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "10 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
     "status": 0
   },
   {
@@ -3562,6 +3547,21 @@ window.tournamentMatchesData = [
     "awayGoals": null,
     "date": "2026-11-28",
     "time": "12:45",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "10 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
+    "id": 23688,
+    "homeTeam": "Академия Михайлова (Тула)",
+    "awayTeam": "Академия Михайлова (Новомосковск)",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-28",
+    "time": "13:00",
     "groupId": 309,
     "tournamentId": 48,
     "group": "Группа А",
