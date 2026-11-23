@@ -3273,8 +3273,8 @@ window.tournamentMatchesData = [
     "id": 22221,
     "homeTeam": "Балашиха",
     "awayTeam": "Академия Петрова",
-    "homeGoals": 0,
-    "awayGoals": 0,
+    "homeGoals": 7,
+    "awayGoals": 27,
     "date": "2026-11-21",
     "time": "12:45",
     "groupId": 312,
@@ -3282,7 +3282,7 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "13 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 1
+    "status": 2
   },
   {
     "id": 22218,
@@ -3372,21 +3372,6 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "10 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
-    "id": 22236,
-    "homeTeam": "Русь",
-    "awayTeam": "Рыцари",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-11-28",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "14 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
   },
   {
@@ -3498,6 +3483,21 @@ window.tournamentMatchesData = [
     "id": 22239,
     "homeTeam": "Белые медведи",
     "awayTeam": "Гранит",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-11-28",
+    "time": "11:00",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "14 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 22236,
+    "homeTeam": "Русь",
+    "awayTeam": "Рыцари",
     "homeGoals": null,
     "awayGoals": null,
     "date": "2026-11-28",
@@ -3765,21 +3765,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22581,
-    "homeTeam": "Серебряные акулы",
-    "awayTeam": "Янтарь",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-12-05",
-    "time": "",
-    "groupId": 315,
-    "tournamentId": 51,
-    "group": "Группа В",
-    "tour": "15 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22578,
     "homeTeam": "Арктика",
     "awayTeam": "Вымпел",
@@ -3897,6 +3882,21 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "11 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
+    "id": 22581,
+    "homeTeam": "Серебряные акулы",
+    "awayTeam": "Янтарь",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-12-05",
+    "time": "10:00",
+    "groupId": 315,
+    "tournamentId": 51,
+    "group": "Группа В",
+    "tour": "15 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
   },
   {
