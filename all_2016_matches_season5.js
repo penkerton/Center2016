@@ -3282,7 +3282,7 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "13 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 2
+    "status": 1
   },
   {
     "id": 22218,
