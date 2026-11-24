@@ -16,20 +16,20 @@ window.playerGoalsData = [
     "goals": 38
   },
   {
+    "player": "Алексей Турков",
+    "group": "Группа В",
+    "team": "Центр",
+    "role": "Н",
+    "games": 11,
+    "goals": 37
+  },
+  {
     "player": "Николай Рудианов",
     "group": "Группа В",
     "team": "Синяя птица",
     "role": "Н",
     "games": 10,
     "goals": 37
-  },
-  {
-    "player": "Алексей Турков",
-    "group": "Группа В",
-    "team": "Центр",
-    "role": "Н",
-    "games": 11,
-    "goals": 36
   },
   {
     "player": "Дмитрий Харитохин",
@@ -1200,14 +1200,6 @@ window.playerGoalsData = [
     "goals": 12
   },
   {
-    "player": "Роман Ельцов",
-    "group": "Группа В",
-    "team": "Центр",
-    "role": "Н",
-    "games": 11,
-    "goals": 12
-  },
-  {
     "player": "Тимофей Веденин",
     "group": "Группа Б",
     "team": "Белые медведи",
@@ -1435,6 +1427,14 @@ window.playerGoalsData = [
     "player": "Никита Чура",
     "group": "Группа Б",
     "team": "Балашиха",
+    "role": "Н",
+    "games": 11,
+    "goals": 11
+  },
+  {
+    "player": "Роман Ельцов",
+    "group": "Группа В",
+    "team": "Центр",
     "role": "Н",
     "games": 11,
     "goals": 11

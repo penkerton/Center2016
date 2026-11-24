@@ -1,5 +1,5 @@
 window.siteData = {
-  "generatedAt": "2026-11-23T23:08:56.883Z",
+  "generatedAt": "2026-11-24T19:51:05.498Z",
   "seasonId": 5,
   "source": {
     "label": "Федерация хоккея Москвы",
