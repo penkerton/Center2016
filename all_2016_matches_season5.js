@@ -3645,36 +3645,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 22275,
-    "homeTeam": "Витязь (Подольск)",
-    "awayTeam": "Русь",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-12-05",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "15 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
-    "id": 22269,
-    "homeTeam": "Гранит",
-    "awayTeam": "Академия Харламова",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-12-05",
-    "time": "",
-    "groupId": 312,
-    "tournamentId": 51,
-    "group": "Группа Б",
-    "tour": "15 тур",
-    "tournament": "2016 г.р. 26/27 (формат 4х4)",
-    "status": 0
-  },
-  {
     "id": 22266,
     "homeTeam": "Рязань - ВДВ",
     "awayTeam": "Академия Петрова",
@@ -3795,21 +3765,6 @@ window.tournamentMatchesData = [
     "status": 0
   },
   {
-    "id": 23697,
-    "homeTeam": "Академия Михайлова (Новомосковск)",
-    "awayTeam": "Академия Михайлова (Москва)",
-    "homeGoals": null,
-    "awayGoals": null,
-    "date": "2026-12-05",
-    "time": "",
-    "groupId": 309,
-    "tournamentId": 48,
-    "group": "Группа А",
-    "tour": "11 тур",
-    "tournament": "2016 г.р. 26/27 (формат 5х5)",
-    "status": 0
-  },
-  {
     "id": 23694,
     "homeTeam": "Локомотив - 2004",
     "awayTeam": "Динамо",
@@ -3822,6 +3777,21 @@ window.tournamentMatchesData = [
     "group": "Группа А",
     "tour": "11 тур",
     "tournament": "2016 г.р. 26/27 (формат 5х5)",
+    "status": 0
+  },
+  {
+    "id": 22275,
+    "homeTeam": "Витязь (Подольск)",
+    "awayTeam": "Русь",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-12-05",
+    "time": "10:00",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "15 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
     "status": 0
   },
   {
@@ -3867,6 +3837,36 @@ window.tournamentMatchesData = [
     "group": "Группа Б",
     "tour": "15 тур",
     "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 22269,
+    "homeTeam": "Гранит",
+    "awayTeam": "Академия Харламова",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-12-05",
+    "time": "11:45",
+    "groupId": 312,
+    "tournamentId": 51,
+    "group": "Группа Б",
+    "tour": "15 тур",
+    "tournament": "2016 г.р. 26/27 (формат 4х4)",
+    "status": 0
+  },
+  {
+    "id": 23697,
+    "homeTeam": "Академия Михайлова (Новомосковск)",
+    "awayTeam": "Академия Михайлова (Москва)",
+    "homeGoals": null,
+    "awayGoals": null,
+    "date": "2026-12-05",
+    "time": "12:00",
+    "groupId": 309,
+    "tournamentId": 48,
+    "group": "Группа А",
+    "tour": "11 тур",
+    "tournament": "2016 г.р. 26/27 (формат 5х5)",
     "status": 0
   },
   {
